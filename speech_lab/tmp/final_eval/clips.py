@@ -12,7 +12,7 @@ if extra:
     extra["rows"] = [row(r["label"], r["kind"], r["f"]) for r in extra["rows"]]
 clips = [
  {"title": "Real board · bus · partners in line with the mics", "tags": [{"text": "real recording", "cls": "ok"}, {"text": "0 dB SNR", "cls": "na"}, {"text": "fan noise as recorded", "cls": "na"}],
-  "caption": "Two LibriSpeech talkers played from the MacBook toward Mic A's end, the real fan noise, plus simulated passengers and bus noise. Listen for the passengers: the axis beam pushes them back; the AI-only pipeline only removes the steady noise.",
+  "caption": "Two LibriSpeech talkers played from the MacBook toward Mic A's end, the real fan noise, plus simulated passengers and DEMAND bus noise. Listen for the passengers: the axis beam pushes them back; the AI-only pipeline only removes the steady noise.",
   "rows": [row("Mic A as recorded", "raw", "real_bus_micA.wav"), row("Axis beam + DPDFNet (bus-endfire)", "out", "real_bus_endfire.wav"), row("Bus v3, no beam (bus)", "out", "real_bus_v3.wav")],
   "metrics": [{"k": "worst partner ESTOI", "v": "+0.110 axis · +0.005 v3"}, {"k": "SNR gain", "v": "+8.7 dB · +3.2 dB"}, {"k": "passenger SIR", "v": "+8.0 dB · +2.5 dB"}]},
 ]

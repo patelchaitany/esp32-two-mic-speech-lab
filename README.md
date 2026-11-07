@@ -51,3 +51,9 @@ Modes: `meeting`, `meeting-classic`, `bus`, `bus-classic`, `bus-endfire`. Each r
 ## Not included
 
 Downloaded datasets and models, raw board recordings and rendered scene audio (all `.wav`/`.npz` except the report's clips), earlier bench results (`results/`, `results2/`), and tuning scratch (`tmp/`).
+
+## Data and licences
+
+- **Report audio** (`speech_lab/report_page/audio/`): contains LibriSpeech speech (CC BY 4.0; V. Panayotov et al., "Librispeech: an ASR corpus based on public domain audio books", ICASSP 2015). The real-board bus clips also contain DEMAND TBUS noise (J. Thiemann, N. Ito, E. Vincent, "The Diverse Environments Multi-channel Acoustic Noise Database (DEMAND)", 2013), so these clips are shared under CC BY-SA 3.0.
+- **Derived tables** (`speech_lab/corpus_libri/`, `speech_lab/corpora/libri/`): built from LibriSpeech metadata (CC BY 4.0).
+- **Neural models** (not included): GTCRN (MIT), DPDFNet (Apache-2.0), VoxLock (Apache-2.0), WeSpeaker (code Apache-2.0, weights CC BY 4.0). The pre- and post-processing in `speech_lab/methods/_core/` re-implements their published inference chains. Full sources, licences and citations are in `speech_lab/DATA.md`.
