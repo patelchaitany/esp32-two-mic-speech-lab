@@ -1,0 +1,622 @@
+{
+ "sweep_L": [
+  {
+   "t_re_peak_samples": 0.75,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": 5.0,
+   "level_dB": -2.284,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.5
+  },
+  {
+   "t_re_peak_samples": 11.75,
+   "level_dB": -3.529,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.844
+  },
+  {
+   "t_re_peak_samples": 15.25,
+   "level_dB": -9.864,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.781
+  },
+  {
+   "t_re_peak_samples": 21.0,
+   "level_dB": -4.809,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.953
+  },
+  {
+   "t_re_peak_samples": 27.875,
+   "level_dB": -11.958,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.75
+  }
+ ],
+ "sweep_R": [
+  {
+   "t_re_peak_samples": -12.625,
+   "level_dB": -3.164,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": -8.0,
+   "level_dB": -4.358,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": -4.125,
+   "level_dB": -5.885,
+   "tdoa_xcorr": -0.25,
+   "tdoa_gcc": -0.375
+  },
+  {
+   "t_re_peak_samples": 2.0,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.75
+  },
+  {
+   "t_re_peak_samples": 5.875,
+   "level_dB": -7.23,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.703
+  },
+  {
+   "t_re_peak_samples": 9.125,
+   "level_dB": -11.051,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.688
+  },
+  {
+   "t_re_peak_samples": 12.625,
+   "level_dB": -7.23,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.625
+  },
+  {
+   "t_re_peak_samples": 17.0,
+   "level_dB": -8.554,
+   "tdoa_xcorr": -0.375,
+   "tdoa_gcc": -0.625
+  },
+  {
+   "t_re_peak_samples": 22.375,
+   "level_dB": -7.874,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.688
+  },
+  {
+   "t_re_peak_samples": 25.5,
+   "level_dB": -11.916,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.797
+  },
+  {
+   "t_re_peak_samples": 33.375,
+   "level_dB": -13.013,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.828
+  },
+  {
+   "t_re_peak_samples": 39.125,
+   "level_dB": -9.505,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.766
+  },
+  {
+   "t_re_peak_samples": 44.5,
+   "level_dB": -11.155,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.703
+  }
+ ],
+ "sweep_L2": [
+  {
+   "t_re_peak_samples": -1.0,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": 3.25,
+   "level_dB": -2.241,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": 6.375,
+   "level_dB": -6.272,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.828
+  },
+  {
+   "t_re_peak_samples": 10.125,
+   "level_dB": -3.618,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.844
+  },
+  {
+   "t_re_peak_samples": 13.5,
+   "level_dB": -10.052,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.734
+  },
+  {
+   "t_re_peak_samples": 19.25,
+   "level_dB": -4.913,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.984
+  },
+  {
+   "t_re_peak_samples": 23.25,
+   "level_dB": -10.36,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.875
+  }
+ ],
+ "talkA_L:L": [
+  {
+   "t_re_peak_samples": -0.875,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.531
+  },
+  {
+   "t_re_peak_samples": 3.375,
+   "level_dB": -2.5,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": 6.625,
+   "level_dB": -6.912,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.812
+  },
+  {
+   "t_re_peak_samples": 10.125,
+   "level_dB": -3.203,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.844
+  },
+  {
+   "t_re_peak_samples": 13.375,
+   "level_dB": -10.466,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.781
+  },
+  {
+   "t_re_peak_samples": 19.625,
+   "level_dB": -5.228,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.969
+  },
+  {
+   "t_re_peak_samples": 26.25,
+   "level_dB": -12.68,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.734
+  }
+ ],
+ "talkA_L:L:first_arrival_-12dB": 157.0,
+ "talkA_L:L:first_arrival_-20dB": 155.0,
+ "talkB_R:R": [
+  {
+   "t_re_peak_samples": -12.375,
+   "level_dB": -2.804,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": -7.625,
+   "level_dB": -4.337,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.5
+  },
+  {
+   "t_re_peak_samples": -3.75,
+   "level_dB": -5.112,
+   "tdoa_xcorr": -0.25,
+   "tdoa_gcc": -0.375
+  },
+  {
+   "t_re_peak_samples": 2.25,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.625
+  },
+  {
+   "t_re_peak_samples": 6.25,
+   "level_dB": -8.244,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.734
+  },
+  {
+   "t_re_peak_samples": 9.5,
+   "level_dB": -9.171,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.797
+  },
+  {
+   "t_re_peak_samples": 12.75,
+   "level_dB": -6.579,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.688
+  },
+  {
+   "t_re_peak_samples": 17.375,
+   "level_dB": -8.7,
+   "tdoa_xcorr": -0.375,
+   "tdoa_gcc": -0.656
+  },
+  {
+   "t_re_peak_samples": 22.75,
+   "level_dB": -7.39,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.719
+  },
+  {
+   "t_re_peak_samples": 33.75,
+   "level_dB": -13.651,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.625
+  },
+  {
+   "t_re_peak_samples": 39.5,
+   "level_dB": -9.614,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.891
+  },
+  {
+   "t_re_peak_samples": 44.875,
+   "level_dB": -11.901,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.875
+  }
+ ],
+ "talkB_R:R:first_arrival_-12dB": 145.625,
+ "talkB_R:R:first_arrival_-20dB": 144.75,
+ "talkAB_LR:L": [
+  {
+   "t_re_peak_samples": 0.75,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.531
+  },
+  {
+   "t_re_peak_samples": 5.0,
+   "level_dB": -2.519,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.5
+  },
+  {
+   "t_re_peak_samples": 8.125,
+   "level_dB": -6.934,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.812
+  },
+  {
+   "t_re_peak_samples": 11.75,
+   "level_dB": -3.378,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.844
+  },
+  {
+   "t_re_peak_samples": 15.0,
+   "level_dB": -10.225,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.781
+  },
+  {
+   "t_re_peak_samples": 21.25,
+   "level_dB": -5.19,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -1.0
+  },
+  {
+   "t_re_peak_samples": 28.0,
+   "level_dB": -12.85,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.75
+  }
+ ],
+ "talkAB_LR:L:first_arrival_-12dB": 112.625,
+ "talkAB_LR:L:first_arrival_-20dB": 110.375,
+ "talkAB_LR:R": [
+  {
+   "t_re_peak_samples": -12.5,
+   "level_dB": -3.001,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.531
+  },
+  {
+   "t_re_peak_samples": -8.0,
+   "level_dB": -4.601,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.5
+  },
+  {
+   "t_re_peak_samples": -4.0,
+   "level_dB": -5.72,
+   "tdoa_xcorr": -0.25,
+   "tdoa_gcc": -0.359
+  },
+  {
+   "t_re_peak_samples": 2.0,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.734
+  },
+  {
+   "t_re_peak_samples": 6.0,
+   "level_dB": -8.101,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.703
+  },
+  {
+   "t_re_peak_samples": 9.375,
+   "level_dB": -10.873,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.594
+  },
+  {
+   "t_re_peak_samples": 12.5,
+   "level_dB": -7.505,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.609
+  },
+  {
+   "t_re_peak_samples": 17.125,
+   "level_dB": -8.363,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.625
+  },
+  {
+   "t_re_peak_samples": 22.375,
+   "level_dB": -8.455,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.672
+  },
+  {
+   "t_re_peak_samples": 25.625,
+   "level_dB": -12.4,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.75
+  },
+  {
+   "t_re_peak_samples": 39.125,
+   "level_dB": -9.538,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.938
+  },
+  {
+   "t_re_peak_samples": 44.625,
+   "level_dB": -12.015,
+   "tdoa_xcorr": -0.875,
+   "tdoa_gcc": -0.656
+  }
+ ],
+ "talkAB_LR:R:first_arrival_-12dB": 116.375,
+ "talkAB_LR:R:first_arrival_-20dB": 115.375,
+ "talkAB_LR:first_arrival_R_minus_L_-12dB": [
+  3.75,
+  8.039
+ ],
+ "talkAB_LR:first_arrival_R_minus_L_-20dB": [
+  5.0,
+  10.719
+ ],
+ "talkA_noise:L": [
+  {
+   "t_re_peak_samples": -0.625,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": 3.625,
+   "level_dB": -2.389,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.5
+  },
+  {
+   "t_re_peak_samples": 6.75,
+   "level_dB": -6.707,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.812
+  },
+  {
+   "t_re_peak_samples": 10.375,
+   "level_dB": -3.278,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.859
+  },
+  {
+   "t_re_peak_samples": 13.625,
+   "level_dB": -9.822,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.766
+  },
+  {
+   "t_re_peak_samples": 19.875,
+   "level_dB": -5.11,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -1.0
+  },
+  {
+   "t_re_peak_samples": 26.5,
+   "level_dB": -12.659,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.719
+  }
+ ],
+ "talkA_noise:L:first_arrival_-12dB": 156.25,
+ "talkA_noise:L:first_arrival_-20dB": 154.125,
+ "talkA_noise:R": [
+  {
+   "t_re_peak_samples": -14.75,
+   "level_dB": -6.904,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.5
+  },
+  {
+   "t_re_peak_samples": -10.25,
+   "level_dB": -5.435,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.531
+  },
+  {
+   "t_re_peak_samples": -6.375,
+   "level_dB": -6.753,
+   "tdoa_xcorr": -0.375,
+   "tdoa_gcc": -0.391
+  },
+  {
+   "t_re_peak_samples": -0.25,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.703
+  },
+  {
+   "t_re_peak_samples": 3.5,
+   "level_dB": -6.562,
+   "tdoa_xcorr": -0.375,
+   "tdoa_gcc": -0.641
+  },
+  {
+   "t_re_peak_samples": 7.0,
+   "level_dB": -9.272,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.625
+  },
+  {
+   "t_re_peak_samples": 10.5,
+   "level_dB": -6.645,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.578
+  },
+  {
+   "t_re_peak_samples": 14.875,
+   "level_dB": -6.665,
+   "tdoa_xcorr": -0.375,
+   "tdoa_gcc": -0.594
+  },
+  {
+   "t_re_peak_samples": 19.625,
+   "level_dB": -5.245,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.672
+  },
+  {
+   "t_re_peak_samples": 31.25,
+   "level_dB": -9.663,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.734
+  },
+  {
+   "t_re_peak_samples": 36.875,
+   "level_dB": -7.131,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.969
+  },
+  {
+   "t_re_peak_samples": 42.375,
+   "level_dB": -10.961,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.844
+  }
+ ],
+ "talkA_noise:R:first_arrival_-12dB": 160.75,
+ "talkA_noise:R:first_arrival_-20dB": 150.125,
+ "talkA_noise:first_arrival_R_minus_L_-12dB": [
+  4.5,
+  9.647
+ ],
+ "talkA_noise:first_arrival_R_minus_L_-20dB": [
+  -4.0,
+  -8.575
+ ],
+ "talkC_R_quiet:R": [
+  {
+   "t_re_peak_samples": -12.375,
+   "level_dB": -3.786,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.516
+  },
+  {
+   "t_re_peak_samples": -8.0,
+   "level_dB": -3.987,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.547
+  },
+  {
+   "t_re_peak_samples": -3.75,
+   "level_dB": -6.049,
+   "tdoa_xcorr": -0.25,
+   "tdoa_gcc": -0.375
+  },
+  {
+   "t_re_peak_samples": 2.25,
+   "level_dB": 0.0,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.672
+  },
+  {
+   "t_re_peak_samples": 6.125,
+   "level_dB": -7.051,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.719
+  },
+  {
+   "t_re_peak_samples": 9.5,
+   "level_dB": -8.856,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.719
+  },
+  {
+   "t_re_peak_samples": 12.625,
+   "level_dB": -7.187,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.688
+  },
+  {
+   "t_re_peak_samples": 20.5,
+   "level_dB": -7.602,
+   "tdoa_xcorr": -0.5,
+   "tdoa_gcc": -0.734
+  },
+  {
+   "t_re_peak_samples": 25.625,
+   "level_dB": -11.532,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.812
+  },
+  {
+   "t_re_peak_samples": 36.375,
+   "level_dB": -10.28,
+   "tdoa_xcorr": -0.75,
+   "tdoa_gcc": -0.938
+  },
+  {
+   "t_re_peak_samples": 39.5,
+   "level_dB": -9.788,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.797
+  },
+  {
+   "t_re_peak_samples": 44.875,
+   "level_dB": -10.848,
+   "tdoa_xcorr": -0.625,
+   "tdoa_gcc": -0.766
+  }
+ ],
+ "talkC_R_quiet:R:first_arrival_-12dB": 145.75,
+ "talkC_R_quiet:R:first_arrival_-20dB": 144.5
+}

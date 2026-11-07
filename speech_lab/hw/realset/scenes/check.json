@@ -1,0 +1,366 @@
+{
+ "bus/L1_snr-5_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -45.0,
+   "near_2": -42.0,
+   "near_3": -45.4,
+   "bus_noise": -39.1,
+   "device": -42.9
+  },
+  "snr_rule_db": -5.0,
+  "snr_incl_device_db": -5.82
+ },
+ "bus/L1_snr-5_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -45.0,
+   "near_2": -42.0,
+   "near_3": -45.4,
+   "bus_noise": -39.1,
+   "device": -54.9
+  },
+  "snr_rule_db": -5.0,
+  "snr_incl_device_db": -5.05
+ },
+ "bus/L1_snr+0_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -50.0,
+   "near_2": -47.0,
+   "near_3": -50.4,
+   "bus_noise": -44.1,
+   "device": -42.9
+  },
+  "snr_rule_db": -0.0,
+  "snr_incl_device_db": -2.2
+ },
+ "bus/L1_snr+0_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -50.0,
+   "near_2": -47.0,
+   "near_3": -50.4,
+   "bus_noise": -44.1,
+   "device": -54.9
+  },
+  "snr_rule_db": -0.0,
+  "snr_incl_device_db": -0.17
+ },
+ "bus/L1_snr+5_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -55.0,
+   "near_2": -52.0,
+   "near_3": -55.4,
+   "bus_noise": -49.1,
+   "device": -42.9
+  },
+  "snr_rule_db": 5.0,
+  "snr_incl_device_db": 0.1
+ },
+ "bus/L1_snr+5_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -55.0,
+   "near_2": -52.0,
+   "near_3": -55.4,
+   "bus_noise": -49.1,
+   "device": -54.9
+  },
+  "snr_rule_db": 5.0,
+  "snr_incl_device_db": 4.47
+ },
+ "bus/L2_snr-5_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -48.2,
+   "near_2": -45.2,
+   "near_3": -42.7,
+   "near_4": -46.5,
+   "bus_noise": -39.1,
+   "device": -42.9
+  },
+  "snr_rule_db": -5.0,
+  "snr_incl_device_db": -5.82
+ },
+ "bus/L2_snr-5_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -48.2,
+   "near_2": -45.2,
+   "near_3": -42.7,
+   "near_4": -46.5,
+   "bus_noise": -39.1,
+   "device": -54.9
+  },
+  "snr_rule_db": -5.0,
+  "snr_incl_device_db": -5.06
+ },
+ "bus/L2_snr+0_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -53.2,
+   "near_2": -50.2,
+   "near_3": -47.7,
+   "near_4": -51.5,
+   "bus_noise": -44.1,
+   "device": -42.9
+  },
+  "snr_rule_db": -0.0,
+  "snr_incl_device_db": -2.21
+ },
+ "bus/L2_snr+0_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -53.2,
+   "near_2": -50.2,
+   "near_3": -47.7,
+   "near_4": -51.5,
+   "bus_noise": -44.1,
+   "device": -54.9
+  },
+  "snr_rule_db": -0.0,
+  "snr_incl_device_db": -0.18
+ },
+ "bus/L2_snr+5_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -58.2,
+   "near_2": -55.2,
+   "near_3": -52.7,
+   "near_4": -56.5,
+   "bus_noise": -49.1,
+   "device": -42.9
+  },
+  "snr_rule_db": 5.0,
+  "snr_incl_device_db": 0.09
+ },
+ "bus/L2_snr+5_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -58.2,
+   "near_2": -55.2,
+   "near_3": -52.7,
+   "near_4": -56.5,
+   "bus_noise": -49.1,
+   "device": -54.9
+  },
+  "snr_rule_db": 5.0,
+  "snr_incl_device_db": 4.46
+ },
+ "bus/L3_snr-5_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -47.9,
+   "near_2": -46.7,
+   "near_3": -47.7,
+   "near_4": -46.3,
+   "near_5": -43.4,
+   "bus_noise": -39.1,
+   "device": -42.9
+  },
+  "snr_rule_db": -5.0,
+  "snr_incl_device_db": -5.83
+ },
+ "bus/L3_snr-5_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -47.9,
+   "near_2": -46.7,
+   "near_3": -47.7,
+   "near_4": -46.3,
+   "near_5": -43.4,
+   "bus_noise": -39.1,
+   "device": -54.9
+  },
+  "snr_rule_db": -5.0,
+  "snr_incl_device_db": -5.06
+ },
+ "bus/L3_snr+0_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -52.9,
+   "near_2": -51.7,
+   "near_3": -52.7,
+   "near_4": -51.3,
+   "near_5": -48.4,
+   "bus_noise": -44.1,
+   "device": -42.9
+  },
+  "snr_rule_db": -0.0,
+  "snr_incl_device_db": -2.22
+ },
+ "bus/L3_snr+0_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -52.9,
+   "near_2": -51.7,
+   "near_3": -52.7,
+   "near_4": -51.3,
+   "near_5": -48.4,
+   "bus_noise": -44.1,
+   "device": -54.9
+  },
+  "snr_rule_db": -0.0,
+  "snr_incl_device_db": -0.18
+ },
+ "bus/L3_snr+5_recorded": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -57.9,
+   "near_2": -56.7,
+   "near_3": -57.7,
+   "near_4": -56.3,
+   "near_5": -53.4,
+   "bus_noise": -49.1,
+   "device": -42.9
+  },
+  "snr_rule_db": 5.0,
+  "snr_incl_device_db": 0.08
+ },
+ "bus/L3_snr+5_quiet": {
+  "T_s": 28.25,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "partner_A": -42.1,
+   "partner_B": -48.0,
+   "near_1": -57.9,
+   "near_2": -56.7,
+   "near_3": -57.7,
+   "near_4": -56.3,
+   "near_5": -53.4,
+   "bus_noise": -49.1,
+   "device": -54.9
+  },
+  "snr_rule_db": 5.0,
+  "snr_incl_device_db": 4.46
+ },
+ "meeting/recorded": {
+  "T_s": 38.24,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "talker_00": -46.9,
+   "talker_01": -57.9,
+   "talker_02": -56.9,
+   "talker_03": -55.9,
+   "talker_04": -56.5,
+   "talker_05": -62.1,
+   "talker_06": -52.6,
+   "talker_07": -56.9,
+   "device": -44.0
+  },
+  "talker_snr_db": {
+   "M1": 6.1,
+   "M2": -3.1,
+   "M3": -4.3,
+   "M4": -3.1,
+   "M5": -2.1,
+   "M6": -8.0,
+   "MF1": -0.9,
+   "MF2": -4.7
+  }
+ },
+ "meeting/quiet": {
+  "T_s": 38.24,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "talker_00": -46.9,
+   "talker_01": -57.9,
+   "talker_02": -56.9,
+   "talker_03": -55.9,
+   "talker_04": -56.5,
+   "talker_05": -62.1,
+   "talker_06": -52.6,
+   "talker_07": -56.9,
+   "device": -56.0
+  },
+  "talker_snr_db": {
+   "M1": 18.1,
+   "M2": 8.9,
+   "M3": 7.7,
+   "M4": 8.9,
+   "M5": 9.9,
+   "M6": 4.0,
+   "MF1": 11.1,
+   "MF2": 7.3
+  }
+ },
+ "meeting/quiet_omeeting": {
+  "T_s": 38.24,
+  "sum_err": 0.0,
+  "lvl_dbfs_active": {
+   "talker_00": -46.9,
+   "talker_01": -57.9,
+   "talker_02": -56.9,
+   "talker_03": -55.9,
+   "talker_04": -56.5,
+   "talker_05": -62.1,
+   "talker_06": -52.6,
+   "talker_07": -56.9,
+   "omeeting": -55.4,
+   "device": -56.0
+  },
+  "talker_snr_db": {
+   "M1": 12.6,
+   "M2": 6.9,
+   "M3": 3.8,
+   "M4": 8.1,
+   "M5": 4.6,
+   "M6": 1.6,
+   "MF1": 8.6,
+   "MF2": 4.7
+  }
+ }
+}

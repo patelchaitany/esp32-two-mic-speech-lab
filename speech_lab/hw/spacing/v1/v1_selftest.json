@@ -1,0 +1,23 @@
+{
+ "pure_delay": {
+  "delay_ls_300_3000": -1.1000043850984889,
+  "xcorr": -1.100007097512045,
+  "gcc_phat": -1.09375
+ },
+ "synthetic_diffuse_d1.25_tau-1.10": [
+  {
+   "slope": -1.0984,
+   "d_fit_cm": 1.255
+  },
+  {
+   "slope": -1.1029,
+   "d_fit_cm": 1.245
+  },
+  {
+   "slope": -1.1007,
+   "d_fit_cm": 1.25
+  }
+ ],
+ "axisym_m0_vs_sinc_maxerr": 1.2212453270876722e-15,
+ "axisym_m-0.5_vs_J0_maxerr": 2.220446049250313e-16
+}

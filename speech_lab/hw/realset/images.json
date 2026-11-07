@@ -1,0 +1,128 @@
+{
+ "A1": {
+  "onset_sample": 13238,
+  "image_dbfs": -38.8,
+  "residual_during_speech_dbfs": -45.2,
+  "noise_only_dbfs": -40.2,
+  "snr_at_micA_db": 1.4
+ },
+ "A2": {
+  "onset_sample": 11678,
+  "image_dbfs": -40.1,
+  "residual_during_speech_dbfs": -38.6,
+  "noise_only_dbfs": -40.6,
+  "snr_at_micA_db": 0.5
+ },
+ "A3": {
+  "onset_sample": 25346,
+  "image_dbfs": -38.0,
+  "residual_during_speech_dbfs": -43.2,
+  "noise_only_dbfs": -41.8,
+  "snr_at_micA_db": 3.8
+ },
+ "B1": {
+  "onset_sample": 28788,
+  "image_dbfs": -44.1,
+  "residual_during_speech_dbfs": -44.2,
+  "noise_only_dbfs": -44.2,
+  "snr_at_micA_db": 0.1
+ },
+ "B2": {
+  "onset_sample": 11960,
+  "image_dbfs": -44.2,
+  "residual_during_speech_dbfs": -43.6,
+  "noise_only_dbfs": -43.2,
+  "snr_at_micA_db": -1.0
+ },
+ "B3": {
+  "onset_sample": 16710,
+  "image_dbfs": -46.4,
+  "residual_during_speech_dbfs": -42.6,
+  "noise_only_dbfs": -44.9,
+  "snr_at_micA_db": -1.5
+ },
+ "AE1": {
+  "onset_sample": 12290,
+  "image_dbfs": -41.9,
+  "residual_during_speech_dbfs": -42.8,
+  "noise_only_dbfs": -43.3,
+  "snr_at_micA_db": 1.4
+ },
+ "AE2": {
+  "onset_sample": 9957,
+  "image_dbfs": -43.2,
+  "residual_during_speech_dbfs": -43.8,
+  "noise_only_dbfs": -44.4,
+  "snr_at_micA_db": 1.2
+ },
+ "BE1": {
+  "onset_sample": 18908,
+  "image_dbfs": -45.5,
+  "residual_during_speech_dbfs": -42.4,
+  "noise_only_dbfs": -45.0,
+  "snr_at_micA_db": -0.5
+ },
+ "BE2": {
+  "onset_sample": 15961,
+  "image_dbfs": -45.4,
+  "residual_during_speech_dbfs": -43.4,
+  "noise_only_dbfs": -43.0,
+  "snr_at_micA_db": -2.4
+ },
+ "M1": {
+  "onset_sample": 9708,
+  "image_dbfs": -37.5,
+  "residual_during_speech_dbfs": -42.7,
+  "noise_only_dbfs": -44.3,
+  "snr_at_micA_db": 6.8
+ },
+ "M2": {
+  "onset_sample": 11347,
+  "image_dbfs": -48.0,
+  "residual_during_speech_dbfs": -43.9,
+  "noise_only_dbfs": -41.3,
+  "snr_at_micA_db": -6.7
+ },
+ "M3": {
+  "onset_sample": 9833,
+  "image_dbfs": -47.2,
+  "residual_during_speech_dbfs": -42.6,
+  "noise_only_dbfs": -42.8,
+  "snr_at_micA_db": -4.4
+ },
+ "M4": {
+  "onset_sample": 11846,
+  "image_dbfs": -46.7,
+  "residual_during_speech_dbfs": -43.5,
+  "noise_only_dbfs": -43.5,
+  "snr_at_micA_db": -3.2
+ },
+ "M5": {
+  "onset_sample": 12352,
+  "image_dbfs": -47.3,
+  "residual_during_speech_dbfs": -44.9,
+  "noise_only_dbfs": -43.7,
+  "snr_at_micA_db": -3.6
+ },
+ "M6": {
+  "onset_sample": 20355,
+  "image_dbfs": -51.8,
+  "residual_during_speech_dbfs": -44.3,
+  "noise_only_dbfs": -43.3,
+  "snr_at_micA_db": -8.5
+ },
+ "MF1": {
+  "onset_sample": 10057,
+  "image_dbfs": -43.2,
+  "residual_during_speech_dbfs": -41.0,
+  "noise_only_dbfs": -42.2,
+  "snr_at_micA_db": -1.0
+ },
+ "MF2": {
+  "onset_sample": 18018,
+  "image_dbfs": -46.7,
+  "residual_during_speech_dbfs": -42.1,
+  "noise_only_dbfs": -43.1,
+  "snr_at_micA_db": -3.6
+ }
+}

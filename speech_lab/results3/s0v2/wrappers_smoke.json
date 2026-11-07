@@ -1,0 +1,108 @@
+{
+ "front_end_bus": {
+  "blind_d_hat_cm": 4.0,
+  "blind_tau0_smp": 0.0,
+  "blind_source": "blind",
+  "s0v2_d_hat_cm": 1.3401907547243006,
+  "s0v2_tau0_smp": -0.9683705870037149,
+  "s0v2_source": "json",
+  "gain_db_used": [
+   0.66,
+   0.69,
+   0.58,
+   0.68,
+   0.61,
+   0.87,
+   0.9,
+   0.77,
+   0.79,
+   0.91,
+   0.8,
+   0.59,
+   0.42,
+   0.76,
+   0.67,
+   0.8,
+   0.86,
+   1.37
+  ],
+  "json_drift_db": 0.03496332781569206,
+  "blind_resid_phase_6kHz_deg": -127.15339297966536,
+  "blind_resid_phase_1kHz_deg": -19.796249267172776,
+  "s0v2_resid_phase_6kHz_deg": -7.263013661892473,
+  "s0v2_resid_phase_1kHz_deg": -1.379243339627583
+ },
+ "front_end_meeting": {
+  "blind_d_hat_cm": 4.0,
+  "blind_tau0_smp": 0.0,
+  "blind_source": "blind",
+  "s0v2_d_hat_cm": 1.2150560757641222,
+  "s0v2_tau0_smp": -1.0198548890628232,
+  "s0v2_source": "json",
+  "gain_db_used": [
+   0.81,
+   0.82,
+   0.78,
+   0.43,
+   0.59,
+   0.91,
+   0.96,
+   0.81,
+   0.8,
+   0.91,
+   0.86,
+   0.63,
+   0.46,
+   0.39,
+   0.87,
+   0.6,
+   1.16,
+   1.32
+  ],
+  "json_drift_db": 0.09324974827227589,
+  "blind_resid_phase_6kHz_deg": -126.20191233923791,
+  "blind_resid_phase_1kHz_deg": -19.8360748125768,
+  "s0v2_resid_phase_6kHz_deg": -0.07053990619333694,
+  "s0v2_resid_phase_1kHz_deg": 1.0274771150378883
+ },
+ "m1_das": {
+  "ok": true,
+  "sec": 1.7,
+  "rms_out_db": -40.09320229058253
+ },
+ "m2_bus_beam": {
+  "ok": true,
+  "sec": 1.5,
+  "rms_out_db": -40.05133684004416
+ },
+ "m4_cdr": {
+  "ok": true,
+  "sec": 2.8,
+  "rms_out_db": -41.92165117918439
+ },
+ "m5_fence": {
+  "ok": true,
+  "sec": 1.1,
+  "rms_out_db": -40.466684826177186
+ },
+ "m2_meeting_beam": {
+  "ok": true,
+  "sec": 2.3,
+  "rms_out_db": -40.509739687183526
+ },
+ "m3_rtf_mvdr": {
+  "ok": true,
+  "sec": 1.8,
+  "rms_out_db": -40.805522551725645
+ },
+ "m7_cacgmm": {
+  "ok": true,
+  "sec": 1.6,
+  "rms_out_db": -39.952282829838
+ },
+ "m10_wpe": {
+  "ok": true,
+  "sec": 4.0,
+  "rms_out_db": -40.51992598955252
+ }
+}

@@ -1,0 +1,305 @@
+{
+ "talkA_L": {
+  "keys": [
+   "L"
+  ],
+  "lag": 5157,
+  "L": {
+   "peak_idx": 161,
+   "gcc_300_6500_-1_1.5ms": -0.5,
+   "slope_-1_1.5ms": -0.528,
+   "gcc_300_6500_-2_4ms": -0.516,
+   "slope_-2_4ms": -0.585,
+   "reverb_20_200ms_slope": -1.103,
+   "direct_energy_dB": -15.833,
+   "drr_dB": 5.376,
+   "peak_frac_A": 161.125,
+   "peak_frac_B": 159.125,
+   "onset_-12dB_A": 157
+  },
+  "blind_active": {
+   "median_loud_half": -0.69,
+   "hist_top3_bin_centres": [
+    -0.675,
+    -0.725,
+    -0.775
+   ],
+   "p10_p90_loud_half": [
+    -0.81,
+    -0.63
+   ]
+  }
+ },
+ "talkB_R": {
+  "keys": [
+   "R"
+  ],
+  "lag": 6379,
+  "R": {
+   "peak_idx": 160,
+   "gcc_300_6500_-1_1.5ms": -0.453,
+   "slope_-1_1.5ms": -0.5,
+   "gcc_300_6500_-2_4ms": -0.484,
+   "slope_-2_4ms": -0.534,
+   "reverb_20_200ms_slope": -1.096,
+   "direct_energy_dB": -22.217,
+   "drr_dB": -0.892,
+   "peak_frac_A": 163.25,
+   "peak_frac_B": 160.0,
+   "onset_-12dB_A": 147
+  },
+  "blind_active": {
+   "median_loud_half": -0.97,
+   "hist_top3_bin_centres": [
+    -1.025,
+    -1.075,
+    -0.975
+   ],
+   "p10_p90_loud_half": [
+    -1.05,
+    -0.79
+   ]
+  }
+ },
+ "talkAB_LR": {
+  "keys": [
+   "L",
+   "R"
+  ],
+  "lag": 5569,
+  "L": {
+   "peak_idx": 115,
+   "gcc_300_6500_-1_1.5ms": -0.5,
+   "slope_-1_1.5ms": -0.515,
+   "gcc_300_6500_-2_4ms": -0.5,
+   "slope_-2_4ms": -0.579,
+   "reverb_20_200ms_slope": -1.066,
+   "direct_energy_dB": -16.311,
+   "drr_dB": 4.44,
+   "peak_frac_A": 115.25,
+   "peak_frac_B": 114.75,
+   "onset_-12dB_A": 113
+  },
+  "R": {
+   "peak_idx": 131,
+   "gcc_300_6500_-1_1.5ms": -0.438,
+   "slope_-1_1.5ms": -0.486,
+   "gcc_300_6500_-2_4ms": -0.484,
+   "slope_-2_4ms": -0.511,
+   "reverb_20_200ms_slope": -1.073,
+   "direct_energy_dB": -22.942,
+   "drr_dB": -0.921,
+   "peak_frac_A": 133.875,
+   "peak_frac_B": 130.75,
+   "onset_-12dB_A": 118
+  },
+  "arrival_R_minus_L_samples_[A,B,onsetA]": [
+   18.625,
+   16.0,
+   5
+  ],
+  "rR_minus_rL_cm_from_peakA": 39.927,
+  "blind_active": {
+   "median_loud_half": -0.69,
+   "hist_top3_bin_centres": [
+    -0.675,
+    -0.725,
+    -0.625
+   ],
+   "p10_p90_loud_half": [
+    -0.79,
+    -0.64
+   ]
+  }
+ },
+ "talkA_noise": {
+  "keys": [
+   "L",
+   "R"
+  ],
+  "lag": 4955,
+  "L": {
+   "peak_idx": 160,
+   "gcc_300_6500_-1_1.5ms": -0.5,
+   "slope_-1_1.5ms": -0.522,
+   "gcc_300_6500_-2_4ms": -0.516,
+   "slope_-2_4ms": -0.582,
+   "reverb_20_200ms_slope": -1.087,
+   "direct_energy_dB": -16.259,
+   "drr_dB": 5.413,
+   "peak_frac_A": 160.375,
+   "peak_frac_B": 158.375,
+   "onset_-12dB_A": 158
+  },
+  "R": {
+   "peak_idx": 177,
+   "gcc_300_6500_-1_1.5ms": -0.594,
+   "slope_-1_1.5ms": -0.508,
+   "gcc_300_6500_-2_4ms": -0.484,
+   "slope_-2_4ms": -0.553,
+   "reverb_20_200ms_slope": -1.056,
+   "direct_energy_dB": -26.585,
+   "drr_dB": -1.759,
+   "peak_frac_A": 177.625,
+   "peak_frac_B": 177.125,
+   "onset_-12dB_A": 161
+  },
+  "arrival_R_minus_L_samples_[A,B,onsetA]": [
+   17.25,
+   18.75,
+   3
+  ],
+  "rR_minus_rL_cm_from_peakA": 36.98,
+  "blind_active": {
+   "median_loud_half": -0.67,
+   "hist_top3_bin_centres": [
+    -0.675,
+    -0.725,
+    -0.625
+   ],
+   "p10_p90_loud_half": [
+    -0.73,
+    -0.61
+   ]
+  }
+ },
+ "noise_LR": {
+  "keys": [
+   "L",
+   "R"
+  ],
+  "lag": 5278,
+  "L": {
+   "peak_idx": 199,
+   "gcc_300_6500_-1_1.5ms": -0.766,
+   "slope_-1_1.5ms": -0.728,
+   "gcc_300_6500_-2_4ms": -0.766,
+   "slope_-2_4ms": -0.691,
+   "reverb_20_200ms_slope": -1.066,
+   "direct_energy_dB": -20.346,
+   "drr_dB": 3.439,
+   "peak_frac_A": 184.75,
+   "peak_frac_B": 199.125,
+   "onset_-12dB_A": 180
+  },
+  "R": {
+   "peak_idx": 198,
+   "gcc_300_6500_-1_1.5ms": -0.609,
+   "slope_-1_1.5ms": -0.516,
+   "gcc_300_6500_-2_4ms": -0.484,
+   "slope_-2_4ms": -0.56,
+   "reverb_20_200ms_slope": -1.055,
+   "direct_energy_dB": -25.768,
+   "drr_dB": -1.352,
+   "peak_frac_A": 198.625,
+   "peak_frac_B": 198.0,
+   "onset_-12dB_A": 182
+  },
+  "arrival_R_minus_L_samples_[A,B,onsetA]": [
+   13.875,
+   -1.125,
+   2
+  ],
+  "rR_minus_rL_cm_from_peakA": 29.745,
+  "blind_active": {
+   "median_loud_half": -0.83,
+   "hist_top3_bin_centres": [
+    -0.825,
+    -0.875,
+    -0.775
+   ],
+   "p10_p90_loud_half": [
+    -0.94,
+    -0.76
+   ]
+  }
+ },
+ "talkC_R_quiet": {
+  "keys": [
+   "R"
+  ],
+  "lag": 5312,
+  "R": {
+   "peak_idx": 160,
+   "gcc_300_6500_-1_1.5ms": -0.453,
+   "slope_-1_1.5ms": -0.495,
+   "gcc_300_6500_-2_4ms": -0.5,
+   "slope_-2_4ms": -0.53,
+   "reverb_20_200ms_slope": -1.101,
+   "direct_energy_dB": -21.925,
+   "drr_dB": -1.698,
+   "peak_frac_A": 163.125,
+   "peak_frac_B": 159.875,
+   "onset_-12dB_A": 147
+  },
+  "blind_active": {
+   "median_loud_half": -1.03,
+   "hist_top3_bin_centres": [
+    -1.025,
+    -1.075,
+    -0.975
+   ],
+   "p10_p90_loud_half": [
+    -1.08,
+    -0.95
+   ]
+  }
+ },
+ "sweep_L": {
+  "keys": [
+   "L"
+  ],
+  "lag": 5329,
+  "L": {
+   "peak_idx": 180,
+   "gcc_300_6500_-1_1.5ms": -0.5,
+   "slope_-1_1.5ms": -0.514,
+   "gcc_300_6500_-2_4ms": -0.5,
+   "slope_-2_4ms": -0.578,
+   "reverb_20_200ms_slope": -1.084,
+   "direct_energy_dB": -18.302,
+   "drr_dB": 4.695,
+   "peak_frac_A": 181.75,
+   "peak_frac_B": 179.75,
+   "onset_-12dB_A": 178
+  }
+ },
+ "sweep_R": {
+  "keys": [
+   "R"
+  ],
+  "lag": 6268,
+  "R": {
+   "peak_idx": 200,
+   "gcc_300_6500_-1_1.5ms": -0.453,
+   "slope_-1_1.5ms": -0.496,
+   "gcc_300_6500_-2_4ms": -0.484,
+   "slope_-2_4ms": -0.522,
+   "reverb_20_200ms_slope": -1.085,
+   "direct_energy_dB": -24.773,
+   "drr_dB": -0.073,
+   "peak_frac_A": 202.875,
+   "peak_frac_B": 199.625,
+   "onset_-12dB_A": 186
+  }
+ },
+ "sweep_L2": {
+  "keys": [
+   "L"
+  ],
+  "lag": 6914,
+  "L": {
+   "peak_idx": 181,
+   "gcc_300_6500_-1_1.5ms": -0.5,
+   "slope_-1_1.5ms": -0.528,
+   "gcc_300_6500_-2_4ms": -0.516,
+   "slope_-2_4ms": -0.585,
+   "reverb_20_200ms_slope": -1.085,
+   "direct_energy_dB": -18.152,
+   "drr_dB": 5.451,
+   "peak_frac_A": 179.5,
+   "peak_frac_B": 179.0,
+   "onset_-12dB_A": 177
+  }
+ }
+}

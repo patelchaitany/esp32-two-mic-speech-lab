@@ -1,0 +1,536 @@
+<title>ESP32 Two-Mic Night Report</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: bench notebook. One reading column (~68ch) for prose; wider figure bands for audio, charts and tables; a slim sticky section bar. */
+:root {
+  --paper: #eef2f0;
+  --sheet: #f8faf9;
+  --panel: #e1e8e4;
+  --ink: #15201b;
+  --muted: #55645d;
+  --rule: #c8d2cd;
+  --mask: #17694f;        /* solder-mask green: processed signal, pass */
+  --mask-soft: #d2e6dc;
+  --copper: #a3561f;      /* copper: raw signal, caution */
+  --copper-soft: #f1dfcf;
+  --bad: #b3261e;
+  --bad-soft: #f6d9d6;
+  --ref: #4f5d8a;         /* oracle / reference */
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --col: 44rem;
+  --wide: 64rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f1613; --sheet: #141d19; --panel: #1b2622; --ink: #dfe7e2; --muted: #95a59d; --rule: #2c3833;
+    --mask: #5cc79a; --mask-soft: #1d3a2e; --copper: #e39a62; --copper-soft: #3d2a1c; --bad: #f08a80; --bad-soft: #3e1f1c;
+    --ref: #9aa8dd; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f1613; --sheet: #141d19; --panel: #1b2622; --ink: #dfe7e2; --muted: #95a59d; --rule: #2c3833;
+  --mask: #5cc79a; --mask-soft: #1d3a2e; --copper: #e39a62; --copper-soft: #3d2a1c; --bad: #f08a80; --bad-soft: #3e1f1c;
+  --ref: #9aa8dd; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 1.0625rem; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 4rem;
+}
+a { color: var(--mask); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--mask); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: var(--wide); margin-inline: auto; }
+.col { max-width: var(--col); }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; line-height: 1.12; margin: 0; }
+h1 { font-stretch: 78%; font-weight: 800; font-size: clamp(2.3rem, 6.5vw, 4.1rem); letter-spacing: -0.01em; }
+h2 { font-stretch: 85%; font-weight: 750; font-size: clamp(1.6rem, 3.6vw, 2.15rem); }
+h3 { font-stretch: 90%; font-weight: 700; font-size: 1.18rem; }
+p { margin: 0; }
+.mono, code, kbd { font-family: var(--f-mono); font-size: 0.86em; }
+.num { font-variant-numeric: tabular-nums; }
+.eyebrow { font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+/* sticky section bar */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px))); }
+.bar nav { max-width: var(--wide); margin-inline: auto; display: flex; gap: 1.1rem; overflow-x: auto; scrollbar-width: none;
+  padding: 0.55rem max(16px, env(safe-area-inset-left, 0px)); font-family: var(--f-mono); font-size: 0.78rem; white-space: nowrap; }
+.bar a { color: var(--muted); text-decoration: none; }
+.bar a:hover { color: var(--ink); }
+
+/* header */
+header.top { display: grid; gap: 1.25rem; padding-block: 2.6rem 1.6rem; }
+.meta { font-family: var(--f-mono); font-size: 0.8rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; }
+.lede { font-size: 1.2rem; line-height: 1.5; max-width: 40rem; }
+
+/* bottom line + verdicts */
+.bottom { display: grid; gap: 1.6rem; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: start; }
+@media (max-width: 52rem) { .bottom { grid-template-columns: minmax(0, 1fr); } }
+.points { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.55rem; }
+.points li::marker { color: var(--mask); }
+.verdicts { display: grid; gap: 0; border: 1px solid var(--rule); border-radius: 10px; background: var(--sheet); overflow: hidden; }
+.verdict { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.15rem 0.8rem; padding: 0.75rem 0.95rem; border-top: 1px solid var(--rule); }
+.verdict:first-child { border-top: 0; }
+.verdict .what { font-family: var(--f-display); font-weight: 650; font-stretch: 90%; }
+.verdict .why { grid-column: 1 / -1; color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
+.chip { font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.04em; padding: 0.12rem 0.5rem; border-radius: 99px; align-self: center; white-space: nowrap; }
+.chip.ok { background: var(--mask-soft); color: var(--mask); }
+.chip.part { background: var(--copper-soft); color: var(--copper); }
+.chip.no { background: var(--bad-soft); color: var(--bad); }
+.chip.na { background: var(--panel); color: var(--muted); }
+
+/* sections */
+section { display: grid; gap: 1.15rem; padding-block: 2.6rem 0.4rem; border-top: 1px solid var(--rule); margin-top: 2.2rem; scroll-margin-top: 3rem; }
+section > .head { display: grid; gap: 0.35rem; }
+.prose { display: grid; gap: 0.9rem; max-width: var(--col); }
+.prose ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+.note { color: var(--muted); font-size: 0.93rem; max-width: var(--col); }
+
+/* facts grid */
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr)); gap: 0.8rem; }
+.fact { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 0.85rem 0.95rem; display: grid; gap: 0.2rem; align-content: start; min-width: 0; }
+.fact .k { font-family: var(--f-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.fact .v { font-family: var(--f-display); font-stretch: 85%; font-weight: 750; font-size: 1.55rem; font-variant-numeric: tabular-nums; }
+.fact .d { font-size: 0.92rem; line-height: 1.45; color: var(--muted); }
+
+/* figures */
+figure { margin: 0; display: grid; gap: 0.5rem; min-width: 0; }
+figcaption { color: var(--muted); font-size: 0.9rem; max-width: var(--col); }
+.svgbox { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 0.6rem; overflow-x: auto; }
+.svgbox svg { display: block; width: 100%; height: auto; min-width: 34rem; }
+svg text { font-family: var(--f-mono); font-size: 11px; fill: var(--muted); }
+svg .ink { fill: var(--ink); } svg .mask { fill: var(--mask); } svg .copper { fill: var(--copper); } svg .ref { fill: var(--ref); }
+svg .band1 { fill: var(--mask-soft); } svg .band2 { fill: var(--panel); }
+svg .axis { stroke: var(--rule); stroke-width: 1; fill: none; } svg .grid { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 2 4; fill: none; }
+svg .lmask { stroke: var(--mask); stroke-width: 2; fill: none; } svg .lcopper { stroke: var(--copper); stroke-width: 2; fill: none; }
+svg .lgrey { stroke: var(--muted); stroke-width: 1.5; fill: none; stroke-dasharray: 4 3; }
+svg .pcb { fill: var(--panel); stroke: var(--rule); }
+svg .port { fill: var(--sheet); stroke: var(--ink); stroke-width: 1.5; }
+svg .ghost { fill: none; stroke: var(--mask); stroke-width: 1.5; stroke-dasharray: 4 3; }
+svg .t-ink { fill: var(--ink); } svg .t-mask { fill: var(--mask); } svg .t-copper { fill: var(--copper); }
+
+/* tables */
+.tblwrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 10px; background: var(--sheet); }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+th, td { padding: 0.5rem 0.7rem; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--f-mono); font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); font-weight: 600; white-space: nowrap; }
+td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--f-mono); font-size: 0.84rem; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+tr.hl td { background: var(--mask-soft); }
+td .sub { display: block; color: var(--muted); font-size: 0.82rem; }
+
+/* listening clips */
+.clips { display: grid; gap: 1.1rem; }
+.clip { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; padding: 1rem; display: grid; gap: 0.75rem; min-width: 0; }
+.clip .ch { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; align-items: baseline; justify-content: space-between; }
+.clip .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.clip .cap { color: var(--muted); font-size: 0.95rem; max-width: var(--col); }
+.track { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); gap: 0.25rem 0.7rem; align-items: center; }
+.track .lbl { grid-column: 2; display: flex; justify-content: space-between; gap: 0.6rem; font-family: var(--f-mono); font-size: 0.74rem; color: var(--muted); }
+.track .lbl b { font-weight: 600; color: var(--ink); }
+.play { grid-row: 1 / span 2; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1.5px solid currentColor; background: transparent; cursor: pointer; display: grid; place-items: center; padding: 0; }
+.play svg { width: 0.9rem; height: 0.9rem; fill: currentColor; }
+.track.raw .play { color: var(--copper); } .track.out .play { color: var(--mask); } .track.ref .play { color: var(--ref); }
+.spec { position: relative; height: 78px; border-radius: 6px; background: var(--panel); overflow: hidden; cursor: pointer; }
+.spec .ink { position: absolute; inset: 0; -webkit-mask: var(--spec) 0 0 / 100% 100% no-repeat; mask: var(--spec) 0 0 / 100% 100% no-repeat; }
+.track.raw .spec .ink { background: var(--copper); } .track.out .spec .ink { background: var(--mask); } .track.ref .spec .ink { background: var(--ref); }
+.spec .head { position: absolute; top: 0; bottom: 0; left: 0; width: 2px; background: var(--ink); opacity: 0; }
+.spec.on .head { opacity: 0.85; }
+.kv { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; font-family: var(--f-mono); font-size: 0.78rem; color: var(--muted); }
+.kv b { color: var(--ink); font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-family: var(--f-mono); font-size: 0.76rem; color: var(--muted); }
+.legend i { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 3px; vertical-align: -0.1rem; margin-right: 0.35rem; }
+
+/* experiments */
+.exps { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 0.9rem; }
+.exp { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 0.95rem 1rem; display: grid; gap: 0.45rem; align-content: start; min-width: 0; }
+.exp .q { font-family: var(--f-display); font-stretch: 90%; font-weight: 700; font-size: 1.05rem; line-height: 1.25; }
+.exp p { font-size: 0.95rem; line-height: 1.5; }
+.exp .ans { font-family: var(--f-mono); font-size: 0.78rem; color: var(--ink); background: var(--panel); border-radius: 6px; padding: 0.45rem 0.6rem; }
+
+/* steps + commands */
+ol.steps { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 0.8rem; max-width: var(--col); }
+ol.steps li { counter-increment: s; display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 0.7rem; }
+ol.steps li::before { content: counter(s); font-family: var(--f-display); font-weight: 800; font-stretch: 80%; font-size: 1.35rem; color: var(--mask); line-height: 1.2; }
+ol.steps .val { display: block; color: var(--muted); font-size: 0.92rem; }
+.cmd { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.5rem; align-items: start; background: var(--sheet); border: 1px solid var(--rule); border-radius: 8px; padding: 0.55rem 0.6rem 0.55rem 0.8rem; max-width: var(--col); }
+.cmd pre { margin: 0; overflow-x: auto; font-family: var(--f-mono); font-size: 0.8rem; line-height: 1.5; }
+.cmd button { font-family: var(--f-mono); font-size: 0.72rem; background: var(--panel); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; padding: 0.25rem 0.55rem; cursor: pointer; }
+footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.88rem; display: grid; gap: 0.4rem; max-width: var(--col); }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap">
+  <div class="bar"><nav aria-label="Sections">
+    <a href="#listen">Listen</a><a href="#board">Board</a><a href="#bus">Bus</a><a href="#meeting">Meeting</a>
+    <a href="#spacing">Spacing</a><a href="#experiments">Experiments</a><a href="#next">Next steps</a><a href="#run">How to run</a><a href="#method">Method</a>
+  </nav></div>
+
+  <header class="top">
+    <div class="meta"><span>ESP32-C3 + 2 × INMP441</span><span>one I2S bus, 16 kHz</span><span>night of 2–3 Nov 2026</span><span>01:45–06:45 IST, unattended</span></div>
+    <h1>ESP32 Two-Mic Night Report</h1>
+    <p class="lede">What a night of unattended experiments, plus held-out re-runs this evening, found about your two-mic recorder: how the board really behaves, how well the bus and meeting pipelines work in simulation and on real recordings, and what to change next.</p>
+  </header>
+
+  <div class="bottom">
+    <div class="prose">
+      <h2>Bottom line</h2>
+      <ul class="points">
+        <li><strong>Meeting: mostly works.</strong> On 8 held-out simulated rooms with 20 talkers each, the meeting pipeline raised the average talker's intelligibility (ESTOI) by +0.12 and the worst talker's by +0.06, close to the oracle's +0.07, and cut the level spread between talkers from 3.9 to 1.5 dB. The neural version slightly exceeds the noise-modulation limit; the classical version passes. On the real board the gain is about a third (+0.04 average).</li>
+        <li><strong>Bus: only half works.</strong> Noise goes down (+5.4 dB SNR, worst partner +0.03 ESTOI on the held-out test), but nearby passengers stay as intelligible as before. With the mics 1.3 cm apart, direction can't tell a partner from a passenger, and voice-print extraction followed whoever was louder.</li>
+        <li><strong>One bus setup worked on the board:</strong> Mic A's end pointed at the partners, with the axis beam and DPDFNet (+0.12 worst-partner ESTOI, passengers −8.6 dB). It needs the partners in line with the mics, and was only tested that way.</li>
+        <li><strong>Calibrate at every boot.</strong> The mics are 1.3 cm apart, and Mic B is sampled one I2S frame (62.5 µs) late plus 0–7.5 µs that changes per boot. Self-calibration from 0.5 s of room noise handles it; the original calibration made results worse.</li>
+        <li><strong>Moving the mics to 4 cm is optional:</strong> +0.004 ESTOI for the bus and +0.01 to +0.02 for the meeting.</li>
+      </ul>
+    </div>
+    <div class="verdicts" aria-label="Verdicts"><div class="verdict"><span class="what">Meeting · simulated test</span><span class="chip ok">mostly works</span><span class="why">+0.12 average and +0.06 worst-talker ESTOI; level spread 3.9 → 1.5 dB. The no-neural version passes do-no-harm; v3 slightly exceeds the noise-modulation limit.</span></div><div class="verdict"><span class="what">Meeting · real board</span><span class="chip part">partly</span><span class="why">+0.04 average ESTOI; talkers captured 62 → 75 %. Loud fans limit it.</span></div><div class="verdict"><span class="what">Bus · simulated test</span><span class="chip part">partly</span><span class="why">+0.03 worst-partner ESTOI, +5.4 dB SNR; passengers not suppressed.</span></div><div class="verdict"><span class="what">Bus · real board</span><span class="chip part">partly</span><span class="why">Bus v3 +0.01. Partners in line with the mics, axis beam + DPDFNet: +0.12.</span></div><div class="verdict"><span class="what">Self-calibration</span><span class="chip ok">works</span><span class="why">Matched the measured calibration for both v3 pipelines; the skew is stable within a boot.</span></div><div class="verdict"><span class="what">Mics at 4 cm</span><span class="chip na">optional</span><span class="why">Bus +0.004, meeting +0.013 average ESTOI in a paired simulation.</span></div></div>
+  </div>
+
+  <section id="listen">
+    <div class="head"><span class="eyebrow">Before and after</span><h2>Listen</h2></div>
+    <p class="note">Real-board clips come from the ESP32 recordings; simulated clips come from held-out test scenes picked by a fixed rule (the median scene). Every clip is peak-normalized, so compare noise and clarity, not loudness. Spectrograms run 60 Hz to 8 kHz on a mel scale.</p>
+    <div class="legend"><span><i style="background:var(--copper)"></i>Mic A as recorded</span><span><i style="background:var(--mask)"></i>Processed</span><span><i style="background:var(--ref)"></i>Oracle (needs the clean reference; the ceiling)</span><span>Click a spectrogram to jump there.</span></div>
+    <div class="clips" id="clips"></div>
+  </section>
+
+  <section id="board">
+    <div class="head"><span class="eyebrow">Measured on the board</span><h2>The board is not what the design assumed</h2></div>
+    <div class="facts">
+      <div class="fact"><span class="k">Mic spacing</span><span class="v num">≈ 1.3 cm</span><span class="d">Plausible 1.2–1.5 cm from acoustic fits; calipers will settle it. The design, the test bench and every tuned threshold assumed 4 cm.</span></div>
+      <div class="fact"><span class="k">Channel skew</span><span class="v num">−62.5 to −70 µs</span><span class="d">Mic B is sampled one I2S frame late, plus a fraction that is set at each boot: −1.10 samples at the first boot, −1.01 to −1.03 after 8 resets.</span></div>
+      <div class="fact"><span class="k">Largest acoustic delay</span><span class="v num">±38 µs</span><span class="d">At 1.3 cm. The skew is about twice that, so it must be removed before any spatial processing.</span></div>
+      <div class="fact"><span class="k">Mic B sensitivity</span><span class="v num">−1.3 dB</span><span class="d">For direct sound near the mic axis; −0.7 dB in diffuse noise. Across 8 boots it varied by 0.03 dB or less (std) at 0.5–2 kHz and 0.14–0.35 dB in other bands, so a factory constant works.</span></div>
+      <div class="fact"><span class="k">Room noise overnight</span><span class="v num">−41 to −62 dBFS</span><span class="d">Mostly the laptop fans under build load. Each mic has its own noise below 60 Hz at −35 dBFS, so the 80 Hz high-pass is required.</span></div>
+      <div class="fact"><span class="k">Capture chain</span><span class="v num">0 dropped</span><span class="d">No lost samples in any take. The ESP32 clock runs 17 ppm off the Mac's. Room RT60 is 0.4–0.5 s.</span></div>
+    </div>
+    <div class="facts" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));">
+      <figure>
+        <div class="svgbox"><svg viewBox="0 0 460 150" role="img" aria-label="Mic layout: Mic A and Mic B about 13 mm apart now; 40 mm recommended">
+          <rect class="pcb" x="20" y="48" width="420" height="40" rx="6"/>
+          <circle class="port" cx="60" cy="68" r="8"/>
+          <circle class="port" cx="164" cy="68" r="8"/>
+          <circle class="ghost" cx="380" cy="68" r="8"/>
+          <path class="axis" d="M60 36 V28 M164 36 V28 M60 32 H164" style="stroke:var(--ink)"/>
+          <text x="112" y="22" text-anchor="middle" class="t-ink">≈ 13 mm now</text>
+          <path class="lmask" d="M60 110 V118 M380 110 V118 M60 114 H380" style="stroke-width:1.5"/>
+          <text x="220" y="134" text-anchor="middle" class="t-mask">40 mm recommended (25 mm if size matters)</text>
+          <text x="60" y="102" text-anchor="middle">Mic A · ch0</text>
+          <text x="164" y="102" text-anchor="middle">Mic B · ch1</text>
+          <text x="380" y="102" text-anchor="middle" class="t-mask">Mic B moved</text>
+        </svg></div>
+        <figcaption>Mic A has L/R tied to GND (left slot, ch0); Mic B has L/R tied to 3V3 (right slot, ch1). Drawn to scale.</figcaption>
+      </figure>
+      <figure>
+        <div class="svgbox"><svg viewBox="0 0 520 150" role="img" aria-label="Timing: the measured skew of about minus 63 to minus 70 microseconds lies outside the plus or minus 38 microsecond acoustic range at 13 mm, inside the plus or minus 117 microsecond range at 40 mm">
+          <rect class="band2" x="35.4" y="56" width="449.3" height="50" rx="3"/>
+          <rect class="band1" x="187.0" y="70" width="145.9" height="36" rx="3"/>
+          <rect class="copper" x="125.6" y="40" width="14.4" height="66" rx="2"/>
+          <path class="axis" d="M20 106 H500" style="stroke:var(--muted)"/>
+          <path class="axis" d="M260 106 v6 M140 106 v6 M380 106 v6 M20 106 v6 M500 106 v6" style="stroke:var(--muted)"/>
+          <text x="260" y="124" text-anchor="middle">0</text>
+          <text x="140" y="124" text-anchor="middle">−62.5 µs</text>
+          <text x="380" y="124" text-anchor="middle">+62.5 µs</text>
+          <text x="22" y="124">−125</text>
+          <text x="498" y="124" text-anchor="end">+125</text>
+          <text x="260" y="142" text-anchor="middle">1 sample at 16 kHz = 62.5 µs = one I2S frame</text>
+          <text x="470" y="68" text-anchor="end">possible at 40 mm: ±117 µs</text>
+          <text x="326" y="86" text-anchor="end" class="t-mask">at 13 mm: ±38 µs</text>
+          <text x="112" y="34" class="t-copper">measured skew −63…−70 µs</text>
+        </svg></div>
+        <figcaption>Where Mic B's sampling offset sits against the delays sound can actually produce between the two mics. Positive means B hears later.</figcaption>
+      </figure>
+    </div>
+    <figure>
+      <div class="svgbox"><svg viewBox="0 0 720 230" role="img" aria-label="Skew estimates through the night: about -1.12 samples in the first boot, then -0.98 to -1.04 after the resets">
+<rect class="band1" x="139.8" y="18.0" width="562.2" height="130.2"/>
+<path class="grid" d="M58 190.0 H702"/><text x="50" y="194.0" text-anchor="end">−1.15</text>
+<path class="grid" d="M58 147.0 H702"/><text x="50" y="151.0" text-anchor="end">−1.10</text>
+<path class="grid" d="M58 104.0 H702"/><text x="50" y="108.0" text-anchor="end">−1.05</text>
+<path class="grid" d="M58 61.0 H702"/><text x="50" y="65.0" text-anchor="end">−1.00</text>
+<path class="grid" d="M58 18.0 H702"/><text x="50" y="22.0" text-anchor="end">−0.95</text>
+<path class="axis" d="M150.0 190 v5"/><text x="150.0" y="208" text-anchor="middle">02:00</text>
+<path class="axis" d="M272.7 190 v5"/><text x="272.7" y="208" text-anchor="middle">03:00</text>
+<path class="axis" d="M395.3 190 v5"/><text x="395.3" y="208" text-anchor="middle">04:00</text>
+<path class="axis" d="M518.0 190 v5"/><text x="518.0" y="208" text-anchor="middle">05:00</text>
+<path class="axis" d="M640.7 190 v5"/><text x="640.7" y="208" text-anchor="middle">06:00</text>
+<path class="axis" d="M58 190 H702"/>
+<path class="lgrey" d="M131.6 18 V190"/><text x="136.6" y="28">8 resets</text>
+<circle class="copper" cx="66.1" cy="164.1" r="4.5"/>
+<circle class="copper" cx="128.4" cy="166.0" r="4.5"/>
+<circle class="mask" cx="162.0" cy="64.2" r="3.5"/>
+<circle class="mask" cx="182.4" cy="67.9" r="3.5"/>
+<circle class="mask" cx="202.9" cy="65.0" r="3.5"/>
+<circle class="mask" cx="223.3" cy="78.3" r="3.5"/>
+<circle class="mask" cx="243.8" cy="81.7" r="3.5"/>
+<circle class="mask" cx="264.2" cy="56.4" r="3.5"/>
+<circle class="mask" cx="284.7" cy="42.9" r="3.5"/>
+<circle class="mask" cx="305.1" cy="52.7" r="3.5"/>
+<circle class="mask" cx="325.5" cy="54.4" r="3.5"/>
+<circle class="mask" cx="346.0" cy="58.9" r="3.5"/>
+<circle class="mask" cx="366.4" cy="73.6" r="3.5"/>
+<circle class="mask" cx="386.9" cy="80.2" r="3.5"/>
+<circle class="mask" cx="407.3" cy="82.0" r="3.5"/>
+<circle class="mask" cx="427.8" cy="54.3" r="3.5"/>
+<circle class="mask" cx="448.2" cy="76.8" r="3.5"/>
+<circle class="mask" cx="468.7" cy="80.8" r="3.5"/>
+<circle class="mask" cx="489.1" cy="86.4" r="3.5"/>
+<circle class="mask" cx="509.5" cy="82.2" r="3.5"/>
+<circle class="mask" cx="530.0" cy="81.9" r="3.5"/>
+<circle class="mask" cx="550.4" cy="84.9" r="3.5"/>
+<circle class="mask" cx="570.9" cy="80.3" r="3.5"/>
+<circle class="mask" cx="591.3" cy="85.5" r="3.5"/>
+<circle class="mask" cx="611.8" cy="79.9" r="3.5"/>
+<circle class="mask" cx="632.2" cy="80.1" r="3.5"/>
+<circle class="mask" cx="652.7" cy="77.9" r="3.5"/>
+<circle class="mask" cx="673.1" cy="88.7" r="3.5"/>
+<circle class="mask" cx="693.5" cy="79.4" r="3.5"/>
+<circle class="ink" cx="132.4" cy="94.1" r="3"/>
+<circle class="ink" cx="133.4" cy="84.9" r="3"/>
+<circle class="ink" cx="134.4" cy="78.1" r="3"/>
+<circle class="ink" cx="135.4" cy="77.9" r="3"/>
+<circle class="ink" cx="136.4" cy="79.6" r="3"/>
+<circle class="ink" cx="137.4" cy="77.9" r="3"/>
+<circle class="ink" cx="138.3" cy="77.3" r="3"/>
+<circle class="ink" cx="139.4" cy="79.1" r="3"/>
+<circle class="ink" cx="150.9" cy="75.2" r="3"/>
+<circle class="ink" cx="326.8" cy="70.7" r="3"/>
+<text x="64.1" y="154.2" class="t-copper">first boot</text>
+<text x="693.8" y="142.2" class="t-mask" text-anchor="end">band: ±5 µs residual target around the median</text>
+<text x="14" y="104.0" transform="rotate(-90 14 104.0)" text-anchor="middle">skew (samples)</text>
+</svg></div>
+      <figcaption>Mic B's skew estimated from 10 s of room noise: first boot (copper), the 8 resets and later ambient takes (dark), and the drift monitor every 10 minutes (green). Sweeps from the same speaker at 01:55 and 03:26 measured the same direct-path delay, so over that span the wander is in the noise-based estimate, not the board.</figcaption>
+    </figure>
+    <div class="prose">
+      <h3>What calibration has to do</h3>
+      <ul>
+        <li><strong>Remove the skew at every start.</strong> Take out the whole frame, then estimate the fraction from room noise: 0.5 s gave ±0.05 sample in this room. Speech from nearby talkers biases the estimate by +0.10 to +0.22 sample, so noise is the better source.</li>
+        <li><strong>Store only what is fixed.</strong> Keep the integer frame, Mic B's gain and the caliper spacing in <code>calib.json</code>. Never store the fraction; it changes at each boot.</li>
+        <li><strong>Why it matters.</strong> Left uncorrected at 1.2 cm, the skew puts the talker in the beam's null: −15 dB for a cardioid instead of +4.6 dB.</li>
+        <li><strong>The original calibration could not do it.</strong> It only allowed skews of 0 or +0.5 sample and spacings of 1.5–8 cm, and returned zero skew on 16 of 16 board-like test scenes. The new self-calibration (<code>x_s0v2</code>) is within 0.06 sample on all 56 board recordings.</li>
+        <li><strong>Settled tonight:</strong> the skew is a whole frame, not the half frame first assumed. A half-frame model needs 76–79 % of the room's noise to arrive from exactly one direction, and still fits worse.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bus">
+    <div class="head"><span class="eyebrow">Simulated test set + real board recordings</span><h2>Bus: keep the two partners, drop the bus</h2></div>
+    <div class="prose">
+      <p>The bus goal is selective: keep the two partners, remove the bus <em>and</em> the other passengers. With the mics 1.3 cm apart, direction can't reliably separate a partner from a passenger, so the pipeline chosen on the tuning set uses no beam. It runs a neural denoiser (DPDFNet) on Mic A, remixes a −15 dB residual back in, and levels the result with an AGC gated on the partners.</p>
+    </div>
+    <h3>Held-out simulated test</h3>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Pipeline</th><th class="n">Worst partner</th><th class="n">SNR gain</th><th class="n">Passenger SIR</th><th class="n">Passenger ESTOI</th><th class="n">Partner level, worst</th><th>Do-no-harm gate</th></tr></thead>
+      <tbody>
+        <tr><td>Mic A as recorded</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">0.082</td><td class="n">−0.1 dB</td><td><span class="chip ok">pass</span></td></tr>
+        <tr class="hl"><td><strong>Bus v3</strong> (chosen)<span class="sub">x_bus_v3</span></td><td class="n">+0.032<span class="sub">+0.027…+0.037</span></td><td class="n">+5.4 dB<span class="sub">+5.1…+5.7</span></td><td class="n">+3.8 dB<span class="sub">+3.3…+4.2</span></td><td class="n">0.090</td><td class="n">−6.3 dB</td><td><span class="chip no">fail</span><span class="sub">partner level and balance</span></td></tr>
+        <tr><td>Bus v3, no neural model<span class="sub">x_bus_v3_classic</span></td><td class="n">+0.025<span class="sub">+0.020…+0.030</span></td><td class="n">+1.7 dB<span class="sub">+1.2…+2.2</span></td><td class="n">−1.4 dB<span class="sub">−2.5…−0.4</span></td><td class="n">0.091</td><td class="n">−3.3 dB</td><td><span class="chip no">fail</span></td></tr>
+        <tr><td>DPDFNet only<span class="sub">neural denoiser on Mic A</span></td><td class="n">+0.050<span class="sub">+0.038…+0.063</span></td><td class="n">+9.8 dB<span class="sub">+9.2…+10.4</span></td><td class="n">+5.9 dB<span class="sub">+5.0…+6.8</span></td><td class="n">0.084</td><td class="n">−8.9 dB</td><td><span class="chip no">fail</span></td></tr>
+        <tr><td>Oracle<span class="sub">uses the clean speech; the ceiling</span></td><td class="n">+0.454</td><td class="n">+15.3 dB</td><td class="n">+10.8 dB</td><td class="n">0.007</td><td class="n">−1.1 dB</td><td><span class="chip na">n/a</span></td></tr>
+      </tbody></table></div>
+    <p class="note">30 held-out layouts at −5 and 0 dB SNR (60 scenes), LibriSpeech speech, paired 95 % intervals against Mic A. Passenger ESTOI is how intelligible the nearby passengers remain (lower is better): no real pipeline lowers it, while the oracle takes it to 0.007. DPDFNet alone beat the chosen pipeline here (+0.050 vs +0.032) but drops the weaker partner by about 9 dB on average and leaves the two partners up to 11 dB apart (90th percentile); Bus v3 trades some intelligibility for steadier levels. On the tuning set Bus v3 scored +0.042 at 0 dB.</p>
+    <h3>Real board</h3>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Pipeline</th><th class="n">Worst partner</th><th class="n">SNR gain</th><th class="n">Passenger SIR</th><th class="n">Partner level, worst</th></tr></thead>
+      <tbody>
+        <tr><td>Mic A as recorded</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">−0.1 dB</td></tr>
+        <tr><td><strong>Bus v3</strong></td><td class="n">+0.011</td><td class="n">+3.1 dB</td><td class="n">+2.6 dB</td><td class="n">−9.1 dB</td></tr>
+        <tr><td>Bus v3, no neural model</td><td class="n">+0.006</td><td class="n">+0.5 dB</td><td class="n">+0.3 dB</td><td class="n">−2.6 dB</td></tr>
+        <tr><td>DPDFNet only</td><td class="n">+0.014</td><td class="n">+4.7 dB</td><td class="n">+3.6 dB</td><td class="n">−14.9 dB</td></tr>
+        <tr><td>Axis beam<span class="sub">fixed, toward Mic A's end</span></td><td class="n">+0.043</td><td class="n">+2.0 dB</td><td class="n">+1.9 dB</td><td class="n">−1.1 dB</td></tr>
+        <tr class="hl"><td><strong>Axis beam + DPDFNet</strong><span class="sub">bus-endfire; layout L1, 6 scenes</span></td><td class="n">+0.117</td><td class="n">+9.6 dB</td><td class="n">+8.6 dB</td><td class="n">−8.2 dB</td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <ul>
+        <li><strong>Setup.</strong> 18 scenes: real partner recordings with the real fan noise, plus simulated passengers and bus noise, in 3 layouts at −5, 0 and +5 dB. Self-calibration gave the same Bus v3 numbers as the measured calibration.</li>
+        <li><strong>Why the axis beam wins here.</strong> Every real talker sat in line with the mics on Mic A's side, because the sound came from the MacBook. Turned 180°, the same beam removed the partners (−0.08 ESTOI, −4 dB). With the original default calibration it scored −0.06 to −0.13.</li>
+        <li><strong>What failed.</strong> Beams steered by the direction tracker gave the same output as Mic A. Voice-print extraction (VoxLock) made things worse (−0.05 to −0.12) with clean enrollment, or passed the audio through unchanged with self-enrollment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="meeting">
+    <div class="head"><span class="eyebrow">Simulated test set + real board recordings</span><h2>Meeting: capture all twenty voices</h2></div>
+    <div class="prose">
+      <p>The meeting pipeline cleans and levels everyone instead of picking talkers. It removes reverberation (WPE), steers a beam toward whoever is speaking, suppresses noise with a small neural network (GTCRN), and gives each speech segment its own gain so quiet and far talkers come up to the same level. Self-calibration runs first.</p>
+    </div>
+    <h3>Held-out simulated test</h3>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Pipeline</th><th class="n">Worst talker</th><th class="n">Average talker</th><th class="n">Far (&gt; 4 m)</th><th class="n">Level spread</th><th class="n">Talkers captured</th><th>Do-no-harm gate</th></tr></thead>
+      <tbody>
+        <tr><td>Mic A as recorded</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">3.9 dB</td><td class="n">55 %</td><td><span class="chip ok">pass</span></td></tr>
+        <tr><td>GTCRN only<span class="sub">neural denoiser on Mic A</span></td><td class="n">+0.036</td><td class="n">+0.074</td><td class="n">+0.072</td><td class="n">4.1 dB</td><td class="n">53 %</td><td><span class="chip no">fail</span><span class="sub">noise modulation 5.9 dB</span></td></tr>
+        <tr class="hl"><td><strong>Meeting v3</strong> (chosen)<span class="sub">x_meeting_v3</span></td><td class="n">+0.061<span class="sub">+0.052…+0.069</span></td><td class="n">+0.120<span class="sub">+0.114…+0.127</span></td><td class="n">+0.120<span class="sub">+0.113…+0.128</span></td><td class="n">1.5 dB</td><td class="n">93 %</td><td><span class="chip no">fail</span><span class="sub">noise modulation 5.4 dB, CI up to 6.3 (limit 6)</span></td></tr>
+        <tr><td>Meeting v3, no neural model<span class="sub">x_meeting_v3_classic</span></td><td class="n">+0.056<span class="sub">+0.051…+0.061</span></td><td class="n">+0.092<span class="sub">+0.086…+0.098</span></td><td class="n">+0.090<span class="sub">+0.084…+0.097</span></td><td class="n">1.5 dB</td><td class="n">92 %</td><td><span class="chip ok">pass</span></td></tr>
+        <tr><td>Oracle<span class="sub">uses the clean speech; the ceiling</span></td><td class="n">+0.070<span class="sub">+0.057…+0.083</span></td><td class="n">+0.173</td><td class="n">+0.189</td><td class="n">4.0 dB</td><td class="n">55 %</td><td><span class="chip na">n/a</span></td></tr>
+      </tbody></table></div>
+    <p class="note">Change in ESTOI, an intelligibility score from 0 to 1, against Mic A; ranges are paired 95 % confidence intervals. 8 simulated rooms with 20 LibriSpeech talkers each, none used for tuning. Level spread is the standard deviation of talker levels (target 1.5 dB; both v3 pipelines land at 1.52 and miss it narrowly). For the worst talker, v3 is close to the oracle's +0.070. Talkers captured: within ±3 dB of the median level and not less intelligible. On the 20 tuning rooms v3 scored +0.075 / +0.125 / +0.118, so it did not overfit.</p>
+    <h3>Real board</h3>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Pipeline</th><th class="n">Worst talker</th><th class="n">Average talker</th><th class="n">Far talkers</th><th class="n">Level spread</th><th class="n">Talkers captured</th></tr></thead>
+      <tbody>
+        <tr><td>Mic A as recorded</td><td class="n">0</td><td class="n">0</td><td class="n">0</td><td class="n">4.2 dB</td><td class="n">62 %</td></tr>
+        <tr class="hl"><td><strong>Meeting v3</strong></td><td class="n">+0.023</td><td class="n">+0.038</td><td class="n">+0.004</td><td class="n">3.5 dB</td><td class="n">75 %</td></tr>
+        <tr><td>Meeting v3, no neural model</td><td class="n">+0.015</td><td class="n">+0.028</td><td class="n">+0.013</td><td class="n">2.7 dB</td><td class="n">75 %</td></tr>
+        <tr><td>Axis beam + DPDFNet<span class="sub">only for talkers on the mic axis</span></td><td class="n">+0.006</td><td class="n">+0.076</td><td class="n">+0.022</td><td class="n">5.4 dB</td><td class="n">71 %</td></tr>
+      </tbody></table></div>
+    <p class="note">3 scenes: 8 LibriSpeech talkers played from the MacBook at 0 to −15 dB, two of them pre-reverberated to sound 4 m away; real fan noise as recorded, 12 dB quieter, and quieter with added meeting babble. Self-calibration from the recording itself gave the same numbers as the measured calibration (+0.039 average). Gains are smaller than in simulation because the fans were loud and the "far" talkers still came from the nearby laptop speakers, so dereverberation had nothing to remove.</p>
+  </section>
+
+  <section id="spacing">
+    <div class="head"><span class="eyebrow">Physics + paired simulation</span><h2>1.2 cm or 4 cm?</h2></div>
+    <div class="prose">
+      <p><strong>Not needed for the bus; a small gain for the meeting.</strong> The same simulated scenes were rendered at 12 mm and at 40 mm and run through the same methods, so the difference isolates the spacing.</p>
+    </div>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Measure</th><th class="n">12 mm</th><th class="n">40 mm</th><th class="n">40 − 12 mm</th></tr></thead>
+      <tbody>
+        <tr><td>Bus, best system (CDR → GTCRN), worst-partner ESTOI change</td><td class="n">+0.025</td><td class="n">+0.029</td><td class="n">+0.004<span class="sub">−0.000…+0.008</span></td></tr>
+        <tr><td>Bus, same system, SNR gain</td><td class="n">+5.5 dB</td><td class="n">+5.7 dB</td><td class="n">+0.19 dB<span class="sub">−0.18…+0.56</span></td></tr>
+        <tr><td>Bus, best classical beam (RTF-MVDR), SNR gain difference</td><td class="n"></td><td class="n"></td><td class="n">+0.48 dB<span class="sub">+0.13…+0.83</span></td></tr>
+        <tr><td>Meeting, steered beam, average ESTOI change</td><td class="n">0<span class="sub">falls back to Mic A in 4/4 rooms</span></td><td class="n">+0.022</td><td class="n">+0.022<span class="sub">+0.019…+0.026</span></td></tr>
+        <tr><td>Meeting, best system at each spacing, average ESTOI change</td><td class="n">+0.080</td><td class="n">+0.093</td><td class="n">+0.013<span class="sub">+0.009…+0.017</span></td></tr>
+      </tbody></table></div>
+    <div class="prose">
+      <ul>
+        <li><strong>Why 12 mm loses direction.</strong> Delays between the mics shrink to about 45 % of their true value in reverberant noise (85 % at 40 mm), so the direction tracker called the two bus partners inseparable in 9 of 10 layouts (6 of 10 at 40 mm).</li>
+        <li><strong>Physics.</strong> 4 cm gives a beam about 1 dB more (+0.8–1.0 dB bus, +0.7–1.1 dB meeting), 3× finer direction resolution and about 6× less damage from the per-boot skew. 25 mm is within 0.1–0.3 dB of 40 mm.</li>
+        <li><strong>Neural denoisers don't care.</strong> GTCRN on Mic A alone gained +0.024 / +0.026 at 12 / 40 mm.</li>
+        <li><strong>Recommendation:</strong> keep 1.2 cm for now. If you revise the board, use 25–40 mm on one rigid strip, then calibrate; it helps the meeting and makes calibration more forgiving.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experiments">
+    <div class="head"><span class="eyebrow">Real recordings, nothing replayed</span><h2>Side experiments</h2></div>
+    <p class="note">These ran on audio already recorded from the board: LibriSpeech talkers played through the MacBook speakers, the room and fan noise, and the reset and drift takes. Each number comes from a JSON file in <code>hw/realset/bizarre/</code>; the write-up is <code>hw/realset/BIZARRE.md</code>.</p>
+    <div class="exps">
+      <article class="exp"><p class="q">Can two mics 1.2 cm apart tell a near talker from a far one?</p>
+        <p>The coherent-to-diffuse ratio separates talkers at 0.3–1 m from talkers at 2 m or more in quiet rooms, at 1.2 cm as well as at 4 cm. With diffuse noise at 0 dB it mostly measures SNR instead.</p>
+        <p class="ans">quiet: AUC 0.97 (1.2 cm), 0.96 (4 cm) · bus noise 0 dB: AUC 0.56</p></article>
+      <article class="exp"><p class="q">Can voice prints count the meeting talkers?</p>
+        <p>Speaker embeddings found all 8 talkers on clean audio. In the real fan noise the −12 and −15 dB talkers merged into others; with the fan noise 12 dB lower all 8 came back. Direction-based clustering found one cluster, because the speakers sit in only two places.</p>
+        <p class="ans">clean ARI 1.00 · real noise purity 0.72 · −12 dB noise purity 0.94–1.00</p></article>
+      <article class="exp"><p class="q">Does dereverberation rescue far talkers?</p>
+        <p>Two-channel WPE clearly helps far, reverberant talkers when the room is quiet, and almost nothing at realistic SNR. 60 filter taps were no better than 30.</p>
+        <p class="ans">ESTOI +0.21 / +0.23 noise-free far takes · +0.01…+0.03 real recordings · +0.13 at 30 dB SNR, +0.03 at 0 dB</p></article>
+      <article class="exp"><p class="q">Can a voice-print extractor pull out one partner from overlapping speech?</p>
+        <p>It extracts whichever partner is louder, and a wrong same-gender enrollment works almost as well. The quieter partner is not recovered with any enrollment.</p>
+        <p class="ans">louder: +9…+16 dB SIR, ESTOI +0.05…+0.20 · quieter: loses 6–29 dB</p></article>
+      <article class="exp"><p class="q">How stable is the calibration?</p>
+        <p>The skew is −1 sample plus a per-boot fraction: 0.11 at the cold first boot, 0.013–0.035 after each reset, steady within a boot. Mic B's gain does not change. Spacing fitted from noise wanders, so use calipers.</p>
+        <p class="ans">within a boot ±0.007 sample over 31 min · 0.5 s noise → ±0.05 · spacing from noise 1.06–1.99 cm</p></article>
+      <article class="exp"><p class="q">How much does an uncorrected skew hurt?</p>
+        <p>At 1.2 cm it destroys any beam: the talker falls into the null. At 4 cm the same skew only degrades it.</p>
+        <p class="ans">1.2 cm: −15 dB cardioid, −10 dB superdirective (should be +4.6 / +5.9) · 4 cm: +1.4 dB instead of +5.0</p></article>
+      <article class="exp"><p class="q">What is the most a fixed two-mic filter can gain on these recordings?</p>
+        <p>The real noise is partly incoherent between the mics at 150–500 Hz, which caps a 1.2 cm pair. Unloaded beams gain nothing on median; diagonal loading makes them reliably positive, close to the oracle ceiling.</p>
+        <p class="ans">oracle +2.5 dB median · loaded beam +2.0…+2.2 dB, all 18 takes positive · unloaded ≈ 0 dB (−5…+5)</p></article>
+      <article class="exp"><p class="q">Does the skew drift overnight?</p>
+        <p>Not measurably. Two sweeps from the same speaker 1.5 hours apart gave the same direct-sound delay. Noise-based estimates every 10 minutes until 06:25 wandered by about ±0.03 sample as the fan noise changed, inside the ±5 µs target. Only the first 1.5 hours are checked with a sweep.</p>
+        <p class="ans">direct path −0.516 sample at 01:55 and at 03:26 · self-calibration on 27 noise readings 02:05–06:25: −0.979…−1.032 (monitor's simpler fit −0.970…−1.042)</p></article>
+    </div>
+  </section>
+
+  <section id="next">
+    <div class="head"><span class="eyebrow">In this order</span><h2>What to do next</h2></div>
+    <ol class="steps">
+      <li><div><strong>Tap test and calipers (5 minutes).</strong> While recording, tap next to the mic whose L/R pin goes to GND: channel 0 should jump by more than 10 dB. If channel 1 jumps, the labels are swapped and the one-frame skew comes from how the ESP32 pairs the I2S slots. Then measure the port spacing.<span class="val">Settles which mic is which and why Mic B is one frame late.</span></div></li>
+      <li><div><strong>Calibrate at every start.</strong> Use 0.5–1 s of room noise after each boot to estimate the skew; store only the integer frame, Mic B's gain and the caliper spacing. <code>enhance.py</code> already does this per file.<span class="val">Without it, the beams in these pipelines remove the talker instead of the noise.</span></div></li>
+      <li><div><strong>Record real people.</strong> A 3–5 minute meeting around a table, and a two-person conversation with other talkers nearby. Put talkers on Mic B's side and side-on to the board too; tonight's speakers sat only on Mic A's side.<span class="val">The real-board numbers rest on two speaker positions.</span></div></li>
+      <li><div><strong>Decide the bus approach.</strong> With this board, try <code>bus-endfire</code> with Mic A's end pointed at the partners. If both partners can't be in line with the mics, two mics 1.2 cm apart won't separate them from passengers; plan 3 or more mics, a wider array, or close-talk mics.<span class="val">This is the one requirement no method met in simulation.</span></div></li>
+      <li><div><strong>Add a speech-recognition test.</strong> Word error rate is still pending in the gates; it decides whether the neural denoisers help or hurt transcription.<span class="val">Intelligibility scores and transcription accuracy can disagree.</span></div></li>
+    </ol>
+  </section>
+
+  <section id="run">
+    <div class="head"><span class="eyebrow">Files in the lab folder</span><h2>How to run it</h2></div>
+    <div class="prose"><p>Record with your <code>record.py</code> as before (left = Mic A, right = Mic B), then from the lab folder:</p></div>
+    <div class="cmd"><pre>.venv/bin/python enhance.py ~/voice.wav -m meeting</pre><button type="button">Copy</button></div>
+    <div class="cmd"><pre>.venv/bin/python enhance.py ~/voice.wav -m bus-endfire</pre><button type="button">Copy</button></div>
+    <div class="cmd"><pre>afplay ~/voice_meeting.wav</pre><button type="button">Copy</button></div>
+    <div class="prose">
+      <ul>
+        <li>Modes: <code>meeting</code>, <code>meeting-classic</code>, <code>bus</code>, <code>bus-classic</code>, <code>bus-endfire</code>. Each run prints the board calibration it measured from the recording; keep at least 0.5 s without speech in it.</li>
+        <li>Calibration only: <code>.venv/bin/python -m methods.x_s0v2 file.wav</code>.</li>
+        <li>Write-ups: <code>hw/SPACING.md</code> (board), <code>hw/realset/RESULTS_REAL.md</code> and <code>BIZARRE.md</code> (real recordings), <code>study/SPACING_STUDY.md</code>, <code>study/final/BUS_V3.md</code> and <code>MEETING_V3.md</code> (pipeline choices). Held-out results are in <code>results3/final/test/</code>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="method">
+    <div class="head"><span class="eyebrow">So you can judge the numbers</span><h2>How this was tested</h2></div>
+    <div class="prose">
+      <ul>
+        <li><strong>Real board.</strong> ESP32-C3 with two INMP441 mics, 16 kHz, 24-bit over USB serial. LibriSpeech speech played from the MacBook speakers in clips of 4.2 s or less. A clean reference was fitted from each recording, so real takes can be scored. Bus noise and passengers were added digitally, because laptop speakers can't reproduce bus rumble. The build jobs kept the laptop fans running all night (−41 to −62 dBFS), so each real scene exists with the fans as recorded and 12 dB quieter.</li>
+        <li><strong>Simulation.</strong> Simulated rooms with LibriSpeech speech and DEMAND noise. Bus: 30 tuning layouts and 30 held-out layouts at −5 and 0 dB SNR. Meeting: 20 tuning rooms and 8 held-out rooms with 20 talkers. Pipelines were chosen on the tuning sets only.</li>
+        <li><strong>Scores.</strong> ESTOI intelligibility (0–1), SNR gain during speech, passenger suppression, level spread across talkers, each against Mic A with paired 95 % bootstrap intervals. Gates: G0 means do no harm, G1 means a meaningful gain.</li>
+        <li><strong>Not done.</strong> No word-error-rate test (no speech recognizer downloaded), no listening panel, no real people. The overnight run stopped at 06:27 before its final tests; the held-out tests and the real-board runs of the final pipelines were run again this evening on the frozen code.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer><p>Built from the lab folder on 3 Nov 2026: overnight runs 01:45–06:27 IST, held-out re-run 19:20 IST.</p>
+    <p>Board drawing and timing figure are to scale; all other numbers trace to the files named in “How to run it”.</p></footer>
+</div>
+
+<script type="application/json" id="clip-data">[{"title": "Real board · bus · partners in line with the mics", "tags": [{"text": "real recording", "cls": "ok"}, {"text": "0 dB SNR", "cls": "na"}, {"text": "fan noise as recorded", "cls": "na"}], "caption": "Two LibriSpeech talkers played from the MacBook toward Mic A's end, the real fan noise, plus simulated passengers and bus noise. Listen for the passengers: the axis beam pushes them back; the AI-only pipeline only removes the steady noise.", "rows": [{"label": "Mic A as recorded", "kind": "raw", "src": "audio/real_bus_micA.wav", "spec": "spec/real_bus_micA.png", "dur": 28.25}, {"label": "Axis beam + DPDFNet (bus-endfire)", "kind": "out", "src": "audio/real_bus_endfire.wav", "spec": "spec/real_bus_endfire.png", "dur": 28.25}, {"label": "Bus v3, no beam (bus)", "kind": "out", "src": "audio/real_bus_v3.wav", "spec": "spec/real_bus_v3.png", "dur": 28.25}], "metrics": [{"k": "worst partner ESTOI", "v": "+0.110 axis · +0.005 v3"}, {"k": "SNR gain", "v": "+8.7 dB · +3.2 dB"}, {"k": "passenger SIR", "v": "+8.0 dB · +2.5 dB"}]}, {"title": "Simulated bus · median held-out scene", "tags": [{"text": "simulation", "cls": "part"}, {"text": "0 dB SNR", "cls": "na"}, {"text": "partners in line with the mics", "cls": "na"}], "caption": "Layout g20 of the held-out test at 0 dB (the median by worst-partner gain): two partners, nearby passengers and DEMAND bus noise. Listen for the bus rumble going away while the passengers' voices stay.", "rows": [{"label": "Mic A as recorded", "kind": "raw", "src": "audio/sim_bus_micA.wav", "spec": "spec/sim_bus_micA.png", "dur": 24.0}, {"label": "Bus v3", "kind": "out", "src": "audio/sim_bus_v3.wav", "spec": "spec/sim_bus_v3.png", "dur": 24.0}, {"label": "Oracle (uses the clean speech)", "kind": "ref", "src": "audio/sim_bus_oracle.wav", "spec": "spec/sim_bus_oracle.png", "dur": 24.0}], "metrics": [{"k": "worst partner ESTOI", "v": "+0.037 v3 · +0.442 oracle"}, {"k": "SNR gain", "v": "+6.2 dB"}, {"k": "passenger SIR", "v": "+4.7 dB"}]}, {"title": "Real board · meeting · eight talkers", "tags": [{"text": "real recording", "cls": "ok"}, {"text": "fan noise as recorded", "cls": "na"}], "caption": "Eight talkers from 0 to −15 dB, two of them pre-reverberated to sound far away. This is the hardest real scene (loudest fans). Listen for the fan noise dropping and the quiet talkers coming up; intelligibility gains here are small.", "rows": [{"label": "Mic A as recorded", "kind": "raw", "src": "audio/real_meet_micA.wav", "spec": "spec/real_meet_micA.png", "dur": 38.24}, {"label": "Meeting v3 (meeting)", "kind": "out", "src": "audio/real_meet_v3.wav", "spec": "spec/real_meet_v3.png", "dur": 38.24}, {"label": "Meeting v3, no neural model (meeting-classic)", "kind": "out", "src": "audio/real_meet_classic.wav", "spec": "spec/real_meet_classic.png", "dur": 38.24}], "metrics": [{"k": "average talker ESTOI", "v": "+0.019 v3 · +0.023 classic"}, {"k": "noise removed", "v": "7.0 dB · 2.7 dB"}]}, {"title": "Simulated meeting · median held-out room", "tags": [{"text": "simulation", "cls": "part"}, {"text": "20 talkers", "cls": "na"}, {"text": "30 s excerpt", "cls": "na"}], "caption": "Room r03 of the held-out test (the median by worst-talker gain), 66–96 s: ten talkers between 1.5 and 5.5 m from the device. Listen for the far talkers getting louder and drier, and the levels evening out.", "rows": [{"label": "Mic A as recorded", "kind": "raw", "src": "audio/sim_meet_micA.wav", "spec": "spec/sim_meet_micA.png", "dur": 30.0}, {"label": "Meeting v3", "kind": "out", "src": "audio/sim_meet_v3.wav", "spec": "spec/sim_meet_v3.png", "dur": 30.0}, {"label": "Meeting v3, no neural model", "kind": "out", "src": "audio/sim_meet_classic.wav", "spec": "spec/sim_meet_classic.png", "dur": 30.0}], "metrics": [{"k": "whole room, worst talker", "v": "+0.056 v3"}, {"k": "average talker", "v": "+0.118"}]}]</script>
+<script>
+(function () {
+  var data = [];
+  try { data = JSON.parse(document.getElementById('clip-data').textContent); } catch (e) { data = []; }
+  var root = document.getElementById('clips');
+  var PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z"/></svg>';
+  var PAUSE = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/></svg>';
+  var current = null;
+  function fmt(t) { t = Math.max(0, t || 0); var m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ':' + (s < 10 ? '0' : '') + s; }
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+  data.forEach(function (c) {
+    var el = document.createElement('article'); el.className = 'clip';
+    var tags = (c.tags || []).map(function (t) { return '<span class="chip ' + (t.cls || 'na') + '">' + esc(t.text) + '</span>'; }).join('');
+    var kv = (c.metrics || []).map(function (m) { return '<span>' + esc(m.k) + ' <b>' + esc(m.v) + '</b></span>'; }).join('');
+    el.innerHTML = '<div class="ch"><h3>' + esc(c.title) + '</h3><div class="tags">' + tags + '</div></div>' +
+      (c.caption ? '<p class="cap">' + esc(c.caption) + '</p>' : '');
+    (c.rows || []).forEach(function (r) {
+      var tr = document.createElement('div'); tr.className = 'track ' + (r.kind || 'out');
+      tr.innerHTML = '<button class="play" type="button" aria-label="Play ' + esc(r.label) + '">' + PLAY + '</button>' +
+        '<div class="spec" tabindex="0" role="slider" aria-label="Seek ' + esc(r.label) + '" aria-valuemin="0" aria-valuemax="' + (r.dur || 0) + '" aria-valuenow="0" style="--spec:url(\'' + r.spec + '\')"><span class="ink"></span><span class="head"></span></div>' +
+        '<div class="lbl"><b>' + esc(r.label) + '</b><span class="t">0:00 / ' + fmt(r.dur) + '</span></div>';
+      el.appendChild(tr);
+      var a = new Audio(); a.preload = 'none'; a.src = r.src;
+      var btn = tr.querySelector('.play'), spec = tr.querySelector('.spec'), head = tr.querySelector('.head'), tl = tr.querySelector('.t');
+      var dur = r.dur || 0, raf = 0;
+      function draw() { var d = a.duration || dur; var t = a.currentTime || 0; head.style.left = (d ? Math.min(100, 100 * t / d) : 0) + '%';
+        tl.textContent = fmt(t) + ' / ' + fmt(d); spec.setAttribute('aria-valuenow', t.toFixed(1)); if (!a.paused) raf = requestAnimationFrame(draw); }
+      function stop() { a.pause(); }
+      a.addEventListener('play', function () { if (current && current !== a) current.pause(); current = a; btn.innerHTML = PAUSE; btn.setAttribute('aria-label', 'Pause ' + r.label); spec.classList.add('on'); cancelAnimationFrame(raf); draw(); });
+      a.addEventListener('pause', function () { btn.innerHTML = PLAY; btn.setAttribute('aria-label', 'Play ' + r.label); cancelAnimationFrame(raf); draw(); });
+      a.addEventListener('ended', function () { spec.classList.remove('on'); });
+      btn.addEventListener('click', function () { if (a.paused) { a.play().catch(function () {}); } else { stop(); } });
+      function seekTo(frac) { var d = a.duration || dur; if (!d) return; var go = function () { a.currentTime = Math.max(0, Math.min(d - 0.05, frac * d)); draw(); };
+        if (a.readyState >= 1) { go(); } else { a.preload = 'metadata'; a.addEventListener('loadedmetadata', go, { once: true }); a.load(); }
+        spec.classList.add('on'); a.play().catch(function () {}); }
+      spec.addEventListener('click', function (e) { var b = spec.getBoundingClientRect(); seekTo((e.clientX - b.left) / b.width); });
+      spec.addEventListener('keydown', function (e) { var d = a.duration || dur; if (!d) return;
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); seekTo(((a.currentTime || 0) + (e.key === 'ArrowRight' ? 2 : -2)) / d); }
+        else if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (a.paused) a.play().catch(function () {}); else stop(); } });
+    });
+    if (kv) { var k = document.createElement('div'); k.className = 'kv'; k.innerHTML = kv; el.appendChild(k); }
+    root.appendChild(el);
+  });
+  document.querySelectorAll('.cmd button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var pre = b.parentNode.querySelector('pre'); var txt = pre.textContent;
+      var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1400); };
+      var sel = function () { var r = document.createRange(); r.selectNodeContents(pre); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected'; };
+      try { navigator.clipboard.writeText(txt).then(done, sel); } catch (e) { sel(); }
+    });
+  });
+})();
+</script>

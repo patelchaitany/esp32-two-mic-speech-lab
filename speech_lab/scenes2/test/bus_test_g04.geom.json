@@ -1,0 +1,746 @@
+{
+ "geom_id": "bus_test_g04",
+ "set": "test",
+ "scenario": "bus",
+ "generator": "lab.scene_bus:make_recipe",
+ "seed": 20004,
+ "fs": 16000,
+ "room": {
+  "dims": [
+   11.537,
+   2.609,
+   2.236
+  ],
+  "rt60": 0.178,
+  "tail": "synthetic",
+  "max_order": 18,
+  "e_abs": 0.49342581381943335,
+  "rand_disp": 0.05,
+  "exact_direct": true,
+  "edited": false,
+  "seed": 20004,
+  "n_rir": 3432,
+  "n_x": 1877
+ },
+ "mics": [
+  [
+   6.056313,
+   1.9002,
+   0.550795
+  ],
+  [
+   6.073325,
+   1.881926,
+   0.552094
+  ]
+ ],
+ "spacing_m": 0.025001,
+ "center": [
+  6.064819,
+  1.891063,
+  0.551444
+ ],
+ "array_azimuth_deg": 132.9517,
+ "array_elevation_deg": -2.9783,
+ "sources": [
+  {
+   "name": "pA",
+   "pos": [
+    6.140025,
+    2.328996,
+    1.279585
+   ],
+   "directivity": {
+    "azimuth_deg": -97.17121985215837,
+    "colatitude_deg": 114.76504523704075,
+    "p": 0.75
+   },
+   "dist_m": 0.853012,
+   "dist_a_m": 0.849711,
+   "theta_deg": 74.2812,
+   "fold_deg": 74.2812,
+   "tau_us": 19.7447,
+   "direct_a": 79.6367
+  },
+  {
+   "name": "pB",
+   "pos": [
+    6.082748,
+    1.873763,
+    1.067919
+   ],
+   "directivity": {
+    "azimuth_deg": 82.82878014784163,
+    "colatitude_deg": 65.23495476295926,
+    "p": 0.75
+   },
+   "dist_m": 0.517075,
+   "dist_a_m": 0.518474,
+   "theta_deg": 95.7362,
+   "fold_deg": 84.2638,
+   "tau_us": -7.2829,
+   "direct_a": 64.1854
+  },
+  {
+   "name": "n1",
+   "pos": [
+    5.472202,
+    1.629525,
+    1.094035
+   ],
+   "directivity": {
+    "azimuth_deg": 276.764,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 0.844986,
+   "dist_a_m": 0.842354,
+   "theta_deg": 77.4303,
+   "fold_deg": 77.4303,
+   "tau_us": 15.8608,
+   "direct_a": 79.2935
+  },
+  {
+   "name": "n2",
+   "pos": [
+    6.291152,
+    0.836427,
+    1.067522
+   ],
+   "directivity": {
+    "azimuth_deg": 239.686,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 1.195751,
+   "dist_a_m": 1.205723,
+   "theta_deg": 142.7406,
+   "fold_deg": 37.2594,
+   "tau_us": -58.0108,
+   "direct_a": 96.2437
+  },
+  {
+   "name": "n3",
+   "pos": [
+    6.907957,
+    2.274807,
+    1.2427
+   ],
+   "directivity": {
+    "azimuth_deg": 353.858,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 1.155844,
+   "dist_a_m": 1.159466,
+   "theta_deg": 106.5449,
+   "fold_deg": 73.4551,
+   "tau_us": -20.755,
+   "direct_a": 94.0859
+  },
+  {
+   "name": "cone",
+   "pos": [
+    4.512425,
+    1.127241,
+    1.28675
+   ],
+   "directivity": {
+    "azimuth_deg": 164.45,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 1.8799,
+   "dist_a_m": 1.876882,
+   "theta_deg": 75.8416,
+   "fold_deg": 75.8416,
+   "tau_us": 17.8284,
+   "direct_a": 127.5513
+  },
+  {
+   "name": "c1a",
+   "pos": [
+    6.644842,
+    1.459619,
+    1.185658
+   ],
+   "directivity": {
+    "azimuth_deg": 93.52831978376103,
+    "colatitude_deg": 103.94100035017665,
+    "p": 0.75
+   },
+   "dist_m": 0.961664,
+   "dist_a_m": 0.971354,
+   "theta_deg": 140.5893,
+   "fold_deg": 39.4107,
+   "tau_us": -56.3127,
+   "direct_a": 85.311
+  },
+  {
+   "name": "c1b",
+   "pos": [
+    6.617361,
+    1.905314,
+    1.074811
+   ],
+   "directivity": {
+    "azimuth_deg": -86.47168021623895,
+    "colatitude_deg": 76.05899964982335,
+    "p": 0.75
+   },
+   "dist_m": 0.761195,
+   "dist_a_m": 0.76772,
+   "theta_deg": 121.0629,
+   "fold_deg": 58.9371,
+   "tau_us": -37.6051,
+   "direct_a": 75.812
+  },
+  {
+   "name": "c2a",
+   "pos": [
+    5.571746,
+    1.109661,
+    1.079037
+   ],
+   "directivity": {
+    "azimuth_deg": 31.521513420251647,
+    "colatitude_deg": 57.39237969649294,
+    "p": 0.75
+   },
+   "dist_m": 1.063985,
+   "dist_a_m": 1.067144,
+   "theta_deg": 104.3139,
+   "fold_deg": 75.6861,
+   "tau_us": -18.0193,
+   "direct_a": 89.7793
+  },
+  {
+   "name": "c2b",
+   "pos": [
+    6.244926,
+    1.522534,
+    1.584223
+   ],
+   "directivity": {
+    "azimuth_deg": -148.47848657974836,
+    "colatitude_deg": 122.60762030350706,
+    "p": 0.75
+   },
+   "dist_m": 1.111253,
+   "dist_a_m": 1.116324,
+   "theta_deg": 113.6394,
+   "fold_deg": 66.3606,
+   "tau_us": -29.2252,
+   "direct_a": 92.0734
+  },
+  {
+   "name": "f01",
+   "pos": [
+    10.285311,
+    2.298363,
+    1.209376
+   ],
+   "directivity": {
+    "azimuth_deg": 52.301,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 4.290841,
+   "dist_a_m": 4.298452,
+   "theta_deg": 127.437,
+   "fold_deg": 52.563,
+   "tau_us": -44.3079,
+   "direct_a": 240.5109
+  },
+  {
+   "name": "f02",
+   "pos": [
+    7.529895,
+    1.907132,
+    1.289119
+   ],
+   "directivity": {
+    "azimuth_deg": 162.813,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 1.640387,
+   "dist_a_m": 1.648215,
+   "theta_deg": 128.6048,
+   "fold_deg": 51.3952,
+   "tau_us": -45.4775,
+   "direct_a": 116.8847
+  },
+  {
+   "name": "f03",
+   "pos": [
+    8.000192,
+    1.988674,
+    1.30666
+   ],
+   "directivity": {
+    "azimuth_deg": 311.55,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 2.079795,
+   "dist_a_m": 2.08754,
+   "theta_deg": 128.1536,
+   "fold_deg": 51.8464,
+   "tau_us": -45.0278,
+   "direct_a": 137.378
+  },
+  {
+   "name": "f04",
+   "pos": [
+    8.775682,
+    0.96224,
+    1.228247
+   ],
+   "directivity": {
+    "azimuth_deg": 122.194,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 2.94441,
+   "dist_a_m": 2.95528,
+   "theta_deg": 150.3436,
+   "fold_deg": 29.6564,
+   "tau_us": -63.3404,
+   "direct_a": 177.8556
+  },
+  {
+   "name": "f05",
+   "pos": [
+    2.568189,
+    1.141964,
+    1.071063
+   ],
+   "directivity": {
+    "azimuth_deg": 316.754,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 3.613527,
+   "dist_a_m": 3.607299,
+   "theta_deg": 60.0364,
+   "fold_deg": 60.0364,
+   "tau_us": 36.4039,
+   "direct_a": 208.2705
+  },
+  {
+   "name": "f06",
+   "pos": [
+    10.62377,
+    0.941611,
+    1.583373
+   ],
+   "directivity": {
+    "azimuth_deg": 208.75,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 4.769735,
+   "dist_a_m": 4.77983,
+   "theta_deg": 143.8165,
+   "fold_deg": 36.1835,
+   "tau_us": -58.8303,
+   "direct_a": 262.9658
+  },
+  {
+   "name": "f07",
+   "pos": [
+    8.97198,
+    1.724746,
+    1.701629
+   ],
+   "directivity": {
+    "azimuth_deg": 35.678,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 3.130842,
+   "dist_a_m": 3.139477,
+   "theta_deg": 133.6114,
+   "fold_deg": 46.3886,
+   "tau_us": -50.2755,
+   "direct_a": 186.4479
+  },
+  {
+   "name": "f08",
+   "pos": [
+    3.413557,
+    2.241841,
+    1.082295
+   ],
+   "directivity": {
+    "azimuth_deg": 115.735,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 2.726543,
+   "dist_a_m": 2.717236,
+   "theta_deg": 41.7898,
+   "fold_deg": 41.7898,
+   "tau_us": 54.3449,
+   "direct_a": 166.7515
+  },
+  {
+   "name": "f09",
+   "pos": [
+    0.641134,
+    1.750298,
+    1.622268
+   ],
+   "directivity": {
+    "azimuth_deg": 128.313,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 5.530175,
+   "dist_a_m": 5.5222,
+   "theta_deg": 50.3057,
+   "fold_deg": 50.3057,
+   "tau_us": 46.5531,
+   "direct_a": 297.5953
+  },
+  {
+   "name": "f10",
+   "pos": [
+    10.896201,
+    1.351775,
+    1.658248
+   ],
+   "directivity": {
+    "azimuth_deg": 53.842,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 4.98579,
+   "dist_a_m": 4.995171,
+   "theta_deg": 138.589,
+   "fold_deg": 41.411,
+   "tau_us": -54.665,
+   "direct_a": 273.0109
+  },
+  {
+   "name": "f11",
+   "pos": [
+    2.602012,
+    0.283094,
+    1.600197
+   ],
+   "directivity": {
+    "azimuth_deg": 161.018,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 3.959353,
+   "dist_a_m": 3.955815,
+   "theta_deg": 73.4703,
+   "fold_deg": 73.4703,
+   "tau_us": 20.7375,
+   "direct_a": 224.5278
+  },
+  {
+   "name": "engine",
+   "pos": [
+    11.1679,
+    1.123174,
+    0.587891
+   ],
+   "directivity": null,
+   "dist_m": 5.160661,
+   "dist_a_m": 5.170442,
+   "theta_deg": 141.4438,
+   "fold_deg": 38.5562,
+   "tau_us": -56.9984,
+   "direct_a": 281.1868
+  },
+  {
+   "name": "wheel_fl",
+   "pos": [
+    2.105707,
+    0.15,
+    0.315337
+   ],
+   "directivity": null,
+   "dist_m": 4.331468,
+   "dist_a_m": 4.327347,
+   "theta_deg": 70.6711,
+   "fold_deg": 70.6711,
+   "tau_us": 24.1253,
+   "direct_a": 241.8587
+  },
+  {
+   "name": "wheel_fr",
+   "pos": [
+    2.105707,
+    2.459,
+    0.315337
+   ],
+   "directivity": null,
+   "dist_m": 4.006603,
+   "dist_a_m": 3.996872,
+   "theta_deg": 38.8246,
+   "fold_deg": 38.8246,
+   "tau_us": 56.7849,
+   "direct_a": 226.443
+  },
+  {
+   "name": "wheel_rl",
+   "pos": [
+    8.776841,
+    0.15,
+    0.315337
+   ],
+   "directivity": null,
+   "dist_m": 3.231425,
+   "dist_a_m": 3.243442,
+   "theta_deg": 163.9694,
+   "fold_deg": 16.0306,
+   "tau_us": -70.054,
+   "direct_a": 191.2976
+  },
+  {
+   "name": "wheel_rr",
+   "pos": [
+    8.776841,
+    2.459,
+    0.315337
+   ],
+   "directivity": null,
+   "dist_m": 2.780892,
+   "dist_a_m": 2.787287,
+   "theta_deg": 120.6584,
+   "fold_deg": 59.3416,
+   "tau_us": -37.1669,
+   "direct_a": 170.0192
+  },
+  {
+   "name": "door_front",
+   "pos": [
+    1.198508,
+    2.509,
+    1.3886
+   ],
+   "directivity": null,
+   "dist_m": 4.97631,
+   "dist_a_m": 4.966973,
+   "theta_deg": 41.6305,
+   "fold_deg": 41.6305,
+   "tau_us": 54.4799,
+   "direct_a": 271.6955
+  },
+  {
+   "name": "door_mid",
+   "pos": [
+    5.746043,
+    2.509,
+    1.156546
+   ],
+   "directivity": null,
+   "dist_m": 0.921744,
+   "dist_a_m": 0.913148,
+   "theta_deg": 46.2714,
+   "fold_deg": 46.2714,
+   "tau_us": 50.3811,
+   "direct_a": 82.5958
+  }
+ ],
+ "meta": {
+  "stratum": "lap_flat",
+  "replicate": 0,
+  "spacing_mm": 25,
+  "rt60_bin": "0.150-0.225",
+  "dist_A_m": 0.853012,
+  "dist_B_m": 0.517075,
+  "dist_bin_A": "0.65-1.0",
+  "dist_bin_B": "0.45-0.65",
+  "partner_dist_max_m": 0.853012,
+  "theta_A_deg": 74.2812,
+  "theta_B_deg": 95.7362,
+  "fold_A_deg": 74.2812,
+  "fold_B_deg": 84.2638,
+  "tau_A_us": 19.7447,
+  "tau_B_us": -7.2829,
+  "partner_angle_deg": 33.018,
+  "angle_class": "broadside",
+  "inseparable": true,
+  "inseparable_why": [
+   "both_broadside"
+  ],
+  "device_height_m": 0.5514,
+  "lap_owner": "B",
+  "pose": "seated",
+  "n_passengers": 19,
+  "n_conv_pairs": 2,
+  "n_far": 11,
+  "nearest_passenger_m": 0.761195,
+  "cone_dist_m": 1.8799,
+  "cone_dtheta_deg": 1.56,
+  "handling": false,
+  "sweep": false,
+  "skew_us": 31.25,
+  "road_model": "j0",
+  "rc_sabine_m": 1.108,
+  "people": {
+   "partners": [
+    "pA",
+    "pB"
+   ],
+   "near": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "cone": "cone",
+   "conv": [
+    [
+     "c1a",
+     "c1b"
+    ],
+    [
+     "c2a",
+     "c2b"
+    ]
+   ],
+   "far": [
+    "f01",
+    "f02",
+    "f03",
+    "f04",
+    "f05",
+    "f06",
+    "f07",
+    "f08",
+    "f09",
+    "f10",
+    "f11"
+   ]
+  },
+  "noise_src": {
+   "engine": "engine",
+   "wheels": [
+    "wheel_fl",
+    "wheel_fr",
+    "wheel_rl",
+    "wheel_rr"
+   ],
+   "doors": [
+    "door_front",
+    "door_mid"
+   ]
+  },
+  "acoustics": {
+   "edt_s": 0.1575,
+   "t20_s": 0.2593,
+   "t30_s": 0.2276,
+   "rc_eff_m": 1.543,
+   "drr_A_db": 3.96,
+   "drr_B_db": 5.11,
+   "gain_db": {
+    "pA": 2.36,
+    "pB": 3.12,
+    "n1": 0.03,
+    "n2": -2.7,
+    "n3": -2.52,
+    "cone": -5.21,
+    "c1a": 1.05,
+    "c1b": 0.7,
+    "c2a": -0.1,
+    "c2b": -0.19,
+    "f01": -8.19,
+    "f02": -1.36,
+    "f03": -5.41,
+    "f04": -3.84,
+    "f05": -5.68,
+    "f06": -6.24,
+    "f07": -7.06,
+    "f08": -5.97,
+    "f09": -7.63,
+    "f10": -7.74,
+    "f11": -7.75,
+    "engine": -4.87,
+    "wheel_fl": -4.81,
+    "wheel_fr": -4.48,
+    "wheel_rl": -3.42,
+    "wheel_rr": -1.87,
+    "door_front": -5.17,
+    "door_mid": 3.43
+   },
+   "band_gain_db": {
+    "engine": [
+     8.33,
+     2.5,
+     -5.55,
+     -12.2,
+     -4.49,
+     -5.71,
+     -4.53,
+     -5.42
+    ],
+    "wheel_fl": [
+     2.58,
+     1.52,
+     -1.27,
+     -3.68,
+     -3.07,
+     -4.63,
+     -6.11,
+     -5.07
+    ],
+    "wheel_fr": [
+     2.35,
+     -3.14,
+     -1.67,
+     -0.25,
+     -2.06,
+     -1.72,
+     -4.79,
+     -5.77
+    ],
+    "wheel_rl": [
+     -0.12,
+     3.4,
+     -0.41,
+     -1.36,
+     -2.65,
+     -4.1,
+     -4.63,
+     -3.47
+    ],
+    "wheel_rr": [
+     -1.59,
+     0.47,
+     2.02,
+     0.51,
+     0.53,
+     -2.04,
+     -4.18,
+     -1.84
+    ],
+    "door_front": [
+     6.56,
+     -5.18,
+     -1.54,
+     -5.73,
+     -6.75,
+     -3.96,
+     -5.98,
+     -5.49
+    ],
+    "door_mid": [
+     7.72,
+     5.81,
+     4.23,
+     4.84,
+     4.07,
+     1.0,
+     4.68,
+     3.1
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,1452 @@
+{
+ "rule": "2 samples per target speaker, each 8-15 s of active speech (lab.corpus_libri.vad): single utterances from the speaker's chapter with the least material that offers two, highest SNR first (choose_enrollment). A sample is a run of consecutive utterances only when the speaker has no two long enough single utterances (speaker 61). Never used by scenes: absent from corpora/libri/manifest.json.",
+ "enroll_chapter_scene_share": "fraction of the speaker's remaining (scene) seconds that come from the enrollment chapter(s); 1.0 for speakers with a single chapter",
+ "speakers": {
+  "1089": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "134691",
+   "enroll_chapter_scene_share": 0.388,
+   "samples": [
+    {
+     "ids": [
+      "1089-134691-0017"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1089/134691/1089-134691-0017.flac"
+     ],
+     "chapter": "134691",
+     "duration_s": 11.695,
+     "active_s": 8.8,
+     "active_rms_db": -23.26,
+     "snr_db": 31.72,
+     "text": "THE EUROPE THEY HAD COME FROM LAY OUT THERE BEYOND THE IRISH SEA EUROPE OF STRANGE TONGUES AND VALLEYED AND WOODBEGIRT AND CITADELLED AND OF ENTRENCHED AND MARSHALLED RACES"
+    },
+    {
+     "ids": [
+      "1089-134691-0011"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1089/134691/1089-134691-0011.flac"
+     ],
+     "chapter": "134691",
+     "duration_s": 20.01,
+     "active_s": 13.78,
+     "active_rms_db": -24.16,
+     "snr_db": 31.6,
+     "text": "THEIR PIETY WOULD BE LIKE THEIR NAMES LIKE THEIR FACES LIKE THEIR CLOTHES AND IT WAS IDLE FOR HIM TO TELL HIMSELF THAT THEIR HUMBLE AND CONTRITE HEARTS IT MIGHT BE PAID A FAR RICHER TRIBUTE OF DEVOTION THAN HIS HAD EVER BEEN A GIFT TENFOLD MORE ACCEPTABLE THAN HIS ELABORATE ADORATION"
+    }
+   ]
+  },
+  "1188": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "133604",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "1188-133604-0028"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1188/133604/1188-133604-0028.flac"
+     ],
+     "chapter": "133604",
+     "duration_s": 19.005,
+     "active_s": 12.28,
+     "active_rms_db": -24.58,
+     "snr_db": 34.83,
+     "text": "WELL THEN LAST HERE IS TURNER'S GREEK SCHOOL OF THE HIGHEST CLASS AND YOU DEFINE HIS ART ABSOLUTELY AS FIRST THE DISPLAYING INTENSELY AND WITH THE STERNEST INTELLECT OF NATURAL FORM AS IT IS AND THEN THE ENVELOPMENT OF IT WITH CLOUD AND FIRE"
+    },
+    {
+     "ids": [
+      "1188-133604-0037"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1188/133604/1188-133604-0037.flac"
+     ],
+     "chapter": "133604",
+     "duration_s": 14.51,
+     "active_s": 10.56,
+     "active_rms_db": -24.96,
+     "snr_db": 34.09,
+     "text": "EVERY LINE IN WHICH THE MASTER TRACES IT EVEN WHERE SEEMINGLY NEGLIGENT IS LOVELY AND SET DOWN WITH A MEDITATIVE CALMNESS WHICH MAKES THESE TWO ETCHINGS CAPABLE OF BEING PLACED BESIDE THE MOST TRANQUIL WORK OF HOLBEIN OR DUERER"
+    }
+   ]
+  },
+  "121": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "123852",
+   "enroll_chapter_scene_share": 0.096,
+   "samples": [
+    {
+     "ids": [
+      "121-123852-0000"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/121/123852/121-123852-0000.flac"
+     ],
+     "chapter": "123852",
+     "duration_s": 17.695,
+     "active_s": 11.6,
+     "active_rms_db": -24.81,
+     "snr_db": 56.78,
+     "text": "THOSE PRETTY WRONGS THAT LIBERTY COMMITS WHEN I AM SOMETIME ABSENT FROM THY HEART THY BEAUTY AND THY YEARS FULL WELL BEFITS FOR STILL TEMPTATION FOLLOWS WHERE THOU ART"
+    },
+    {
+     "ids": [
+      "121-123852-0004"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/121/123852/121-123852-0004.flac"
+     ],
+     "chapter": "123852",
+     "duration_s": 16.29,
+     "active_s": 11.4,
+     "active_rms_db": -25.55,
+     "snr_db": 54.24,
+     "text": "MY HEART DOTH PLEAD THAT THOU IN HIM DOST LIE A CLOSET NEVER PIERC'D WITH CRYSTAL EYES BUT THE DEFENDANT DOTH THAT PLEA DENY AND SAYS IN HIM THY FAIR APPEARANCE LIES"
+    }
+   ]
+  },
+  "1221": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "135766",
+   "enroll_chapter_scene_share": 0.322,
+   "samples": [
+    {
+     "ids": [
+      "1221-135766-0003"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1221/135766/1221-135766-0003.flac"
+     ],
+     "chapter": "135766",
+     "duration_s": 13.72,
+     "active_s": 9.82,
+     "active_rms_db": -27.24,
+     "snr_db": 23.13,
+     "text": "THE CHILD HAD A NATIVE GRACE WHICH DOES NOT INVARIABLY CO EXIST WITH FAULTLESS BEAUTY ITS ATTIRE HOWEVER SIMPLE ALWAYS IMPRESSED THE BEHOLDER AS IF IT WERE THE VERY GARB THAT PRECISELY BECAME IT BEST"
+    },
+    {
+     "ids": [
+      "1221-135766-0005"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1221/135766/1221-135766-0005.flac"
+     ],
+     "chapter": "135766",
+     "duration_s": 16.645,
+     "active_s": 11.84,
+     "active_rms_db": -28.4,
+     "snr_db": 21.55,
+     "text": "HESTER COULD ONLY ACCOUNT FOR THE CHILD'S CHARACTER AND EVEN THEN MOST VAGUELY AND IMPERFECTLY BY RECALLING WHAT SHE HERSELF HAD BEEN DURING THAT MOMENTOUS PERIOD WHILE PEARL WAS IMBIBING HER SOUL FROM THE SPIRITUAL WORLD AND HER BODILY FRAME FROM ITS MATERIAL OF EARTH"
+    }
+   ]
+  },
+  "1284": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "134647",
+   "enroll_chapter_scene_share": 0.188,
+   "samples": [
+    {
+     "ids": [
+      "1284-134647-0002"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1284/134647/1284-134647-0002.flac"
+     ],
+     "chapter": "134647",
+     "duration_s": 15.11,
+     "active_s": 9.84,
+     "active_rms_db": -22.62,
+     "snr_db": 26.35,
+     "text": "BUT THIS INESTIMABLE PRIVILEGE WAS SOON VIOLATED WITH THE KNOWLEDGE OF TRUTH THE EMPEROR IMBIBED THE MAXIMS OF PERSECUTION AND THE SECTS WHICH DISSENTED FROM THE CATHOLIC CHURCH WERE AFFLICTED AND OPPRESSED BY THE TRIUMPH OF CHRISTIANITY"
+    },
+    {
+     "ids": [
+      "1284-134647-0004"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1284/134647/1284-134647-0004.flac"
+     ],
+     "chapter": "134647",
+     "duration_s": 12.835,
+     "active_s": 8.8,
+     "active_rms_db": -21.8,
+     "snr_db": 25.34,
+     "text": "SOME OF THE PENAL REGULATIONS WERE COPIED FROM THE EDICTS OF DIOCLETIAN AND THIS METHOD OF CONVERSION WAS APPLAUDED BY THE SAME BISHOPS WHO HAD FELT THE HAND OF OPPRESSION AND PLEADED FOR THE RIGHTS OF HUMANITY"
+    }
+   ]
+  },
+  "1320": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "122612",
+   "enroll_chapter_scene_share": 0.238,
+   "samples": [
+    {
+     "ids": [
+      "1320-122612-0001"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1320/122612/1320-122612-0001.flac"
+     ],
+     "chapter": "122612",
+     "duration_s": 9.52,
+     "active_s": 8.02,
+     "active_rms_db": -19.0,
+     "snr_db": 32.48,
+     "text": "THE DEWS WERE SUFFERED TO EXHALE AND THE SUN HAD DISPERSED THE MISTS AND WAS SHEDDING A STRONG AND CLEAR LIGHT IN THE FOREST WHEN THE TRAVELERS RESUMED THEIR JOURNEY"
+    },
+    {
+     "ids": [
+      "1320-122612-0003"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1320/122612/1320-122612-0003.flac"
+     ],
+     "chapter": "122612",
+     "duration_s": 9.865,
+     "active_s": 8.02,
+     "active_rms_db": -19.35,
+     "snr_db": 32.22,
+     "text": "HE OFTEN STOPPED TO EXAMINE THE TREES NOR DID HE CROSS A RIVULET WITHOUT ATTENTIVELY CONSIDERING THE QUANTITY THE VELOCITY AND THE COLOR OF ITS WATERS"
+    }
+   ]
+  },
+  "1580": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "141083",
+   "enroll_chapter_scene_share": 0.509,
+   "samples": [
+    {
+     "ids": [
+      "1580-141083-0001"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1580/141083/1580-141083-0001.flac"
+     ],
+     "chapter": "141083",
+     "duration_s": 10.255,
+     "active_s": 8.3,
+     "active_rms_db": -27.36,
+     "snr_db": 33.03,
+     "text": "I HAD ALWAYS KNOWN HIM TO BE RESTLESS IN HIS MANNER BUT ON THIS PARTICULAR OCCASION HE WAS IN SUCH A STATE OF UNCONTROLLABLE AGITATION THAT IT WAS CLEAR SOMETHING VERY UNUSUAL HAD OCCURRED"
+    },
+    {
+     "ids": [
+      "1580-141083-0006"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1580/141083/1580-141083-0006.flac"
+     ],
+     "chapter": "141083",
+     "duration_s": 10.85,
+     "active_s": 8.5,
+     "active_rms_db": -28.77,
+     "snr_db": 30.95,
+     "text": "THE ONLY DUPLICATE WHICH EXISTED SO FAR AS I KNEW WAS THAT WHICH BELONGED TO MY SERVANT BANNISTER A MAN WHO HAS LOOKED AFTER MY ROOM FOR TEN YEARS AND WHOSE HONESTY IS ABSOLUTELY ABOVE SUSPICION"
+    }
+   ]
+  },
+  "1995": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "1826",
+   "enroll_chapter_scene_share": 0.301,
+   "samples": [
+    {
+     "ids": [
+      "1995-1826-0026"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1995/1826/1995-1826-0026.flac"
+     ],
+     "chapter": "1826",
+     "duration_s": 15.45,
+     "active_s": 10.06,
+     "active_rms_db": -21.36,
+     "snr_db": 64.51,
+     "text": "NOW FOR ONE LITTLE HALF HOUR SHE HAD BEEN A WOMAN TALKING TO A BOY NO NOT EVEN THAT SHE HAD BEEN TALKING JUST TALKING THERE WERE NO PERSONS IN THE CONVERSATION JUST THINGS ONE THING COTTON"
+    },
+    {
+     "ids": [
+      "1995-1826-0021"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/1995/1826/1995-1826-0021.flac"
+     ],
+     "chapter": "1826",
+     "duration_s": 11.41,
+     "active_s": 8.7,
+     "active_rms_db": -22.24,
+     "snr_db": 60.12,
+     "text": "DON'T KNOW WELL OF ALL THINGS INWARDLY COMMENTED MISS TAYLOR LITERALLY BORN IN COTTON AND OH WELL AS MUCH AS TO ASK WHAT'S THE USE SHE TURNED AGAIN TO GO"
+    }
+   ]
+  },
+  "2094": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "142345",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "2094-142345-0012"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2094/142345/2094-142345-0012.flac"
+     ],
+     "chapter": "142345",
+     "duration_s": 16.13,
+     "active_s": 10.82,
+     "active_rms_db": -19.08,
+     "snr_db": 26.38,
+     "text": "THE FAMILY LIKENESS BETWEEN HER AND HER NIECE DINAH MORRIS WITH THE CONTRAST BETWEEN HER KEENNESS AND DINAH'S SERAPHIC GENTLENESS OF EXPRESSION MIGHT HAVE SERVED A PAINTER AS AN EXCELLENT SUGGESTION FOR A MARTHA AND MARY"
+    },
+    {
+     "ids": [
+      "2094-142345-0038"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2094/142345/2094-142345-0038.flac"
+     ],
+     "chapter": "142345",
+     "duration_s": 20.25,
+     "active_s": 14.78,
+     "active_rms_db": -19.79,
+     "snr_db": 25.18,
+     "text": "I CAN NO MORE HELP SPENDING MY LIFE IN TRYING TO DO WHAT I CAN FOR THE SOULS OF OTHERS THAN YOU COULD HELP RUNNING IF YOU HEARD LITTLE TOTTY CRYING AT THE OTHER END OF THE HOUSE THE VOICE WOULD GO TO YOUR HEART YOU WOULD THINK THE DEAR CHILD WAS IN TROUBLE OR IN DANGER AND YOU COULDN'T REST WITHOUT RUNNING TO HELP HER AND COMFORT HER"
+    }
+   ]
+  },
+  "2300": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "131720",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "2300-131720-0013"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2300/131720/2300-131720-0013.flac"
+     ],
+     "chapter": "131720",
+     "duration_s": 13.89,
+     "active_s": 12.04,
+     "active_rms_db": -20.93,
+     "snr_db": 43.26,
+     "text": "UNLESS HE COULD SECURE AN ENGINE OF SMOOTHER RUNNING AND MORE EXACTLY GOVERNED AND REGULATED THAN THOSE AVAILABLE FOR HIS DYNAMO AND LAMP EDISON REALIZED THAT HE WOULD FIND IT ALMOST IMPOSSIBLE TO GIVE A STEADY LIGHT"
+    },
+    {
+     "ids": [
+      "2300-131720-0026"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2300/131720/2300-131720-0026.flac"
+     ],
+     "chapter": "131720",
+     "duration_s": 17.595,
+     "active_s": 13.3,
+     "active_rms_db": -22.13,
+     "snr_db": 41.21,
+     "text": "THE ARC LAMP INSTALLED OUTSIDE A CUSTOMER'S PREMISES OR IN A CIRCUIT FOR PUBLIC STREET LIGHTING BURNED SO MANY HOURS NIGHTLY SO MANY NIGHTS IN THE MONTH AND WAS PAID FOR AT THAT RATE SUBJECT TO REBATE FOR HOURS WHEN THE LAMP MIGHT BE OUT THROUGH ACCIDENT"
+    }
+   ]
+  },
+  "237": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "134493",
+   "enroll_chapter_scene_share": 0.199,
+   "samples": [
+    {
+     "ids": [
+      "237-134493-0005"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/237/134493/237-134493-0005.flac"
+     ],
+     "chapter": "134493",
+     "duration_s": 10.945,
+     "active_s": 8.0,
+     "active_rms_db": -19.25,
+     "snr_db": 39.23,
+     "text": "HE WAS A SPLENDID FIGURE OF A BOY TALL AND STRAIGHT AS A YOUNG PINE TREE WITH A HANDSOME HEAD AND STORMY GRAY EYES DEEPLY SET UNDER A SERIOUS BROW"
+    },
+    {
+     "ids": [
+      "237-134493-0003"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/237/134493/237-134493-0003.flac"
+     ],
+     "chapter": "134493",
+     "duration_s": 12.765,
+     "active_s": 9.36,
+     "active_rms_db": -19.34,
+     "snr_db": 38.1,
+     "text": "FROM THE GRAVEYARD GATE ONE CAN COUNT A DOZEN GAYLY PAINTED FARMHOUSES THE GILDED WEATHER VANES ON THE BIG RED BARNS WINK AT EACH OTHER ACROSS THE GREEN AND BROWN AND YELLOW FIELDS"
+    }
+   ]
+  },
+  "260": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "123440",
+   "enroll_chapter_scene_share": 0.172,
+   "samples": [
+    {
+     "ids": [
+      "260-123440-0002"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/260/123440/260-123440-0002.flac"
+     ],
+     "chapter": "123440",
+     "duration_s": 14.715,
+     "active_s": 10.5,
+     "active_rms_db": -22.9,
+     "snr_db": 52.33,
+     "text": "IT WAS THE WHITE RABBIT RETURNING SPLENDIDLY DRESSED WITH A PAIR OF WHITE KID GLOVES IN ONE HAND AND A LARGE FAN IN THE OTHER HE CAME TROTTING ALONG IN A GREAT HURRY MUTTERING TO HIMSELF AS HE CAME OH THE DUCHESS THE DUCHESS"
+    },
+    {
+     "ids": [
+      "260-123440-0004"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/260/123440/260-123440-0004.flac"
+     ],
+     "chapter": "123440",
+     "duration_s": 12.02,
+     "active_s": 8.66,
+     "active_rms_db": -23.25,
+     "snr_db": 45.15,
+     "text": "ALICE TOOK UP THE FAN AND GLOVES AND AS THE HALL WAS VERY HOT SHE KEPT FANNING HERSELF ALL THE TIME SHE WENT ON TALKING DEAR DEAR HOW QUEER EVERYTHING IS TO DAY"
+    }
+   ]
+  },
+  "2830": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "3979",
+   "enroll_chapter_scene_share": 0.136,
+   "samples": [
+    {
+     "ids": [
+      "2830-3979-0001"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2830/3979/2830-3979-0001.flac"
+     ],
+     "chapter": "3979",
+     "duration_s": 16.1251,
+     "active_s": 10.84,
+     "active_rms_db": -22.05,
+     "snr_db": 27.2,
+     "text": "THE CONDITION IS THAT I WILL BE PERMITTED TO MAKE LUTHER TALK AMERICAN STREAMLINE HIM SO TO SPEAK BECAUSE YOU WILL NEVER GET PEOPLE WHETHER IN OR OUTSIDE THE LUTHERAN CHURCH ACTUALLY TO READ LUTHER UNLESS WE MAKE HIM TALK AS HE WOULD TALK TODAY TO AMERICANS"
+    },
+    {
+     "ids": [
+      "2830-3979-0007"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2830/3979/2830-3979-0007.flac"
+     ],
+     "chapter": "3979",
+     "duration_s": 14.675,
+     "active_s": 9.5,
+     "active_rms_db": -22.35,
+     "snr_db": 26.84,
+     "text": "MUCH LATER WHEN A FRIEND OF HIS WAS PREPARING AN EDITION OF ALL HIS LATIN WORKS HE REMARKED TO HIS HOME CIRCLE IF I HAD MY WAY ABOUT IT THEY WOULD REPUBLISH ONLY THOSE OF MY BOOKS WHICH HAVE DOCTRINE MY GALATIANS FOR INSTANCE"
+    }
+   ]
+  },
+  "2961": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "961",
+   "enroll_chapter_scene_share": 0.376,
+   "samples": [
+    {
+     "ids": [
+      "2961-961-0019"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2961/961/2961-961-0019.flac"
+     ],
+     "chapter": "961",
+     "duration_s": 12.255,
+     "active_s": 8.28,
+     "active_rms_db": -25.03,
+     "snr_db": 43.58,
+     "text": "FOR AT THE PERIL OF HER OWN EXISTENCE AND WHEN THE OTHER HELLENES HAD DESERTED HER SHE REPELLED THE INVADER AND OF HER OWN ACCORD GAVE LIBERTY TO ALL THE NATIONS WITHIN THE PILLARS"
+    },
+    {
+     "ids": [
+      "2961-961-0002"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/2961/961/2961-961-0002.flac"
+     ],
+     "chapter": "961",
+     "duration_s": 19.99,
+     "active_s": 11.7,
+     "active_rms_db": -25.2,
+     "snr_db": 43.45,
+     "text": "AND THEREFORE TO YOU I TURN TIMAEUS CITIZEN OF LOCRIS WHO ARE AT ONCE A PHILOSOPHER AND A STATESMAN AND TO YOU CRITIAS WHOM ALL ATHENIANS KNOW TO BE SIMILARLY ACCOMPLISHED AND TO HERMOCRATES WHO IS ALSO FITTED BY NATURE AND EDUCATION TO SHARE IN OUR DISCOURSE"
+    }
+   ]
+  },
+  "3570": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "5696",
+   "enroll_chapter_scene_share": 0.203,
+   "samples": [
+    {
+     "ids": [
+      "3570-5696-0007"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/3570/5696/3570-5696-0007.flac"
+     ],
+     "chapter": "5696",
+     "duration_s": 9.5,
+     "active_s": 8.04,
+     "active_rms_db": -21.54,
+     "snr_db": 32.49,
+     "text": "THE USE OF THE WORD WASTE AS A TECHNICAL TERM THEREFORE IMPLIES NO DEPRECATION OF THE MOTIVES OR OF THE ENDS SOUGHT BY THE CONSUMER UNDER THIS CANON OF CONSPICUOUS WASTE"
+    },
+    {
+     "ids": [
+      "3570-5696-0005"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/3570/5696/3570-5696-0005.flac"
+     ],
+     "chapter": "5696",
+     "duration_s": 13.025,
+     "active_s": 10.28,
+     "active_rms_db": -21.63,
+     "snr_db": 32.41,
+     "text": "THROUGHOUT THE ENTIRE EVOLUTION OF CONSPICUOUS EXPENDITURE WHETHER OF GOODS OR OF SERVICES OR HUMAN LIFE RUNS THE OBVIOUS IMPLICATION THAT IN ORDER TO EFFECTUALLY MEND THE CONSUMER'S GOOD FAME IT MUST BE AN EXPENDITURE OF SUPERFLUITIES"
+    }
+   ]
+  },
+  "3575": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "170457",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "3575-170457-0017"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/3575/170457/3575-170457-0017.flac"
+     ],
+     "chapter": "170457",
+     "duration_s": 12.73,
+     "active_s": 8.98,
+     "active_rms_db": -22.91,
+     "snr_db": 42.35,
+     "text": "THOUGH I MAY BE BUT AN UNGRACIOUS ADVISER YOU WILL ALLOW ME THEREFORE TO SUBSCRIBE MYSELF WITH THE BEST WISHES FOR YOUR HAPPINESS HERE AND HEREAFTER YOUR TRUE FRIEND ROBERT SOUTHEY"
+    },
+    {
+     "ids": [
+      "3575-170457-0043"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/3575/170457/3575-170457-0043.flac"
+     ],
+     "chapter": "170457",
+     "duration_s": 19.0,
+     "active_s": 13.78,
+     "active_rms_db": -22.79,
+     "snr_db": 39.26,
+     "text": "HOWEVER REMEMBERING WHAT YOU TOLD ME NAMELY THAT YOU HAD COMMENDED THE MATTER TO A HIGHER DECISION THAN OURS AND THAT YOU WERE RESOLVED TO SUBMIT WITH RESIGNATION TO THAT DECISION WHATEVER IT MIGHT BE I HOLD IT MY DUTY TO YIELD ALSO AND TO BE SILENT IT MAY BE ALL FOR THE BEST"
+    }
+   ]
+  },
+  "3729": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "6852",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "3729-6852-0001"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/3729/6852/3729-6852-0001.flac"
+     ],
+     "chapter": "6852",
+     "duration_s": 12.195,
+     "active_s": 9.98,
+     "active_rms_db": -25.22,
+     "snr_db": 36.16,
+     "text": "WITHOUT SAYING IT POSITIVELY SHE MADE ME UNDERSTAND THAT BEING HERSELF AN ILLUSTRIOUS MEMBER OF THE REPUBLIC OF LETTERS SHE WAS WELL AWARE THAT SHE WAS SPEAKING TO AN INSECT"
+    },
+    {
+     "ids": [
+      "3729-6852-0046"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/3729/6852/3729-6852-0046.flac"
+     ],
+     "chapter": "6852",
+     "duration_s": 12.605,
+     "active_s": 9.12,
+     "active_rms_db": -26.11,
+     "snr_db": 35.71,
+     "text": "HIS HOUSEKEEPER HAD THE MANAGEMENT OF EVERYTHING SHE NEVER ALLOWED HIM TO BE IN NEED OF ANYTHING AND SHE GAVE NO ACCOUNT OF HIS MONEY WHICH SHE KEPT ALTOGETHER BECAUSE HE NEVER ASKED HER TO RENDER ANY ACCOUNTS"
+    }
+   ]
+  },
+  "4077": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "13754",
+   "enroll_chapter_scene_share": 0.411,
+   "samples": [
+    {
+     "ids": [
+      "4077-13754-0016"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4077/13754/4077-13754-0016.flac"
+     ],
+     "chapter": "13754",
+     "duration_s": 11.895,
+     "active_s": 8.64,
+     "active_rms_db": -26.3,
+     "snr_db": 35.41,
+     "text": "AND SO THE STORY OF MORMONISM RUNS ON ITS FINALE HAS NOT YET BEEN WRITTEN THE CURRENT PRESS PRESENTS CONTINUOUSLY NEW STAGES OF ITS PROGRESS NEW DEVELOPMENTS OF ITS PLAN"
+    },
+    {
+     "ids": [
+      "4077-13754-0006"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4077/13754/4077-13754-0006.flac"
+     ],
+     "chapter": "13754",
+     "duration_s": 12.7499,
+     "active_s": 8.86,
+     "active_rms_db": -24.38,
+     "snr_db": 34.85,
+     "text": "WHAT THE LATTER DAY SAINTS CALL CELESTIAL MARRIAGE IS CHARACTERISTIC OF THE CHURCH AND IS IN VERY GENERAL PRACTISE BUT OF CELESTIAL MARRIAGE PLURALITY OF WIVES WAS AN INCIDENT NEVER AN ESSENTIAL"
+    }
+   ]
+  },
+  "4446": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "2271",
+   "enroll_chapter_scene_share": 0.218,
+   "samples": [
+    {
+     "ids": [
+      "4446-2271-0004"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4446/2271/4446-2271-0004.flac"
+     ],
+     "chapter": "2271",
+     "duration_s": 12.01,
+     "active_s": 8.46,
+     "active_rms_db": -22.85,
+     "snr_db": 46.37,
+     "text": "DO YOU KNOW ALEXANDER MAINHALL LOOKED WITH PERPLEXITY UP INTO THE TOP OF THE HANSOM AND RUBBED HIS PINK CHEEK WITH HIS GLOVED FINGER DO YOU KNOW I SOMETIMES THINK OF TAKING TO CRITICISM SERIOUSLY MYSELF"
+    },
+    {
+     "ids": [
+      "4446-2271-0017"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4446/2271/4446-2271-0017.flac"
+     ],
+     "chapter": "2271",
+     "duration_s": 12.26,
+     "active_s": 9.24,
+     "active_rms_db": -24.65,
+     "snr_db": 45.07,
+     "text": "ONE NIGHT WHEN HE AND WINIFRED WERE SITTING TOGETHER ON THE BRIDGE HE TOLD HER THAT THINGS HAD HAPPENED WHILE HE WAS STUDYING ABROAD THAT HE WAS SORRY FOR ONE THING IN PARTICULAR AND HE ASKED HER WHETHER SHE THOUGHT SHE OUGHT TO KNOW ABOUT THEM"
+    }
+   ]
+  },
+  "4507": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "16021",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "4507-16021-0016"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4507/16021/4507-16021-0016.flac"
+     ],
+     "chapter": "16021",
+     "duration_s": 17.265,
+     "active_s": 10.34,
+     "active_rms_db": -23.86,
+     "snr_db": 41.5,
+     "text": "CAN ONE IMAGINE A NATURALIST REFUSING TO STUDY THE VIPER THE BAT THE SCORPION THE CENTIPEDE THE TARANTULA AND ONE WHO WOULD CAST THEM BACK INTO THEIR DARKNESS SAYING OH HOW UGLY THAT IS"
+    },
+    {
+     "ids": [
+      "4507-16021-0020"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4507/16021/4507-16021-0020.flac"
+     ],
+     "chapter": "16021",
+     "duration_s": 22.5,
+     "active_s": 14.66,
+     "active_rms_db": -23.39,
+     "snr_db": 41.23,
+     "text": "WE MAY BE STOPPED THE FACT MAY BE PUT TO US IN GENERAL TERMS WHICH IS ONE WAY OF ATTENUATING IT WE MAY BE TOLD THAT ALL TRADES PROFESSIONS IT MAY BE ADDED ALL THE ACCIDENTS OF THE SOCIAL HIERARCHY AND ALL FORMS OF INTELLIGENCE HAVE THEIR OWN SLANG"
+    }
+   ]
+  },
+  "4970": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "29093",
+   "enroll_chapter_scene_share": 0.384,
+   "samples": [
+    {
+     "ids": [
+      "4970-29093-0005"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4970/29093/4970-29093-0005.flac"
+     ],
+     "chapter": "29093",
+     "duration_s": 22.16,
+     "active_s": 13.16,
+     "active_rms_db": -23.67,
+     "snr_db": 66.81,
+     "text": "SOMETIMES HE THOUGHT HE WOULD LIKE TO STAND IN A CONSPICUOUS PULPIT AND HUMBLY PREACH THE GOSPEL OF REPENTANCE AND IT EVEN CROSSED HIS MIND THAT IT WOULD BE NOBLE TO GIVE HIMSELF TO A MISSIONARY LIFE TO SOME BENIGHTED REGION WHERE THE DATE PALM GROWS AND THE NIGHTINGALE'S VOICE IS IN TUNE AND THE BUL BUL SINGS ON THE OFF NIGHTS"
+    },
+    {
+     "ids": [
+      "4970-29093-0003"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4970/29093/4970-29093-0003.flac"
+     ],
+     "chapter": "29093",
+     "duration_s": 15.355,
+     "active_s": 8.74,
+     "active_rms_db": -23.95,
+     "snr_db": 66.72,
+     "text": "THE MODEST FELLOW WOULD HAVE LIKED FAME THRUST UPON HIM FOR SOME WORTHY ACHIEVEMENT IT MIGHT BE FOR A BOOK OR FOR THE SKILLFUL MANAGEMENT OF SOME GREAT NEWSPAPER OR FOR SOME DARING EXPEDITION LIKE THAT OF LIEUTENANT STRAIN OR DOCTOR KANE"
+    }
+   ]
+  },
+  "4992": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "23283",
+   "enroll_chapter_scene_share": 0.256,
+   "samples": [
+    {
+     "ids": [
+      "4992-23283-0020"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4992/23283/4992-23283-0020.flac"
+     ],
+     "chapter": "23283",
+     "duration_s": 10.42,
+     "active_s": 8.5,
+     "active_rms_db": -24.85,
+     "snr_db": 54.13,
+     "text": "I HAVE NEVER YET HOWEVER BEEN VANQUISHED BY THEM AND EVEN UPON THIS OCCASION MY REASON SHALL COMBAT THEM TO THE LAST AND MY REASON SHALL FAIL ME BEFORE I DO WRONG"
+    },
+    {
+     "ids": [
+      "4992-23283-0017"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/4992/23283/4992-23283-0017.flac"
+     ],
+     "chapter": "23283",
+     "duration_s": 14.315,
+     "active_s": 10.86,
+     "active_rms_db": -28.46,
+     "snr_db": 51.55,
+     "text": "MISS WOODLEY WAS TOO LITTLE VERSED IN THE SUBJECT TO KNOW THIS WOULD HAVE BEEN NOT TO LOVE AT ALL AT LEAST NOT TO THE EXTENT OF BREAKING THROUGH ENGAGEMENTS AND ALL THE VARIOUS OBSTACLES THAT STILL MILITATED AGAINST THEIR UNION"
+    }
+   ]
+  },
+  "5105": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "28233",
+   "enroll_chapter_scene_share": 0.197,
+   "samples": [
+    {
+     "ids": [
+      "5105-28233-0009"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5105/28233/5105-28233-0009.flac"
+     ],
+     "chapter": "28233",
+     "duration_s": 14.595,
+     "active_s": 9.84,
+     "active_rms_db": -22.8,
+     "snr_db": 25.99,
+     "text": "THE BOND OF UNION THUS EFFECTED COULD NEVER BE SEVERED AND ALTHOUGH BEN ZOOF'S ACHIEVEMENTS HAD FAIRLY EARNED HIM THE RIGHT OF RETIREMENT HE FIRMLY DECLINED ALL HONORS OR ANY PENSION THAT MIGHT PART HIM FROM HIS SUPERIOR OFFICER"
+    },
+    {
+     "ids": [
+      "5105-28233-0010"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5105/28233/5105-28233-0010.flac"
+     ],
+     "chapter": "28233",
+     "duration_s": 13.595,
+     "active_s": 8.96,
+     "active_rms_db": -24.84,
+     "snr_db": 24.83,
+     "text": "UNLIKE HIS MASTER HE MADE NO PRETENSION TO ANY GIFT OF POETIC POWER BUT HIS INEXHAUSTIBLE MEMORY MADE HIM A LIVING ENCYCLOPAEDIA AND FOR HIS STOCK OF ANECDOTES AND TROOPER'S TALES HE WAS MATCHLESS"
+    }
+   ]
+  },
+  "5142": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "36377",
+   "enroll_chapter_scene_share": 0.336,
+   "samples": [
+    {
+     "ids": [
+      "5142-36377-0008"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5142/36377/5142-36377-0008.flac"
+     ],
+     "chapter": "36377",
+     "duration_s": 15.425,
+     "active_s": 12.16,
+     "active_rms_db": -23.25,
+     "snr_db": 35.44,
+     "text": "MISTER MEADOWCROFT THE ELDER HAVING NOT SPOKEN ONE WORD THUS FAR HIMSELF INTRODUCED THE NEWCOMER TO ME WITH A SIDE GLANCE AT HIS SONS WHICH HAD SOMETHING LIKE DEFIANCE IN IT A GLANCE WHICH AS I WAS SORRY TO NOTICE WAS RETURNED WITH THE DEFIANCE ON THEIR SIDE BY THE TWO YOUNG MEN"
+    },
+    {
+     "ids": [
+      "5142-36377-0025"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5142/36377/5142-36377-0025.flac"
+     ],
+     "chapter": "36377",
+     "duration_s": 11.885,
+     "active_s": 9.62,
+     "active_rms_db": -28.91,
+     "snr_db": 34.81,
+     "text": "SILAS SLUNK AWAY WITHOUT A WORD OF PROTEST AMBROSE STOOD HIS GROUND EVIDENTLY BENT ON MAKING HIS PEACE WITH NAOMI BEFORE HE LEFT HER SEEING THAT I WAS IN THE WAY I WALKED ASIDE TOWARD A GLASS DOOR AT THE LOWER END OF THE ROOM"
+    }
+   ]
+  },
+  "5639": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "40744",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "5639-40744-0034"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5639/40744/5639-40744-0034.flac"
+     ],
+     "chapter": "40744",
+     "duration_s": 13.055,
+     "active_s": 9.54,
+     "active_rms_db": -28.22,
+     "snr_db": 56.63,
+     "text": "ALL ROSE TO DO HER REVERENCE AS IF SOMETHING FROM HEAVEN HAD MIRACULOUSLY APPEARED BEFORE THEM BUT GAZING ON HER ENTRANCED WITH ADMIRATION NOT ONE OF THEM WAS ABLE TO ADDRESS A SINGLE WORD TO HER"
+    },
+    {
+     "ids": [
+      "5639-40744-0000"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5639/40744/5639-40744-0000.flac"
+     ],
+     "chapter": "40744",
+     "duration_s": 15.77,
+     "active_s": 10.58,
+     "active_rms_db": -26.33,
+     "snr_db": 52.59,
+     "text": "ELEVEN O'CLOCK HAD STRUCK IT WAS A FINE CLEAR NIGHT THEY WERE THE ONLY PERSONS ON THE ROAD AND THEY SAUNTERED LEISURELY ALONG TO AVOID PAYING THE PRICE OF FATIGUE FOR THE RECREATION PROVIDED FOR THE TOLEDANS IN THEIR VALLEY OR ON THE BANKS OF THEIR RIVER"
+    }
+   ]
+  },
+  "5683": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "32879",
+   "enroll_chapter_scene_share": 0.345,
+   "samples": [
+    {
+     "ids": [
+      "5683-32879-0017"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5683/32879/5683-32879-0017.flac"
+     ],
+     "chapter": "32879",
+     "duration_s": 14.59,
+     "active_s": 9.76,
+     "active_rms_db": -21.81,
+     "snr_db": 41.48,
+     "text": "OF MARK WYLDER I SAY THIS HIS NAME HAS BEEN FOR YEARS HATEFUL TO ME AND RECENTLY IT HAS BECOME FRIGHTFUL AND YOU WILL PROMISE ME SIMPLY THIS THAT YOU WILL NEVER ASK ME TO SPEAK AGAIN ABOUT HIM"
+    },
+    {
+     "ids": [
+      "5683-32879-0013"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/5683/32879/5683-32879-0013.flac"
+     ],
+     "chapter": "32879",
+     "duration_s": 11.495,
+     "active_s": 8.52,
+     "active_rms_db": -23.1,
+     "snr_db": 37.99,
+     "text": "CHELFORD HAD A NOTE FROM MISTER WYLDER THIS MORNING ANOTHER NOTE HIS COMING DELAYED AND SOMETHING OF HIS HAVING TO SEE SOME PERSON WHO IS ABROAD CONTINUED DORCAS AFTER A LITTLE PAUSE"
+    }
+   ]
+  },
+  "61": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "70970",
+   "enroll_chapter_scene_share": 0.386,
+   "samples": [
+    {
+     "ids": [
+      "61-70970-0025",
+      "61-70970-0026"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/61/70970/61-70970-0025.flac",
+      "data/librispeech_test_clean/LibriSpeech/test-clean/61/70970/61-70970-0026.flac"
+     ],
+     "chapter": "70970",
+     "duration_s": 12.91,
+     "active_s": 8.58,
+     "active_rms_db": -21.14,
+     "snr_db": 22.64,
+     "text": "THEY WERE UPON THE VERGE OF AN OPEN TRAP IN THE FAR CORNER OF THE HUT AND STUTELEY HAD TRIPPED OVER THE EDGE OF THE REVERSED FLAP MOUTH OF THIS PIT FITZOOTH'S HAND RESTED AT LAST UPON THE TOP RUNG OF A LADDER AND SLOWLY THE TRUTH CAME TO HIM"
+    },
+    {
+     "ids": [
+      "61-70970-0028",
+      "61-70970-0029",
+      "61-70970-0030"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/61/70970/61-70970-0028.flac",
+      "data/librispeech_test_clean/LibriSpeech/test-clean/61/70970/61-70970-0029.flac",
+      "data/librispeech_test_clean/LibriSpeech/test-clean/61/70970/61-70970-0030.flac"
+     ],
+     "chapter": "70970",
+     "duration_s": 13.82,
+     "active_s": 9.88,
+     "active_rms_db": -22.29,
+     "snr_db": 22.47,
+     "text": "STUTELEY WAS BY HIS SIDE IN A FLASH AND THEN THEY BOTH BEGAN FEELING ABOUT THEM TO ASCERTAIN THE SHAPE AND CHARACTER OF THIS VAULT FROM THE BLACKNESS BEHIND THE LIGHT THEY HEARD A VOICE WARRENTON'S SAVE ME MASTERS BUT YOU STARTLED ME RARELY"
+    }
+   ]
+  },
+  "672": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "122797",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "672-122797-0001"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/672/122797/672-122797-0001.flac"
+     ],
+     "chapter": "122797",
+     "duration_s": 15.13,
+     "active_s": 10.28,
+     "active_rms_db": -19.62,
+     "snr_db": 37.08,
+     "text": "THE PLACE HE HAD WAS A VERY GOOD ONE THE SUN SHONE ON HIM AS TO FRESH AIR THERE WAS ENOUGH OF THAT AND ROUND HIM GREW MANY LARGE SIZED COMRADES PINES AS WELL AS FIRS"
+    },
+    {
+     "ids": [
+      "672-122797-0002"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/672/122797/672-122797-0002.flac"
+     ],
+     "chapter": "122797",
+     "duration_s": 13.62,
+     "active_s": 10.16,
+     "active_rms_db": -22.3,
+     "snr_db": 33.14,
+     "text": "HE DID NOT THINK OF THE WARM SUN AND OF THE FRESH AIR HE DID NOT CARE FOR THE LITTLE COTTAGE CHILDREN THAT RAN ABOUT AND PRATTLED WHEN THEY WERE IN THE WOODS LOOKING FOR WILD STRAWBERRIES"
+    }
+   ]
+  },
+  "6829": {
+   "split": "test",
+   "gender": "F",
+   "chapter": "68771",
+   "enroll_chapter_scene_share": 0.471,
+   "samples": [
+    {
+     "ids": [
+      "6829-68771-0009"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/6829/68771/6829-68771-0009.flac"
+     ],
+     "chapter": "68771",
+     "duration_s": 13.115,
+     "active_s": 10.0,
+     "active_rms_db": -23.87,
+     "snr_db": 49.52,
+     "text": "LOUISE HOPED FOR EXCELLENT RESULTS FROM THIS ORGANIZATION AND WISHED THE ENTERTAINMENT TO BE SO EFFECTIVE IN WINNING THEIR GOOD WILL THAT THEY WOULD WORK EARNESTLY FOR THE CAUSE IN WHICH THEY WERE ENLISTED"
+    },
+    {
+     "ids": [
+      "6829-68771-0000"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/6829/68771/6829-68771-0000.flac"
+     ],
+     "chapter": "68771",
+     "duration_s": 13.315,
+     "active_s": 10.12,
+     "active_rms_db": -22.58,
+     "snr_db": 41.27,
+     "text": "SO TO THE SURPRISE OF THE DEMOCRATIC COMMITTEE AND ALL HIS FRIENDS MISTER HOPKINS ANNOUNCED THAT HE WOULD OPPOSE FORBES'S AGGRESSIVE CAMPAIGN WITH AN EQUAL AGGRESSIVENESS AND SPEND AS MANY DOLLARS IN DOING SO AS MIGHT BE NECESSARY"
+    }
+   ]
+  },
+  "6930": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "76324",
+   "enroll_chapter_scene_share": 0.278,
+   "samples": [
+    {
+     "ids": [
+      "6930-76324-0015"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/6930/76324/6930-76324-0015.flac"
+     ],
+     "chapter": "76324",
+     "duration_s": 12.405,
+     "active_s": 10.18,
+     "active_rms_db": -28.07,
+     "snr_db": 27.93,
+     "text": "SMUGGLING THE HOUSE CLEANING PARAPHERNALIA INTO THE CELLAR WINDOW UNOBSERVED THAT AFTERNOON PROVED NO EASY TASK FOR CYNTHIA HAD ADDED A WHISK BROOM AND DUST PAN TO THE OUTFIT"
+    },
+    {
+     "ids": [
+      "6930-76324-0028"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/6930/76324/6930-76324-0028.flac"
+     ],
+     "chapter": "76324",
+     "duration_s": 9.875,
+     "active_s": 8.14,
+     "active_rms_db": -26.35,
+     "snr_db": 26.38,
+     "text": "WELL I'M CONVINCED THAT THE BOARDED UP HOUSE MYSTERY HAPPENED NOT EARLIER THAN APRIL SIXTEENTH EIGHTEEN SIXTY ONE AND PROBABLY NOT MUCH LATER"
+    }
+   ]
+  },
+  "7021": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "79740",
+   "enroll_chapter_scene_share": 0.2,
+   "samples": [
+    {
+     "ids": [
+      "7021-79740-0008"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7021/79740/7021-79740-0008.flac"
+     ],
+     "chapter": "79740",
+     "duration_s": 18.415,
+     "active_s": 12.42,
+     "active_rms_db": -20.6,
+     "snr_db": 67.93,
+     "text": "FOR INSTANCE ONE DAY THE CHILDREN HAD BEEN PLAYING UPON THE PIAZZA WITH BLOCKS AND OTHER PLAYTHINGS AND FINALLY HAD GONE INTO THE HOUSE LEAVING ALL THE THINGS ON THE FLOOR OF THE PIAZZA INSTEAD OF PUTTING THEM AWAY IN THEIR PLACES AS THEY OUGHT TO HAVE DONE"
+    },
+    {
+     "ids": [
+      "7021-79740-0010"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7021/79740/7021-79740-0010.flac"
+     ],
+     "chapter": "79740",
+     "duration_s": 12.025,
+     "active_s": 8.64,
+     "active_rms_db": -22.01,
+     "snr_db": 66.86,
+     "text": "DELIA CAME TO THE PARLOR AND WITH AN AIR OF GREAT MYSTERY BECKONED THE CHILDREN ASIDE AND SAID TO THEM IN A WHISPER LEAVE ANDELLA AND ROSALIE HERE AND DON'T SAY A WORD TO THEM"
+    }
+   ]
+  },
+  "7127": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "75946",
+   "enroll_chapter_scene_share": 0.441,
+   "samples": [
+    {
+     "ids": [
+      "7127-75946-0017"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7127/75946/7127-75946-0017.flac"
+     ],
+     "chapter": "75946",
+     "duration_s": 12.33,
+     "active_s": 9.02,
+     "active_rms_db": -26.37,
+     "snr_db": 27.17,
+     "text": "HIS LEGS THE BEST SHAPED AT COURT WERE DISPLAYED TO GREAT ADVANTAGE IN FLESH COLORED SILKEN HOSE OF SILK SO FINE AND SO TRANSPARENT THAT IT SEEMED ALMOST LIKE FLESH ITSELF"
+    },
+    {
+     "ids": [
+      "7127-75946-0028"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7127/75946/7127-75946-0028.flac"
+     ],
+     "chapter": "75946",
+     "duration_s": 16.075,
+     "active_s": 11.64,
+     "active_rms_db": -26.21,
+     "snr_db": 27.14,
+     "text": "BY DEGREES ALL HIS HAPPINESS ALL HIS BRILLIANCY SUBSIDED INTO REGRET AND UNEASINESS SO THAT HIS LIMBS LOST THEIR POWER HIS ARMS HUNG HEAVILY BY HIS SIDES AND HIS HEAD DROOPED AS THOUGH HE WAS STUPEFIED"
+    }
+   ]
+  },
+  "7176": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "88083",
+   "enroll_chapter_scene_share": 0.382,
+   "samples": [
+    {
+     "ids": [
+      "7176-88083-0001"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7176/88083/7176-88083-0001.flac"
+     ],
+     "chapter": "88083",
+     "duration_s": 16.575,
+     "active_s": 12.08,
+     "active_rms_db": -19.61,
+     "snr_db": 38.07,
+     "text": "THE MERGANSER HAD A CRESTED HEAD OF IRIDESCENT GREEN BLACK A BROAD COLLAR OF LUSTROUS WHITE BLACK BACK BLACK AND WHITE WINGS WHITE BELLY SIDES FINELY PENCILLED IN BLACK AND WHITE AND A BREAST OF RICH CHESTNUT RED STREAKED WITH BLACK"
+    },
+    {
+     "ids": [
+      "7176-88083-0007"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7176/88083/7176-88083-0007.flac"
+     ],
+     "chapter": "88083",
+     "duration_s": 14.3,
+     "active_s": 11.74,
+     "active_rms_db": -20.45,
+     "snr_db": 37.81,
+     "text": "BUT SUCH WAS HIS KEENNESS THAT EVEN WHILE THE WIDE FLUKES OF HIS ENGORGED VICTIM WERE STILL STICKING OUT AT THE CORNERS OF HIS BEAK HIS FIERCE RED EYES WERE ONCE MORE PEERING DOWNWARD INTO THE TORRENT IN SEARCH OF FRESH PREY"
+    }
+   ]
+  },
+  "7729": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "102255",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "7729-102255-0022"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7729/102255/7729-102255-0022.flac"
+     ],
+     "chapter": "102255",
+     "duration_s": 11.795,
+     "active_s": 8.66,
+     "active_rms_db": -22.01,
+     "snr_db": 48.17,
+     "text": "FROM THESE AGAIN SPRANG BARRICADED AND FORTIFIED DWELLINGS CAMPS AND SCOUTING PARTIES FINALLY CULMINATING IN ROVING GUERRILLA BANDS HALF PARTISAN HALF PREDATORY"
+    },
+    {
+     "ids": [
+      "7729-102255-0008"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/7729/102255/7729-102255-0008.flac"
+     ],
+     "chapter": "102255",
+     "duration_s": 19.065,
+     "active_s": 13.54,
+     "active_rms_db": -21.75,
+     "snr_db": 48.12,
+     "text": "ALL THE TERRITORIAL DIGNITARIES WERE PRESENT GOVERNOR SHANNON PRESIDED JOHN CALHOUN THE SURVEYOR GENERAL MADE THE PRINCIPAL SPEECH A DENUNCIATION OF THE ABOLITIONISTS SUPPORTING THE TOPEKA MOVEMENT CHIEF JUSTICE LECOMPTE DIGNIFIED THE OCCASION WITH APPROVING REMARKS"
+    }
+   ]
+  },
+  "8224": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "274384",
+   "enroll_chapter_scene_share": 0.281,
+   "samples": [
+    {
+     "ids": [
+      "8224-274384-0008"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8224/274384/8224-274384-0008.flac"
+     ],
+     "chapter": "274384",
+     "duration_s": 13.42,
+     "active_s": 9.16,
+     "active_rms_db": -21.61,
+     "snr_db": 41.62,
+     "text": "THE GOOD NATURED AUDIENCE IN PITY TO FALLEN MAJESTY SHOWED FOR ONCE GREATER DEFERENCE TO THE KING THAN TO THE MINISTER AND SUNG THE PSALM WHICH THE FORMER HAD CALLED FOR"
+    },
+    {
+     "ids": [
+      "8224-274384-0004"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8224/274384/8224-274384-0004.flac"
+     ],
+     "chapter": "274384",
+     "duration_s": 20.64,
+     "active_s": 14.42,
+     "active_rms_db": -20.92,
+     "snr_db": 41.3,
+     "text": "AND THE MEN OF ISRAEL ANSWERED THE MEN OF JUDAH AND SAID WE HAVE TEN PARTS IN THE KING AND WE HAVE ALSO MORE RIGHT IN DAVID THAN YE WHY THEN DID YE DESPISE US THAT OUR ADVICE SHOULD NOT BE FIRST HAD IN BRINGING BACK OUR KING"
+    }
+   ]
+  },
+  "8230": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "279154",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "8230-279154-0013"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8230/279154/8230-279154-0013.flac"
+     ],
+     "chapter": "279154",
+     "duration_s": 14.56,
+     "active_s": 10.86,
+     "active_rms_db": -22.8,
+     "snr_db": 43.75,
+     "text": "IN AN IMAGE OF A WELL KNOWN FACE FOR EXAMPLE SOME PARTS MAY FEEL MORE FAMILIAR THAN OTHERS WHEN THIS HAPPENS WE HAVE MORE BELIEF IN THE ACCURACY OF THE FAMILIAR PARTS THAN IN THAT OF THE UNFAMILIAR PARTS"
+    },
+    {
+     "ids": [
+      "8230-279154-0016"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8230/279154/8230-279154-0016.flac"
+     ],
+     "chapter": "279154",
+     "duration_s": 10.6,
+     "active_s": 8.02,
+     "active_rms_db": -22.98,
+     "snr_db": 43.07,
+     "text": "IN ACTUAL FACT THERE ARE DOUBTLESS VARIOUS FACTORS THAT CONCUR IN GIVING US THE FEELING OF GREATER OR LESS REMOTENESS IN SOME REMEMBERED EVENT"
+    }
+   ]
+  },
+  "8455": {
+   "split": "dev",
+   "gender": "M",
+   "chapter": "210777",
+   "enroll_chapter_scene_share": 1.0,
+   "samples": [
+    {
+     "ids": [
+      "8455-210777-0036"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8455/210777/8455-210777-0036.flac"
+     ],
+     "chapter": "210777",
+     "duration_s": 15.065,
+     "active_s": 10.0,
+     "active_rms_db": -18.74,
+     "snr_db": 40.9,
+     "text": "I CAN AFFORD TO SMILE BECAUSE I AM ABSOLUTELY POWERLESS BEFORE YOU BUT I DO NOT THE LESS FEEL THAT IN A MATTER IN WHICH THE PROGRESS OF THE WORLD IS CONCERNED I OR RATHER WE HAVE BEEN PUT DOWN BY BRUTE FORCE"
+    },
+    {
+     "ids": [
+      "8455-210777-0030"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8455/210777/8455-210777-0030.flac"
+     ],
+     "chapter": "210777",
+     "duration_s": 12.845,
+     "active_s": 8.34,
+     "active_rms_db": -19.07,
+     "snr_db": 39.79,
+     "text": "MISTER NEVERBEND BEGAN THE CAPTAIN AND I OBSERVED THAT UP TO THAT MOMENT HE HAD GENERALLY ADDRESSED ME AS PRESIDENT IT CANNOT BE DENIED THAT WE HAVE COME HERE ON AN UNPLEASANT MISSION"
+    }
+   ]
+  },
+  "8463": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "287645",
+   "enroll_chapter_scene_share": 0.186,
+   "samples": [
+    {
+     "ids": [
+      "8463-287645-0005"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8463/287645/8463-287645-0005.flac"
+     ],
+     "chapter": "287645",
+     "duration_s": 15.975,
+     "active_s": 11.22,
+     "active_rms_db": -22.12,
+     "snr_db": 45.98,
+     "text": "A FEW YEARS BACK ONE OF THEIR SLAVES A COACHMAN WAS KEPT ON THE COACH BOX ONE COLD NIGHT WHEN THEY WERE OUT AT A BALL UNTIL HE BECAME ALMOST FROZEN TO DEATH IN FACT HE DID DIE IN THE INFIRMARY FROM THE EFFECTS OF THE FROST ABOUT ONE WEEK AFTERWARDS"
+    },
+    {
+     "ids": [
+      "8463-287645-0002"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8463/287645/8463-287645-0002.flac"
+     ],
+     "chapter": "287645",
+     "duration_s": 12.92,
+     "active_s": 10.42,
+     "active_rms_db": -22.11,
+     "snr_db": 43.62,
+     "text": "FROM THE MANNER IN WHICH HE EXPRESSED HIMSELF WITH REGARD TO ROBERT HOLLAN NO MAN IN THE WHOLE RANGE OF HIS RECOLLECTIONS WILL BE LONGER REMEMBERED THAN HE HIS ENTHRALMENT WHILE UNDER HOLLAN WILL HARDLY EVER BE FORGOTTEN"
+    }
+   ]
+  },
+  "8555": {
+   "split": "dev",
+   "gender": "F",
+   "chapter": "292519",
+   "enroll_chapter_scene_share": 0.213,
+   "samples": [
+    {
+     "ids": [
+      "8555-292519-0000"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8555/292519/8555-292519-0000.flac"
+     ],
+     "chapter": "292519",
+     "duration_s": 14.9,
+     "active_s": 10.96,
+     "active_rms_db": -21.12,
+     "snr_db": 55.4,
+     "text": "BRIGHTER THAN EARLY DAWN'S MOST BRILLIANT DYE ARE BLOWN CLEAR BANDS OF COLOR THROUGH THE SKY THAT SWIRL AND SWEEP AND MEET TO BREAK AND FOAM LIKE RAINBOW VEILS UPON A BUBBLE'S DOME"
+    },
+    {
+     "ids": [
+      "8555-292519-0001"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/8555/292519/8555-292519-0001.flac"
+     ],
+     "chapter": "292519",
+     "duration_s": 20.82,
+     "active_s": 14.1,
+     "active_rms_db": -21.73,
+     "snr_db": 52.68,
+     "text": "GUIDED BY YOU HOW WE MIGHT STROLL TOWARDS DEATH OUR ONLY MUSIC ONE ANOTHER'S BREATH THROUGH GARDENS INTIMATE WITH HOLLYHOCKS WHERE SILENT POPPIES BURN BETWEEN THE ROCKS BY POOLS WHERE BIRCHES BEND TO CONFIDANTS ABOVE GREEN WATERS SCUMMED WITH LILY PLANTS"
+    }
+   ]
+  },
+  "908": {
+   "split": "test",
+   "gender": "M",
+   "chapter": "31957",
+   "enroll_chapter_scene_share": 0.405,
+   "samples": [
+    {
+     "ids": [
+      "908-31957-0004"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/908/31957/908-31957-0004.flac"
+     ],
+     "chapter": "31957",
+     "duration_s": 14.755,
+     "active_s": 10.02,
+     "active_rms_db": -21.61,
+     "snr_db": 34.69,
+     "text": "SHALL I NEVER MISS HOME TALK AND BLESSING AND THE COMMON KISS THAT COMES TO EACH IN TURN NOR COUNT IT STRANGE WHEN I LOOK UP TO DROP ON A NEW RANGE OF WALLS AND FLOORS ANOTHER HOME THAN THIS"
+    },
+    {
+     "ids": [
+      "908-31957-0025"
+     ],
+     "paths": [
+      "data/librispeech_test_clean/LibriSpeech/test-clean/908/31957/908-31957-0025.flac"
+     ],
+     "chapter": "31957",
+     "duration_s": 20.56,
+     "active_s": 9.42,
+     "active_rms_db": -23.57,
+     "snr_db": 33.62,
+     "text": "I LOVE THEE WITH A LOVE I SEEMED TO LOSE WITH MY LOST SAINTS I LOVE THEE WITH THE BREATH SMILES TEARS OF ALL MY LIFE AND IF GOD CHOOSE I SHALL BUT LOVE THEE BETTER AFTER DEATH"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1522 @@
+{
+ "n_samples": 3137573,
+ "seed": 852243155,
+ "impair": {
+  "gain_db": [
+   0.3469,
+   0.2191
+  ],
+  "hp_hz": [
+   59.607,
+   78.415
+  ],
+  "skew_us": 31.25
+ },
+ "sensor_dba": 33.0,
+ "groups": [
+  {
+   "name": "talker_00",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t00",
+     "talker": "t00",
+     "level_db": 65.64,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "tessa__mtg08",
+        213223,
+        -0.66
+       ],
+       [
+        "tessa__mtg19",
+        1086738,
+        0.99
+       ],
+       [
+        "tessa__mtg13",
+        1426681,
+        -0.83
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_01",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t01",
+     "talker": "t01",
+     "level_db": 60.39,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "satu__bab21",
+        32000,
+        0.37
+       ],
+       [
+        "satu__bab24",
+        184831,
+        -0.26
+       ],
+       [
+        "satu__bab27",
+        2537302,
+        0.12
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_02",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t02",
+     "talker": "t02",
+     "level_db": 59.12,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "m_nica__bab31",
+        70843,
+        -0.07
+       ],
+       [
+        "m_nica__bab02",
+        715695,
+        -0.83
+       ],
+       [
+        "m_nica__bab25",
+        828240,
+        -0.61
+       ],
+       [
+        "m_nica__bab28",
+        866500,
+        -0.61
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_03",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t03",
+     "talker": "t03",
+     "level_db": 62.27,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "aman__mtg17",
+        759778,
+        0.79
+       ],
+       [
+        "aman__mtg04",
+        1833806,
+        -0.62
+       ],
+       [
+        "aman__bus21",
+        2497078,
+        -3.18
+       ],
+       [
+        "aman__bus00",
+        2998619,
+        0.62
+       ],
+       [
+        "aman__bus07",
+        3035770,
+        0.62
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_04",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t04",
+     "talker": "t04",
+     "level_db": 59.6,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "anna__bab06",
+        611806,
+        -0.98
+       ],
+       [
+        "anna__bab12",
+        1913854,
+        -0.25
+       ],
+       [
+        "anna__bab15",
+        1952394,
+        -0.25
+       ],
+       [
+        "anna__bab03",
+        2026881,
+        0.62
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_05",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t05",
+     "talker": "t05",
+     "level_db": 60.41,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "xander__bab13",
+        900872,
+        -0.01
+       ],
+       [
+        "xander__bab22",
+        1990145,
+        -0.62
+       ],
+       [
+        "xander__bab19",
+        2168709,
+        0.09
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_06",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t06",
+     "talker": "t06",
+     "level_db": 64.7,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "alva__bab05",
+        1727422,
+        -0.62
+       ],
+       [
+        "alva__bab14",
+        2203344,
+        -0.57
+       ],
+       [
+        "alva__bab11",
+        2672850,
+        0.16
+       ],
+       [
+        "alva__bab31",
+        3004549,
+        -5.77
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_07",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t07",
+     "talker": "t07",
+     "level_db": 65.87,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "daniel__mtg14",
+        1012856,
+        -0.18
+       ],
+       [
+        "daniel__bab28",
+        1115305,
+        -4.57
+       ],
+       [
+        "daniel__mtg09",
+        1355121,
+        -0.22
+       ],
+       [
+        "daniel__mtg15",
+        2415224,
+        0.99
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_08",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t08",
+     "talker": "t08",
+     "level_db": 63.08,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "nora__bab03",
+        2586173,
+        -0.18
+       ],
+       [
+        "nora__bab06",
+        2763181,
+        0.36
+       ],
+       [
+        "nora__bab26",
+        2886829,
+        -0.95
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_09",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t09",
+     "talker": "t09",
+     "level_db": 62.84,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "zosia__bab23",
+        314082,
+        -0.53
+       ],
+       [
+        "zosia__bab20",
+        1265229,
+        0.93
+       ],
+       [
+        "zosia__bab29",
+        2257437,
+        0.34
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_10",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t10",
+     "talker": "t10",
+     "level_db": 59.42,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "sara__bab16",
+        476043,
+        -0.61
+       ],
+       [
+        "sara__bab01",
+        2131907,
+        0.34
+       ],
+       [
+        "sara__bab10",
+        2925382,
+        0.53
+       ],
+       [
+        "sara__bab04",
+        2960769,
+        0.53
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_11",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t11",
+     "talker": "t11",
+     "level_db": 61.0,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "ellen__bab18",
+        365780,
+        -0.17
+       ],
+       [
+        "ellen__bab04",
+        1159974,
+        0.64
+       ],
+       [
+        "ellen__bab07",
+        2338880,
+        -0.87
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_12",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t12",
+     "talker": "t12",
+     "level_db": 62.42,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "karen__mtg10",
+        1199917,
+        -0.13
+       ],
+       [
+        "karen__mtg00",
+        2060444,
+        0.87
+       ],
+       [
+        "karen__bus04",
+        2723945,
+        0.53
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_13",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t13",
+     "talker": "t13",
+     "level_db": 57.72,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "alice__bab09",
+        395819,
+        0.57
+       ],
+       [
+        "alice__bab00",
+        437674,
+        0.57
+       ],
+       [
+        "alice__bab29",
+        1791647,
+        -2.39
+       ],
+       [
+        "alice__bab23",
+        2298446,
+        0.53
+       ],
+       [
+        "alice__bab20",
+        3068377,
+        0.05
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_14",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t14",
+     "talker": "t14",
+     "level_db": 65.99,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "joana__bab20",
+        412013,
+        -4.12
+       ],
+       [
+        "joana__bab11",
+        1504849,
+        0.03
+       ],
+       [
+        "joana__bab14",
+        1610525,
+        -0.99
+       ],
+       [
+        "joana__bab23",
+        1667198,
+        -5.98
+       ],
+       [
+        "joana__bab17",
+        2486771,
+        -0.7
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_15",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t15",
+     "talker": "t15",
+     "level_db": 65.1,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "samantha__mtg18",
+        150461,
+        0.05
+       ],
+       [
+        "samantha__mtg16",
+        1782791,
+        0.35
+       ],
+       [
+        "samantha__bus02",
+        2623236,
+        0.41
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_16",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t16",
+     "talker": "t16",
+     "level_db": 62.29,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "moira__mtg02",
+        655751,
+        0.5
+       ],
+       [
+        "moira__mtg03",
+        1302986,
+        -0.91
+       ],
+       [
+        "moira__bab18",
+        1564982,
+        -5.1
+       ],
+       [
+        "moira__mtg06",
+        1657251,
+        0.8
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_17",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t17",
+     "talker": "t17",
+     "level_db": 60.93,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "thomas__bab17",
+        269556,
+        -0.1
+       ],
+       [
+        "thomas__bab08",
+        578603,
+        0.12
+       ],
+       [
+        "thomas__bab26",
+        1250207,
+        0.5
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_18",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t18",
+     "talker": "t18",
+     "level_db": 52.95,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "rishi__mtg01",
+        82825,
+        -0.8
+       ],
+       [
+        "rishi__mtg11",
+        515301,
+        -0.15
+       ],
+       [
+        "rishi__mtg07",
+        960445,
+        -0.55
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "talker_19",
+   "role": "talker",
+   "sources": [
+    {
+     "type": "point",
+     "src": "t19",
+     "talker": "t19",
+     "level_db": 54.9,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "tara__mtg05",
+        1556131,
+        0.83
+       ],
+       [
+        "tara__mtg12",
+        2365616,
+        0.59
+       ],
+       [
+        "tara__bus01",
+        2814844,
+        -0.59
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "hvac",
+   "role": "hvac",
+   "sources": [
+    {
+     "type": "diffuse",
+     "model": "sinc",
+     "level_db": 35.0,
+     "weighting": "A",
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        31.5,
+        0.0
+       ],
+       [
+        63.0,
+        -2.0
+       ],
+       [
+        125.0,
+        -5.0
+       ],
+       [
+        250.0,
+        -10.523
+       ],
+       [
+        500.0,
+        -16.046
+       ],
+       [
+        1000.0,
+        -21.569
+       ],
+       [
+        2000.0,
+        -27.092
+       ],
+       [
+        4000.0,
+        -32.615
+       ],
+       [
+        8000.0,
+        -38.138
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "fan",
+   "role": "fan",
+   "sources": [
+    {
+     "type": "point",
+     "src": "fan",
+     "level_db": 43.59,
+     "signal": {
+      "kind": "harmonic",
+      "f0": 120.0,
+      "f0_dev": 0.3,
+      "f0_rate": 0.02,
+      "n_harm": 12,
+      "rolloff": 0.961,
+      "noise_db": 0.86,
+      "noise_shape": [
+       [
+        100,
+        -12
+       ],
+       [
+        250,
+        0
+       ],
+       [
+        600,
+        -2
+       ],
+       [
+        1500,
+        -8
+       ],
+       [
+        4000,
+        -18
+       ],
+       [
+        8000,
+        -30
+       ]
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "meta": {
+  "speakers": {
+   "t00": "Tessa",
+   "t01": "Satu",
+   "t02": "Mónica",
+   "t03": "Aman",
+   "t04": "Anna",
+   "t05": "Xander",
+   "t06": "Alva",
+   "t07": "Daniel",
+   "t08": "Nora",
+   "t09": "Zosia",
+   "t10": "Sara",
+   "t11": "Ellen",
+   "t12": "Karen",
+   "t13": "Alice",
+   "t14": "Joana",
+   "t15": "Samantha",
+   "t16": "Moira",
+   "t17": "Thomas",
+   "t18": "Rishi",
+   "t19": "Tara"
+  },
+  "level_db": {
+   "t00": 65.64,
+   "t01": 60.39,
+   "t02": 59.12,
+   "t03": 62.27,
+   "t04": 59.6,
+   "t05": 60.41,
+   "t06": 64.7,
+   "t07": 65.87,
+   "t08": 63.08,
+   "t09": 62.84,
+   "t10": 59.42,
+   "t11": 61.0,
+   "t12": 62.42,
+   "t13": 57.72,
+   "t14": 65.99,
+   "t15": 65.1,
+   "t16": 62.29,
+   "t17": 60.93,
+   "t18": 52.95,
+   "t19": 54.9
+  },
+  "soft": [
+   "t18",
+   "t19"
+  ],
+  "hvac": {
+   "dba": 35.0,
+   "slope_db_oct": -5.523
+  },
+  "fan": {
+   "level_db": 43.59,
+   "f0": 120.0
+  },
+  "turns": [
+   [
+    "t01",
+    "turn",
+    2.0,
+    4.296,
+    [
+     "satu__bab21"
+    ]
+   ],
+   [
+    "t02",
+    "turn",
+    4.428,
+    6.275,
+    [
+     "m_nica__bab31"
+    ]
+   ],
+   [
+    "t18",
+    "interrupt",
+    5.177,
+    8.989,
+    [
+     "rishi__mtg01"
+    ]
+   ],
+   [
+    "t15",
+    "turn",
+    9.404,
+    12.715,
+    [
+     "samantha__mtg18"
+    ]
+   ],
+   [
+    "t01",
+    "interrupt",
+    11.552,
+    14.352,
+    [
+     "satu__bab24"
+    ]
+   ],
+   [
+    "t00",
+    "interrupt",
+    13.326,
+    17.645,
+    [
+     "tessa__mtg08"
+    ]
+   ],
+   [
+    "t17",
+    "interrupt",
+    16.847,
+    19.352,
+    [
+     "thomas__bab17"
+    ]
+   ],
+   [
+    "t09",
+    "turn",
+    19.63,
+    22.035,
+    [
+     "zosia__bab23"
+    ]
+   ],
+   [
+    "t11",
+    "turn",
+    22.861,
+    25.157,
+    [
+     "ellen__bab18"
+    ]
+   ],
+   [
+    "t13",
+    "interrupt",
+    24.739,
+    29.403,
+    [
+     "alice__bab09",
+     "alice__bab00"
+    ]
+   ],
+   [
+    "t14",
+    "backchannel",
+    25.751,
+    28.419,
+    [
+     "joana__bab20"
+    ]
+   ],
+   [
+    "t10",
+    "turn",
+    29.753,
+    32.019,
+    [
+     "sara__bab16"
+    ]
+   ],
+   [
+    "t18",
+    "turn",
+    32.206,
+    36.021,
+    [
+     "rishi__mtg11"
+    ]
+   ],
+   [
+    "t17",
+    "turn",
+    36.163,
+    38.008,
+    [
+     "thomas__bab08"
+    ]
+   ],
+   [
+    "t04",
+    "turn",
+    38.238,
+    40.665,
+    [
+     "anna__bab06"
+    ]
+   ],
+   [
+    "t16",
+    "turn",
+    40.984,
+    44.553,
+    [
+     "moira__mtg02"
+    ]
+   ],
+   [
+    "t02",
+    "turn",
+    44.731,
+    47.073,
+    [
+     "m_nica__bab02"
+    ]
+   ],
+   [
+    "t03",
+    "turn",
+    47.486,
+    50.492,
+    [
+     "aman__mtg17"
+    ]
+   ],
+   [
+    "t02",
+    "turn",
+    51.765,
+    55.94,
+    [
+     "m_nica__bab25",
+     "m_nica__bab28"
+    ]
+   ],
+   [
+    "t05",
+    "turn",
+    56.305,
+    58.441,
+    [
+     "xander__bab13"
+    ]
+   ],
+   [
+    "t18",
+    "turn",
+    60.028,
+    63.134,
+    [
+     "rishi__mtg07"
+    ]
+   ],
+   [
+    "t07",
+    "turn",
+    63.304,
+    67.693,
+    [
+     "daniel__mtg14"
+    ]
+   ],
+   [
+    "t00",
+    "turn",
+    67.921,
+    72.336,
+    [
+     "tessa__mtg19"
+    ]
+   ],
+   [
+    "t07",
+    "backchannel",
+    69.707,
+    71.553,
+    [
+     "daniel__bab28"
+    ]
+   ],
+   [
+    "t11",
+    "turn",
+    72.498,
+    74.488,
+    [
+     "ellen__bab04"
+    ]
+   ],
+   [
+    "t12",
+    "turn",
+    74.995,
+    78.023,
+    [
+     "karen__mtg10"
+    ]
+   ],
+   [
+    "t17",
+    "turn",
+    78.138,
+    80.094,
+    [
+     "thomas__bab26"
+    ]
+   ],
+   [
+    "t09",
+    "interrupt",
+    79.077,
+    81.186,
+    [
+     "zosia__bab20"
+    ]
+   ],
+   [
+    "t16",
+    "turn",
+    81.437,
+    84.474,
+    [
+     "moira__mtg03"
+    ]
+   ],
+   [
+    "t07",
+    "turn",
+    84.695,
+    88.445,
+    [
+     "daniel__mtg09"
+    ]
+   ],
+   [
+    "t00",
+    "turn",
+    89.168,
+    93.902,
+    [
+     "tessa__mtg13"
+    ]
+   ],
+   [
+    "t14",
+    "turn",
+    94.053,
+    96.833,
+    [
+     "joana__bab11"
+    ]
+   ],
+   [
+    "t19",
+    "turn",
+    97.258,
+    100.432,
+    [
+     "tara__mtg05"
+    ]
+   ],
+   [
+    "t16",
+    "backchannel",
+    97.811,
+    99.801,
+    [
+     "moira__bab18"
+    ]
+   ],
+   [
+    "t14",
+    "turn",
+    100.658,
+    103.271,
+    [
+     "joana__bab14"
+    ]
+   ],
+   [
+    "t16",
+    "turn",
+    103.578,
+    107.817,
+    [
+     "moira__mtg06"
+    ]
+   ],
+   [
+    "t14",
+    "backchannel",
+    104.2,
+    106.365,
+    [
+     "joana__bab23"
+    ]
+   ],
+   [
+    "t06",
+    "turn",
+    107.964,
+    111.001,
+    [
+     "alva__bab05"
+    ]
+   ],
+   [
+    "t15",
+    "turn",
+    111.424,
+    114.502,
+    [
+     "samantha__mtg16"
+    ]
+   ],
+   [
+    "t13",
+    "backchannel",
+    111.978,
+    114.016,
+    [
+     "alice__bab29"
+    ]
+   ],
+   [
+    "t03",
+    "turn",
+    114.613,
+    119.046,
+    [
+     "aman__mtg04"
+    ]
+   ],
+   [
+    "t04",
+    "turn",
+    119.616,
+    124.21,
+    [
+     "anna__bab12",
+     "anna__bab15"
+    ]
+   ],
+   [
+    "t05",
+    "turn",
+    124.384,
+    126.219,
+    [
+     "xander__bab22"
+    ]
+   ],
+   [
+    "t04",
+    "turn",
+    126.68,
+    128.482,
+    [
+     "anna__bab03"
+    ]
+   ],
+   [
+    "t12",
+    "turn",
+    128.778,
+    132.514,
+    [
+     "karen__mtg00"
+    ]
+   ],
+   [
+    "t10",
+    "turn",
+    133.244,
+    135.077,
+    [
+     "sara__bab01"
+    ]
+   ],
+   [
+    "t05",
+    "turn",
+    135.544,
+    137.427,
+    [
+     "xander__bab19"
+    ]
+   ],
+   [
+    "t06",
+    "turn",
+    137.709,
+    140.99,
+    [
+     "alva__bab14"
+    ]
+   ],
+   [
+    "t09",
+    "turn",
+    141.09,
+    143.407,
+    [
+     "zosia__bab29"
+    ]
+   ],
+   [
+    "t13",
+    "turn",
+    143.653,
+    145.768,
+    [
+     "alice__bab23"
+    ]
+   ],
+   [
+    "t11",
+    "turn",
+    146.18,
+    147.629,
+    [
+     "ellen__bab07"
+    ]
+   ],
+   [
+    "t19",
+    "turn",
+    147.851,
+    151.369,
+    [
+     "tara__mtg12"
+    ]
+   ],
+   [
+    "t07",
+    "interrupt",
+    150.952,
+    154.627,
+    [
+     "daniel__mtg15"
+    ]
+   ],
+   [
+    "t14",
+    "turn",
+    155.423,
+    158.419,
+    [
+     "joana__bab17"
+    ]
+   ],
+   [
+    "t03",
+    "backchannel",
+    156.067,
+    156.786,
+    [
+     "aman__bus21"
+    ]
+   ],
+   [
+    "t01",
+    "turn",
+    158.581,
+    161.168,
+    [
+     "satu__bab27"
+    ]
+   ],
+   [
+    "t08",
+    "turn",
+    161.636,
+    163.718,
+    [
+     "nora__bab03"
+    ]
+   ],
+   [
+    "t15",
+    "turn",
+    163.952,
+    166.918,
+    [
+     "samantha__bus02"
+    ]
+   ],
+   [
+    "t06",
+    "turn",
+    167.053,
+    169.783,
+    [
+     "alva__bab11"
+    ]
+   ],
+   [
+    "t12",
+    "turn",
+    170.247,
+    172.301,
+    [
+     "karen__bus04"
+    ]
+   ],
+   [
+    "t08",
+    "turn",
+    172.699,
+    175.749,
+    [
+     "nora__bab06"
+    ]
+   ],
+   [
+    "t19",
+    "turn",
+    175.928,
+    180.176,
+    [
+     "tara__bus01"
+    ]
+   ],
+   [
+    "t08",
+    "turn",
+    180.427,
+    182.711,
+    [
+     "nora__bab26"
+    ]
+   ],
+   [
+    "t10",
+    "turn",
+    182.836,
+    187.233,
+    [
+     "sara__bab10",
+     "sara__bab04"
+    ]
+   ],
+   [
+    "t03",
+    "turn",
+    187.414,
+    192.823,
+    [
+     "aman__bus00",
+     "aman__bus07"
+    ]
+   ],
+   [
+    "t06",
+    "backchannel",
+    187.784,
+    190.605,
+    [
+     "alva__bab31"
+    ]
+   ],
+   [
+    "t13",
+    "interrupt",
+    191.774,
+    193.222,
+    [
+     "alice__bab20"
+    ]
+   ]
+  ],
+  "n_turns": {
+   "t00": 3,
+   "t01": 3,
+   "t02": 3,
+   "t03": 3,
+   "t04": 3,
+   "t05": 3,
+   "t06": 3,
+   "t07": 3,
+   "t08": 3,
+   "t09": 3,
+   "t10": 3,
+   "t11": 3,
+   "t12": 3,
+   "t13": 3,
+   "t14": 3,
+   "t15": 3,
+   "t16": 3,
+   "t17": 3,
+   "t18": 3,
+   "t19": 3
+  },
+  "n_interrupts": 8,
+  "n_backchannels": 7,
+  "overlap_ratio": 0.1227,
+  "text_repeats": 15
+ },
+ "scene_id": "test/meeting_r19",
+ "set": "test",
+ "geom_id": "meeting_test_r19",
+ "scenario": "meeting",
+ "corpus": "tts",
+ "variant": {
+  "seed": 430019,
+  "hvac_dba": 35.0,
+  "target_s": 180.0,
+  "min_turns": 3
+ }
+}

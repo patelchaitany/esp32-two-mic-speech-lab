@@ -1,0 +1,1174 @@
+{
+ "n_samples": 384000,
+ "seed": 932272209,
+ "impair": {
+  "gain_db": [
+   -0.374,
+   -0.9905
+  ],
+  "hp_hz": [
+   59.516,
+   65.089
+  ],
+  "skew_us": 31.25
+ },
+ "sensor_dba": 33.0,
+ "groups": [
+  {
+   "name": "partner_A",
+   "role": "partner",
+   "sources": [
+    {
+     "type": "point",
+     "src": "pA",
+     "level_db": 71.28,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "tara__bus08",
+        26674,
+        0.0
+       ],
+       [
+        "tara__bus02",
+        146441,
+        -0.13
+       ],
+       [
+        "tara__bus17",
+        175924,
+        0.02
+       ],
+       [
+        "tara__bus10",
+        340851,
+        1.08
+       ]
+      ]
+     },
+     "talker": "pA"
+    }
+   ]
+  },
+  {
+   "name": "partner_B",
+   "role": "partner",
+   "sources": [
+    {
+     "type": "point",
+     "src": "pB",
+     "level_db": 70.16,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "rishi__bus11",
+        76798,
+        1.2
+       ],
+       [
+        "rishi__bus05",
+        280840,
+        1.33
+       ]
+      ]
+     },
+     "talker": "pB"
+    }
+   ]
+  },
+  {
+   "name": "near_1",
+   "role": "passenger_near",
+   "sources": [
+    {
+     "type": "point",
+     "src": "n1",
+     "level_db": 63.79,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "damayanti__bab28",
+        652,
+        0.7
+       ],
+       [
+        "damayanti__bab14",
+        41274,
+        1.26
+       ],
+       [
+        "damayanti__bab05",
+        222402,
+        -1.4
+       ],
+       [
+        "damayanti__bab02",
+        272157,
+        0.94
+       ]
+      ]
+     },
+     "talker": "n1"
+    }
+   ]
+  },
+  {
+   "name": "near_2",
+   "role": "passenger_near",
+   "sources": [
+    {
+     "type": "point",
+     "src": "n2",
+     "level_db": 65.99,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "yelda__bab01",
+        20362,
+        -1.31
+       ],
+       [
+        "yelda__bab24",
+        57313,
+        0.32
+       ],
+       [
+        "yelda__bab10",
+        179705,
+        0.97
+       ],
+       [
+        "yelda__bab04",
+        249302,
+        0.36
+       ],
+       [
+        "yelda__bab27",
+        291585,
+        1.4
+       ]
+      ]
+     },
+     "talker": "n2"
+    }
+   ]
+  },
+  {
+   "name": "near_3",
+   "role": "passenger_near",
+   "sources": [
+    {
+     "type": "point",
+     "src": "n3",
+     "level_db": 69.66,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "milena__bab31",
+        18602,
+        -1.12
+       ],
+       [
+        "milena__bab25",
+        138834,
+        1.48
+       ],
+       [
+        "milena__bab19",
+        177877,
+        -0.5
+       ],
+       [
+        "milena__bab22",
+        213375,
+        -1.42
+       ],
+       [
+        "milena__bab02",
+        358206,
+        0.41
+       ]
+      ]
+     },
+     "talker": "n3"
+    }
+   ]
+  },
+  {
+   "name": "cone",
+   "role": "passenger_cone",
+   "sources": [
+    {
+     "type": "point",
+     "src": "cone",
+     "level_db": 68.04,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "amira__bab19",
+        22517,
+        -1.0
+       ],
+       [
+        "amira__bab01",
+        58652,
+        -0.32
+       ],
+       [
+        "amira__bab04",
+        314477,
+        0.6
+       ],
+       [
+        "amira__bab07",
+        353524,
+        -0.37
+       ]
+      ]
+     },
+     "talker": "cone"
+    }
+   ]
+  },
+  {
+   "name": "conv_1",
+   "role": "conv_pair",
+   "sources": [
+    {
+     "type": "point",
+     "src": "c1a",
+     "level_db": 63.31,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "meijia__bab17",
+        54193,
+        0.59
+       ],
+       [
+        "meijia__bab11",
+        152085,
+        -0.57
+       ],
+       [
+        "meijia__bab26",
+        238209,
+        0.02
+       ],
+       [
+        "meijia__bab23",
+        340587,
+        -1.4
+       ]
+      ]
+     },
+     "talker": "c1a"
+    },
+    {
+     "type": "point",
+     "src": "c1b",
+     "level_db": 68.06,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "lekha__bab00",
+        12013,
+        0.79
+       ],
+       [
+        "lekha__bab26",
+        113734,
+        0.28
+       ],
+       [
+        "lekha__bab23",
+        214064,
+        -1.47
+       ],
+       [
+        "lekha__bab17",
+        283717,
+        1.46
+       ]
+      ]
+     },
+     "talker": "c1b"
+    }
+   ]
+  },
+  {
+   "name": "conv_2",
+   "role": "conv_pair",
+   "sources": [
+    {
+     "type": "point",
+     "src": "c2a",
+     "level_db": 63.68,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "tingting__bab09",
+        61659,
+        1.08
+       ],
+       [
+        "tingting__bab06",
+        104516,
+        1.29
+       ],
+       [
+        "tingting__bab18",
+        198612,
+        -1.2
+       ],
+       [
+        "tingting__bab21",
+        303584,
+        -1.0
+       ],
+       [
+        "tingting__bab15",
+        345032,
+        0.57
+       ]
+      ]
+     },
+     "talker": "c2a"
+    },
+    {
+     "type": "point",
+     "src": "c2b",
+     "level_db": 65.0,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "kyoko__bab25",
+        29298,
+        -0.15
+       ],
+       [
+        "kyoko__bab05",
+        145279,
+        0.2
+       ],
+       [
+        "kyoko__bab02",
+        237810,
+        1.13
+       ]
+      ]
+     },
+     "talker": "c2b"
+    }
+   ]
+  },
+  {
+   "name": "babble_far",
+   "role": "babble_far",
+   "sources": [
+    {
+     "type": "point",
+     "src": "f01",
+     "level_db": 67.44,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "lana__bab00",
+        14165,
+        -0.2
+       ],
+       [
+        "lana__bab23",
+        56437,
+        0.36
+       ],
+       [
+        "lana__bab03",
+        369138,
+        -0.9
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f02",
+     "level_db": 67.62,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "tina__bab18",
+        47457,
+        -1.11
+       ],
+       [
+        "tina__bab12",
+        235437,
+        -1.36
+       ],
+       [
+        "tina__bab21",
+        272284,
+        -1.28
+       ],
+       [
+        "tina__bab27",
+        308680,
+        -1.03
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f03",
+     "level_db": 64.03,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "kanya__bab23",
+        41375,
+        -0.49
+       ],
+       [
+        "kanya__bab00",
+        77471,
+        -1.22
+       ],
+       [
+        "kanya__bab26",
+        131834,
+        1.29
+       ],
+       [
+        "kanya__bab03",
+        278432,
+        0.79
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f04",
+     "level_db": 67.01,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "am_lie__bab18",
+        13703,
+        -1.31
+       ],
+       [
+        "am_lie__bab21",
+        71277,
+        0.84
+       ],
+       [
+        "am_lie__bab30",
+        104816,
+        -0.91
+       ],
+       [
+        "am_lie__bab15",
+        204919,
+        1.15
+       ],
+       [
+        "am_lie__bab27",
+        270767,
+        -0.91
+       ],
+       [
+        "am_lie__bab04",
+        311349,
+        -1.03
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f05",
+     "level_db": 69.65,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "luciana__bab06",
+        11460,
+        -0.27
+       ],
+       [
+        "luciana__bab12",
+        67160,
+        0.45
+       ],
+       [
+        "luciana__bab24",
+        204626,
+        -0.12
+       ],
+       [
+        "luciana__bab03",
+        255288,
+        0.39
+       ],
+       [
+        "luciana__bab09",
+        293971,
+        -1.11
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f06",
+     "level_db": 69.67,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "ona__bab13",
+        15543,
+        1.46
+       ],
+       [
+        "ona__bab19",
+        347517,
+        0.74
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f07",
+     "level_db": 69.27,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "zuzana__bab13",
+        34509,
+        -0.37
+       ],
+       [
+        "zuzana__bab24",
+        76382,
+        1.48
+       ],
+       [
+        "zuzana__bab07",
+        257032,
+        0.53
+       ],
+       [
+        "zuzana__bab10",
+        293083,
+        1.43
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f08",
+     "level_db": 65.81,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "linh__bab01",
+        29211,
+        -1.25
+       ],
+       [
+        "linh__bab27",
+        69615,
+        0.83
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f09",
+     "level_db": 71.45,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "carmit__bab27",
+        31270,
+        0.56
+       ],
+       [
+        "carmit__bab18",
+        99003,
+        0.67
+       ],
+       [
+        "carmit__bab30",
+        193309,
+        0.55
+       ],
+       [
+        "carmit__bab24",
+        238847,
+        -0.77
+       ],
+       [
+        "carmit__bab01",
+        282619,
+        -0.46
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f10",
+     "level_db": 66.27,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "paulina__bab01",
+        3524,
+        1.43
+       ],
+       [
+        "paulina__bab13",
+        87413,
+        0.22
+       ],
+       [
+        "paulina__bab16",
+        192459,
+        0.31
+       ],
+       [
+        "paulina__bab10",
+        234720,
+        -0.28
+       ],
+       [
+        "paulina__bab07",
+        272713,
+        -1.25
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "f11",
+     "level_db": 71.8,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "laura__bab16",
+        47260,
+        1.31
+       ],
+       [
+        "laura__bab04",
+        240811,
+        1.19
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "engine_road",
+   "role": "engine_road",
+   "sources": [
+    {
+     "type": "point",
+     "src": "engine",
+     "level_db": 67.79,
+     "weighting": "A",
+     "signal": {
+      "kind": "harmonic",
+      "n_harm": 40,
+      "noise_db": -6.0,
+      "noise_shape": [
+       [
+        15,
+        -20
+       ],
+       [
+        35,
+        0
+       ],
+       [
+        150,
+        -2
+       ],
+       [
+        400,
+        -12
+       ],
+       [
+        1500,
+        -30
+       ],
+       [
+        8000,
+        -50
+       ]
+      ],
+      "f0": 37.45,
+      "f0_dev": 4.36,
+      "f0_rate": 0.06,
+      "rolloff": 0.903
+     }
+    },
+    {
+     "type": "point",
+     "src": "wheel_fl",
+     "level_db": 63.44,
+     "weighting": "A",
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        15,
+        -20
+       ],
+       [
+        35,
+        0
+       ],
+       [
+        100,
+        0
+       ],
+       [
+        300,
+        -3
+       ],
+       [
+        700,
+        -4
+       ],
+       [
+        1200,
+        -8
+       ],
+       [
+        2500,
+        -18
+       ],
+       [
+        5000,
+        -30
+       ],
+       [
+        8000,
+        -40
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "wheel_fr",
+     "level_db": 64.2,
+     "weighting": "A",
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        15,
+        -20
+       ],
+       [
+        35,
+        0
+       ],
+       [
+        100,
+        0
+       ],
+       [
+        300,
+        -3
+       ],
+       [
+        700,
+        -4
+       ],
+       [
+        1200,
+        -8
+       ],
+       [
+        2500,
+        -18
+       ],
+       [
+        5000,
+        -30
+       ],
+       [
+        8000,
+        -40
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "wheel_rl",
+     "level_db": 62.33,
+     "weighting": "A",
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        15,
+        -20
+       ],
+       [
+        35,
+        0
+       ],
+       [
+        100,
+        0
+       ],
+       [
+        300,
+        -3
+       ],
+       [
+        700,
+        -4
+       ],
+       [
+        1200,
+        -8
+       ],
+       [
+        2500,
+        -18
+       ],
+       [
+        5000,
+        -30
+       ],
+       [
+        8000,
+        -40
+       ]
+      ]
+     }
+    },
+    {
+     "type": "point",
+     "src": "wheel_rr",
+     "level_db": 63.81,
+     "weighting": "A",
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        15,
+        -20
+       ],
+       [
+        35,
+        0
+       ],
+       [
+        100,
+        0
+       ],
+       [
+        300,
+        -3
+       ],
+       [
+        700,
+        -4
+       ],
+       [
+        1200,
+        -8
+       ],
+       [
+        2500,
+        -18
+       ],
+       [
+        5000,
+        -30
+       ],
+       [
+        8000,
+        -40
+       ]
+      ]
+     }
+    },
+    {
+     "type": "diffuse",
+     "model": "j0",
+     "level_db": 62.46,
+     "weighting": "A",
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        30,
+        0
+       ],
+       [
+        80,
+        -2
+       ],
+       [
+        200,
+        -8
+       ],
+       [
+        500,
+        -14
+       ],
+       [
+        1000,
+        -20
+       ],
+       [
+        3000,
+        -32
+       ],
+       [
+        8000,
+        -45
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "transient",
+   "role": "transient",
+   "sources": [
+    {
+     "type": "point",
+     "src": "door_front",
+     "level_db": 98.52,
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        15,
+        -20
+       ],
+       [
+        40,
+        0
+       ],
+       [
+        150,
+        0
+       ],
+       [
+        400,
+        -12
+       ],
+       [
+        1500,
+        -30
+       ],
+       [
+        8000,
+        -50
+       ]
+      ],
+      "bursts": [
+       [
+        60216,
+        2884,
+        0.0
+       ]
+      ],
+      "env": "decay"
+     }
+    },
+    {
+     "type": "point",
+     "src": "wheel_rr",
+     "level_db": 89.58,
+     "signal": {
+      "kind": "harmonic",
+      "f0": 3190.8,
+      "n_harm": 3,
+      "rolloff": 1.5,
+      "bursts": [
+       [
+        182004,
+        7360,
+        0.0
+       ]
+      ],
+      "env": "gate"
+     }
+    }
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "type": "snr",
+   "target": [
+    "partner_A",
+    "partner_B"
+   ],
+   "noise": [
+    "near_1",
+    "near_2",
+    "near_3",
+    "cone",
+    "conv_1",
+    "conv_2",
+    "babble_far",
+    "engine_road"
+   ],
+   "snr_db": 5.0,
+   "scale": "noise"
+  }
+ ],
+ "meta": {
+  "speakers": {
+   "pA": "Tara",
+   "pB": "Rishi",
+   "n1": "Damayanti",
+   "n2": "Yelda",
+   "n3": "Milena",
+   "cone": "Amira",
+   "c1a": "Meijia",
+   "c1b": "Lekha",
+   "c2a": "Tingting",
+   "c2b": "Kyoko",
+   "f01": "Lana",
+   "f02": "Tina",
+   "f03": "Kanya",
+   "f04": "Amélie",
+   "f05": "Luciana",
+   "f06": "Ona",
+   "f07": "Zuzana",
+   "f08": "Linh",
+   "f09": "Carmit",
+   "f10": "Paulina",
+   "f11": "Laura"
+  },
+  "lombard_db": {
+   "pA": 71.28,
+   "pB": 70.16,
+   "n1": 63.79,
+   "n2": 65.99,
+   "n3": 69.66,
+   "cone": 68.04,
+   "c1a": 63.31,
+   "c1b": 68.06,
+   "c2a": 63.68,
+   "c2b": 65.0,
+   "f01": 67.44,
+   "f02": 67.62,
+   "f03": 64.03,
+   "f04": 67.01,
+   "f05": 69.65,
+   "f06": 69.67,
+   "f07": 69.27,
+   "f08": 65.81,
+   "f09": 71.45,
+   "f10": 66.27,
+   "f11": 71.8
+  },
+  "activity": {
+   "n1": 0.321,
+   "n2": 0.476,
+   "n3": 0.388,
+   "cone": 0.312,
+   "f01": 0.235,
+   "f02": 0.2,
+   "f03": 0.396,
+   "f04": 0.447,
+   "f05": 0.488,
+   "f06": 0.163,
+   "f07": 0.447,
+   "f08": 0.265,
+   "f09": 0.431,
+   "f10": 0.372,
+   "f11": 0.275
+  },
+  "lead_in_s": 1.5,
+  "engine": {
+   "f0": 37.45,
+   "f0_dev": 4.36,
+   "f0_rate": 0.06,
+   "rolloff": 0.903,
+   "level_dba": 67.79
+  },
+  "wheel_dba": [
+   63.44,
+   64.2,
+   62.33,
+   63.81
+  ],
+  "road_dba": 62.46,
+  "transients": [
+   {
+    "kind": "door_thump",
+    "src": "door_front",
+    "start": 60216,
+    "length": 2884,
+    "lfmax_target_db": 87.22,
+    "capped": false
+   },
+   {
+    "kind": "brake_squeal",
+    "src": "wheel_rr",
+    "start": 182004,
+    "length": 7360,
+    "lfmax_target_db": 87.62,
+    "capped": false
+   }
+  ],
+  "handling": null,
+  "recorded": null
+ },
+ "scene_id": "test/bus_g04_snr+5",
+ "set": "test",
+ "geom_id": "bus_test_g04",
+ "scenario": "bus",
+ "corpus": "tts",
+ "variant": {
+  "seed": 20004,
+  "snr_db": 5.0,
+  "seconds": 24.0
+ }
+}

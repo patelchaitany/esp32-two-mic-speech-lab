@@ -1,0 +1,57 @@
+<svg viewBox="0 0 720 230" role="img" aria-label="Skew estimates through the night: about -1.12 samples in the first boot, then -0.98 to -1.04 after the resets">
+<rect class="band1" x="139.8" y="18.0" width="562.2" height="130.2"/>
+<path class="grid" d="M58 190.0 H702"/><text x="50" y="194.0" text-anchor="end">−1.15</text>
+<path class="grid" d="M58 147.0 H702"/><text x="50" y="151.0" text-anchor="end">−1.10</text>
+<path class="grid" d="M58 104.0 H702"/><text x="50" y="108.0" text-anchor="end">−1.05</text>
+<path class="grid" d="M58 61.0 H702"/><text x="50" y="65.0" text-anchor="end">−1.00</text>
+<path class="grid" d="M58 18.0 H702"/><text x="50" y="22.0" text-anchor="end">−0.95</text>
+<path class="axis" d="M150.0 190 v5"/><text x="150.0" y="208" text-anchor="middle">02:00</text>
+<path class="axis" d="M272.7 190 v5"/><text x="272.7" y="208" text-anchor="middle">03:00</text>
+<path class="axis" d="M395.3 190 v5"/><text x="395.3" y="208" text-anchor="middle">04:00</text>
+<path class="axis" d="M518.0 190 v5"/><text x="518.0" y="208" text-anchor="middle">05:00</text>
+<path class="axis" d="M640.7 190 v5"/><text x="640.7" y="208" text-anchor="middle">06:00</text>
+<path class="axis" d="M58 190 H702"/>
+<path class="lgrey" d="M131.6 18 V190"/><text x="136.6" y="28">8 resets</text>
+<circle class="copper" cx="66.1" cy="164.1" r="4.5"/>
+<circle class="copper" cx="128.4" cy="166.0" r="4.5"/>
+<circle class="mask" cx="162.0" cy="64.2" r="3.5"/>
+<circle class="mask" cx="182.4" cy="67.9" r="3.5"/>
+<circle class="mask" cx="202.9" cy="65.0" r="3.5"/>
+<circle class="mask" cx="223.3" cy="78.3" r="3.5"/>
+<circle class="mask" cx="243.8" cy="81.7" r="3.5"/>
+<circle class="mask" cx="264.2" cy="56.4" r="3.5"/>
+<circle class="mask" cx="284.7" cy="42.9" r="3.5"/>
+<circle class="mask" cx="305.1" cy="52.7" r="3.5"/>
+<circle class="mask" cx="325.5" cy="54.4" r="3.5"/>
+<circle class="mask" cx="346.0" cy="58.9" r="3.5"/>
+<circle class="mask" cx="366.4" cy="73.6" r="3.5"/>
+<circle class="mask" cx="386.9" cy="80.2" r="3.5"/>
+<circle class="mask" cx="407.3" cy="82.0" r="3.5"/>
+<circle class="mask" cx="427.8" cy="54.3" r="3.5"/>
+<circle class="mask" cx="448.2" cy="76.8" r="3.5"/>
+<circle class="mask" cx="468.7" cy="80.8" r="3.5"/>
+<circle class="mask" cx="489.1" cy="86.4" r="3.5"/>
+<circle class="mask" cx="509.5" cy="82.2" r="3.5"/>
+<circle class="mask" cx="530.0" cy="81.9" r="3.5"/>
+<circle class="mask" cx="550.4" cy="84.9" r="3.5"/>
+<circle class="mask" cx="570.9" cy="80.3" r="3.5"/>
+<circle class="mask" cx="591.3" cy="85.5" r="3.5"/>
+<circle class="mask" cx="611.8" cy="79.9" r="3.5"/>
+<circle class="mask" cx="632.2" cy="80.1" r="3.5"/>
+<circle class="mask" cx="652.7" cy="77.9" r="3.5"/>
+<circle class="mask" cx="673.1" cy="88.7" r="3.5"/>
+<circle class="mask" cx="693.5" cy="79.4" r="3.5"/>
+<circle class="ink" cx="132.4" cy="94.1" r="3"/>
+<circle class="ink" cx="133.4" cy="84.9" r="3"/>
+<circle class="ink" cx="134.4" cy="78.1" r="3"/>
+<circle class="ink" cx="135.4" cy="77.9" r="3"/>
+<circle class="ink" cx="136.4" cy="79.6" r="3"/>
+<circle class="ink" cx="137.4" cy="77.9" r="3"/>
+<circle class="ink" cx="138.3" cy="77.3" r="3"/>
+<circle class="ink" cx="139.4" cy="79.1" r="3"/>
+<circle class="ink" cx="150.9" cy="75.2" r="3"/>
+<circle class="ink" cx="326.8" cy="70.7" r="3"/>
+<text x="64.1" y="154.2" class="t-copper">first boot</text>
+<text x="693.8" y="142.2" class="t-mask" text-anchor="end">band: ±5 µs residual target around the median</text>
+<text x="14" y="104.0" transform="rotate(-90 14 104.0)" text-anchor="middle">skew (samples)</text>
+</svg>

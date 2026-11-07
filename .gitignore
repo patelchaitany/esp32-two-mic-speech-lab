@@ -1,0 +1,35 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Downloaded datasets and models (see speech_lab/DATA.md to fetch them)
+speech_lab/data/
+speech_lab/models/
+
+# Audio and arrays: too large for git. The report's listening clips are kept.
+*.wav
+!speech_lab/report_page/audio/*.wav
+*.npz
+*.npy
+*.flac
+*.onnx
+*.gz
+
+# Run logs
+*.log
+*.out
+*.err
+
+# Personal recording
+/voice.wav
+
+# Scratch and earlier-bench outputs (reproducible; kept out to stay small)
+speech_lab/tmp/*
+!speech_lab/tmp/final_eval/
+!speech_lab/tmp/night_realrun/
+speech_lab/results/
+speech_lab/results2/
+speech_lab/scenes/
+speech_lab/report/

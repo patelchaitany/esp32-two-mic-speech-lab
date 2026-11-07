@@ -1,0 +1,207 @@
+{
+ "n_samples": 160000,
+ "seed": 1572559678,
+ "impair": {
+  "gain_db": [
+   -0.9399,
+   -0.6335
+  ],
+  "hp_hz": [
+   50.324,
+   79.114
+  ],
+  "skew_us": 31.25
+ },
+ "sensor_dba": 33.0,
+ "groups": [
+  {
+   "name": "partner_A",
+   "role": "partner",
+   "sources": [
+    {
+     "type": "point",
+     "src": "pA",
+     "talker": "pA",
+     "level_db": 68.0,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "tara__bus08",
+        4800,
+        0.0
+       ],
+       [
+        "tara__bus09",
+        88476,
+        0.0
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "partner_B",
+   "role": "partner",
+   "sources": [
+    {
+     "type": "point",
+     "src": "pB",
+     "talker": "pB",
+     "level_db": 68.0,
+     "signal": {
+      "kind": "speech",
+      "events": [
+       [
+        "karen__bab13",
+        51743,
+        0.0
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "engine_road",
+   "role": "engine_road",
+   "sources": [
+    {
+     "type": "point",
+     "src": "engine",
+     "level_db": 80.0,
+     "signal": {
+      "kind": "harmonic",
+      "f0": 39.666661105495926,
+      "f0_dev": 4.0,
+      "f0_rate": 0.05,
+      "n_harm": 24,
+      "noise_db": -3.0,
+      "noise_shape": [
+       [
+        50,
+        0
+       ],
+       [
+        300,
+        -3
+       ],
+       [
+        600,
+        -30
+       ]
+      ]
+     }
+    },
+    {
+     "type": "diffuse",
+     "model": "sinc",
+     "level_db": 68.0,
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        40,
+        0
+       ],
+       [
+        100,
+        -6
+       ],
+       [
+        400,
+        -10
+       ],
+       [
+        800,
+        -10
+       ],
+       [
+        2000,
+        -22
+       ],
+       [
+        8000,
+        -40
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "handling",
+   "role": "handling",
+   "sources": [
+    {
+     "type": "uncorrelated",
+     "level_db": 70.0,
+     "signal": {
+      "kind": "noise",
+      "shape": [
+       [
+        20,
+        0
+       ],
+       [
+        400,
+        0
+       ],
+       [
+        700,
+        -40
+       ]
+      ],
+      "bursts": [
+       [
+        131720,
+        856,
+        -1.5401555138182859
+       ],
+       [
+        38150,
+        2589,
+        -5.242582891451478
+       ],
+       [
+        102482,
+        800,
+        -5.727302409556389
+       ]
+      ],
+      "env": "gate"
+     }
+    }
+   ]
+  }
+ ],
+ "rules": [
+  {
+   "type": "snr",
+   "target": [
+    "partner_A",
+    "partner_B"
+   ],
+   "noise": [
+    "engine_road"
+   ],
+   "snr_db": 0.0
+  }
+ ],
+ "meta": {
+  "speakers": [
+   "Tara",
+   "Karen"
+  ]
+ },
+ "scene_id": "demo/bus3_snr+0",
+ "set": "demo",
+ "geom_id": "demo_bus3_synthetic",
+ "scenario": "bus",
+ "corpus": "tts",
+ "variant": {
+  "seed": 3,
+  "snr_db": 0.0
+ }
+}

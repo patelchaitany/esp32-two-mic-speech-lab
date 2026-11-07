@@ -1,0 +1,584 @@
+{
+ "bus/L1_snr+0_recorded": {
+  "avg": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2511787414550781
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.06676483154296875
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.0163726806640625
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": 0.019134521484375
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.01776885986328125
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.001621246337890625
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.0814056396484375,
+    "dL_gap": -0.04949188232421875
+   }
+  },
+  "broadside": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2511787414550781
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.06676483154296875
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.0163726806640625
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": 0.019134521484375
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.01776885986328125
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.001621246337890625
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.0814056396484375,
+    "dL_gap": -0.04949188232421875
+   }
+  },
+  "endfire@0.5": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": 0.8552017211914062
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": 0.2399749755859375
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -2.461456298828125
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -0.9584465026855469
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.4004859924316406
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.7603492736816406
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -1.5490646362304688,
+    "dL_gap": -1.6948928833007812
+   }
+  },
+  "endfire": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.6327171325683594
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -1.0998992919921875
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -4.358402252197266
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -2.259857177734375
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -1.26422119140625
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -2.2118568420410156
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -3.4364089965820312,
+    "dL_gap": -3.6094322204589844
+   }
+  }
+ },
+ "bus/L1_snr+0_quiet": {
+  "avg": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2538185119628906
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.06943893432617188
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.019073486328125
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": 0.016448974609375
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.02044677734375
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.004302978515625
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.08411407470703125,
+    "dL_gap": -0.052211761474609375
+   }
+  },
+  "broadside": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2538185119628906
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.06943893432617188
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.019073486328125
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": 0.016448974609375
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.02044677734375
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.004302978515625
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.08411407470703125,
+    "dL_gap": -0.052211761474609375
+   }
+  },
+  "endfire@0.5": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": 0.9090957641601562
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": 0.2934913635253906
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -2.6452598571777344
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -1.0760345458984375
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.4787330627441406
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.8973579406738281
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -1.4457054138183594,
+    "dL_gap": -1.5419425964355469
+   }
+  },
+  "endfire": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.6209793090820312
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -1.0290107727050781
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -4.470466613769531
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -2.4265365600585938
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -1.4358062744140625
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -2.2647247314453125
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -3.0090789794921875,
+    "dL_gap": -2.9109954833984375
+   }
+  }
+ },
+ "bus/L1_snr-5_recorded": {
+  "avg": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2704429626464844
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.08629608154296875
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.036052703857421875
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -0.00048065185546875
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.037296295166015625
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.02117156982421875
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.10118484497070312,
+    "dL_gap": -0.06937408447265625
+   }
+  },
+  "broadside": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2704429626464844
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.08629608154296875
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.036052703857421875
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -0.00048065185546875
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.037296295166015625
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.02117156982421875
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.10118484497070312,
+    "dL_gap": -0.06937408447265625
+   }
+  },
+  "endfire@0.5": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": 0.8620338439941406
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": 0.24065017700195312
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -2.5430984497070312
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -1.0232620239257812
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.4587440490722656
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.8270759582519531
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -1.5407218933105469,
+    "dL_gap": -1.6725883483886719
+   }
+  },
+  "endfire": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.6476974487304688
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -1.0813865661621094
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -4.412883758544922
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -2.357524871826172
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -1.3935966491699219
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -2.2607765197753906
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -3.2391433715820312,
+    "dL_gap": -3.250934600830078
+   }
+  }
+ },
+ "bus/L1_snr+5_quiet": {
+  "avg": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2593231201171875
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.07501983642578125
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.02469635009765625
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": 0.01084136962890625
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.026027679443359375
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.009891510009765625
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.08976364135742188,
+    "dL_gap": -0.057895660400390625
+   }
+  },
+  "broadside": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.2593231201171875
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -0.07501983642578125
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -0.02469635009765625
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": 0.01084136962890625
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.026027679443359375
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.009891510009765625
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -0.08976364135742188,
+    "dL_gap": -0.057895660400390625
+   }
+  },
+  "endfire@0.5": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": 0.8981170654296875
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": 0.24694442749023438
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -2.6246566772460938
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -1.0694389343261719
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -0.44051361083984375
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -0.9041519165039062
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -1.5027198791503906,
+    "dL_gap": -1.6396942138671875
+   }
+  },
+  "endfire": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.6237449645996094
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -1.1055107116699219
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -4.397617340087891
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -2.3505783081054688
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -1.2584991455078125
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -2.2370147705078125
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -3.346691131591797,
+    "dL_gap": -3.44378662109375
+   }
+  }
+ },
+ "bus/L2_snr+0_recorded": {
+  "endfire": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.6160507202148438
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -1.0703201293945312
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -1.2702293395996094
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -2.1179122924804688
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -2.642261505126953
+   },
+   "near_4": {
+    "role": "passenger_near",
+    "dL_act": -4.417808532714844
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -2.5747756958007812
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -3.3561325073242188,
+    "dL_gap": -3.483722686767578
+   }
+  }
+ },
+ "bus/L3_snr+0_recorded": {
+  "endfire": {
+   "partner_A": {
+    "role": "partner",
+    "dL_act": -0.6203346252441406
+   },
+   "partner_B": {
+    "role": "partner",
+    "dL_act": -1.0787315368652344
+   },
+   "near_1": {
+    "role": "passenger_near",
+    "dL_act": -4.874691009521484
+   },
+   "near_2": {
+    "role": "passenger_near",
+    "dL_act": -3.0444908142089844
+   },
+   "near_3": {
+    "role": "passenger_near",
+    "dL_act": -1.2776031494140625
+   },
+   "near_4": {
+    "role": "passenger_near",
+    "dL_act": -1.2042236328125
+   },
+   "near_5": {
+    "role": "passenger_near",
+    "dL_act": -4.551204681396484
+   },
+   "bus_noise": {
+    "role": "engine_road",
+    "dL_act": -2.4095458984375
+   },
+   "device": {
+    "role": "device_noise",
+    "dL_act": -3.354267120361328,
+    "dL_gap": -3.47479248046875
+   }
+  }
+ }
+}

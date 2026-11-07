@@ -1,0 +1,102 @@
+[
+ {
+  "sweep": "ESS 50-7800 Hz, 3.0 s, -10 dBFS",
+  "plays": "left speaker",
+  "name": "sweep_L",
+  "lead_s": 0.25,
+  "sound_s": 3.0,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -10.0
+ },
+ {
+  "sweep": "ESS 50-7800 Hz, 3.0 s, -10 dBFS",
+  "plays": "right speaker",
+  "name": "sweep_R",
+  "lead_s": 0.25,
+  "sound_s": 3.0,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -10.0
+ },
+ {
+  "speaker": "121",
+  "utt": "121-121726-0010",
+  "active_frac": 0.857,
+  "plays": "talker A on left",
+  "name": "talkA_L",
+  "lead_s": 0.25,
+  "sound_s": 4.2,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -6.0
+ },
+ {
+  "speaker": "1089",
+  "utt": "1089-134686-0028",
+  "active_frac": 0.943,
+  "plays": "talker B on right",
+  "name": "talkB_R",
+  "lead_s": 0.25,
+  "sound_s": 4.2,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -6.0
+ },
+ {
+  "A": {
+   "speaker": "121",
+   "utt": "121-121726-0010",
+   "active_frac": 0.857
+  },
+  "B": {
+   "speaker": "1089",
+   "utt": "1089-134686-0028",
+   "active_frac": 0.943
+  },
+  "plays": "A left + B right together",
+  "name": "talkAB_LR",
+  "lead_s": 0.25,
+  "sound_s": 4.2,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -6.0
+ },
+ {
+  "noise": "DEMAND TBUS ch01 (L) + ch04 (R), 100.0-104.2 s",
+  "plays": "bus noise on both",
+  "name": "noise_LR",
+  "lead_s": 0.25,
+  "sound_s": 4.2,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -13.3
+ },
+ {
+  "noise": "DEMAND TBUS ch01 (L) + ch04 (R), 100.0-104.2 s",
+  "A": {
+   "speaker": "121",
+   "utt": "121-121726-0010",
+   "active_frac": 0.857
+  },
+  "plays": "A left + bus noise both, 0 dB at source",
+  "name": "talkA_noise",
+  "lead_s": 0.25,
+  "sound_s": 4.2,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -5.7
+ },
+ {
+  "speaker": "3575",
+  "utt": "3575-170457-0014",
+  "active_frac": 0.914,
+  "plays": "talker C on right, 15 dB quieter",
+  "name": "talkC_R_quiet",
+  "lead_s": 0.25,
+  "sound_s": 4.2,
+  "fs_ref": 16000,
+  "fs_play": 48000,
+  "peak_dbfs": -20.9
+ }
+]

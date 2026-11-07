@@ -1,0 +1,632 @@
+{
+ "files": [
+  {
+   "file": "bus__L1_snr+0_recorded__input_micA.wav",
+   "scene": "bus/L1_snr+0_recorded",
+   "role": "input",
+   "method": "mic_a (raw Mic A, no processing)",
+   "card": {
+    "id": "bus/L1_snr+0_recorded",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 0.0,
+    "device_noise": "recorded",
+    "gain_sim": 2.584260931150329,
+    "gain_device": 1.0
+   },
+   "gain_db": 17.744204753782927,
+   "orig_peak_dbfs": -18.744204753782927
+  },
+  {
+   "file": "bus__L1_snr+0_recorded__x_combo_endfire_cdr_gtcrn.wav",
+   "scene": "bus/L1_snr+0_recorded",
+   "role": "output",
+   "method": "x_combo_endfire_cdr_gtcrn",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire_cdr_gtcrn (experimental, real:run 2026-11-03; GEOMETRY PRIOR as x_combo_endfire): fixed endfire",
+   "card": {
+    "id": "bus/L1_snr+0_recorded",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 0.0,
+    "device_noise": "recorded",
+    "gain_sim": 2.584260931150329,
+    "gain_device": 1.0
+   },
+   "metrics": {
+    "d_estoi_min": 0.043390950832190106,
+    "estoi_wrst": 0.20180562065122384,
+    "estoi_wrst_in": 0.15841466981903374,
+    "dsnr_active": 5.937229439929009,
+    "na_active": 13.792252263652035,
+    "dsir_near": 5.375669707718556,
+    "ta_min": -9.654129811262802,
+    "ta_mean": -7.855022823723026
+   },
+   "gain_db": 23.623219767968756,
+   "orig_peak_dbfs": -24.623219767968752
+  },
+  {
+   "file": "bus__L1_snr+0_recorded__x_combo_endfire.wav",
+   "scene": "bus/L1_snr+0_recorded",
+   "role": "output",
+   "method": "x_combo_endfire",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire (experimental, real:run 2026-11-03; GEOMETRY PRIOR, not blind): S0 (+ gamma_n repair) -> FIXED",
+   "card": {
+    "id": "bus/L1_snr+0_recorded",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 0.0,
+    "device_noise": "recorded",
+    "gain_sim": 2.584260931150329,
+    "gain_device": 1.0
+   },
+   "metrics": {
+    "d_estoi_min": 0.04503235069371528,
+    "estoi_wrst": 0.20344702051274902,
+    "estoi_wrst_in": 0.15841466981903374,
+    "dsnr_active": 1.9044046873044316,
+    "na_active": 2.840270327787123,
+    "dsir_near": 1.6661886059996927,
+    "ta_min": -1.1619174956607368,
+    "ta_mean": -0.9358656404826916
+   },
+   "gain_db": 19.403915328376886,
+   "orig_peak_dbfs": -20.403915328376886
+  },
+  {
+   "file": "bus__L1_snr+5_quiet__input_micA.wav",
+   "scene": "bus/L1_snr+5_quiet",
+   "role": "input",
+   "method": "mic_a (raw Mic A, no processing)",
+   "card": {
+    "id": "bus/L1_snr+5_quiet",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 5.0,
+    "device_noise": "quiet",
+    "gain_sim": 1.4532367166607214,
+    "gain_device": 0.251188643150958
+   },
+   "gain_db": 19.408816962592223,
+   "orig_peak_dbfs": -20.40881696259222
+  },
+  {
+   "file": "bus__L1_snr+5_quiet__x_combo_endfire_cdr_gtcrn.wav",
+   "scene": "bus/L1_snr+5_quiet",
+   "role": "output",
+   "method": "x_combo_endfire_cdr_gtcrn",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire_cdr_gtcrn (experimental, real:run 2026-11-03; GEOMETRY PRIOR as x_combo_endfire): fixed endfire",
+   "card": {
+    "id": "bus/L1_snr+5_quiet",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 5.0,
+    "device_noise": "quiet",
+    "gain_sim": 1.4532367166607214,
+    "gain_device": 0.251188643150958
+   },
+   "metrics": {
+    "d_estoi_min": 0.051167126498881166,
+    "estoi_wrst": 0.34767179890219574,
+    "estoi_wrst_in": 0.2965046724033146,
+    "dsnr_active": 5.907335346696009,
+    "na_active": 10.245054358982786,
+    "dsir_near": 6.065735525114739,
+    "ta_min": -5.430801620506972,
+    "ta_mean": -4.337719012286778
+   },
+   "gain_db": 21.24565494321418,
+   "orig_peak_dbfs": -22.245654943214177
+  },
+  {
+   "file": "bus__L1_snr+5_quiet__x_combo_endfire.wav",
+   "scene": "bus/L1_snr+5_quiet",
+   "role": "output",
+   "method": "x_combo_endfire",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire (experimental, real:run 2026-11-03; GEOMETRY PRIOR, not blind): S0 (+ gamma_n repair) -> FIXED",
+   "card": {
+    "id": "bus/L1_snr+5_quiet",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 5.0,
+    "device_noise": "quiet",
+    "gain_sim": 1.4532367166607214,
+    "gain_device": 0.251188643150958
+   },
+   "metrics": {
+    "d_estoi_min": 0.046445565285577084,
+    "estoi_wrst": 0.3472957176883776,
+    "estoi_wrst_in": 0.2965046724033146,
+    "dsnr_active": 1.6273832814188987,
+    "na_active": 2.5587388423799036,
+    "dsir_near": 1.6955646624746625,
+    "ta_min": -1.1610297432478305,
+    "ta_mean": -0.9313555609610049
+   },
+   "gain_db": 19.46623772695367,
+   "orig_peak_dbfs": -20.466237726953665
+  },
+  {
+   "file": "meeting__recorded__input_micA.wav",
+   "scene": "meeting/recorded",
+   "role": "input",
+   "method": "mic_a (raw Mic A, no processing)",
+   "card": {
+    "id": "meeting/recorded",
+    "set": "meeting",
+    "device_noise": "recorded",
+    "gain_device": 1.0,
+    "omeeting": false
+   },
+   "gain_db": 19.793634004622064,
+   "orig_peak_dbfs": -20.793634004622064
+  },
+  {
+   "file": "meeting__recorded__m8_dpdfnet.wav",
+   "scene": "meeting/recorded",
+   "role": "output",
+   "method": "m8_dpdfnet",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "M8 standalone, DPDFNet-4: Mic A -> S0 high-pass -> DPDFNet-4 (onnxruntime) -> attenuation limit (DESIGN M8).",
+   "card": {
+    "id": "meeting/recorded",
+    "set": "meeting",
+    "device_noise": "recorded",
+    "gain_device": 1.0,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.375,
+    "d_estoi_mean": 0.04006349372399516,
+    "d_estoi_wrst": -0.003524432185038305,
+    "d_estoi_far": 0.00017743982371350164,
+    "lvl_std": 7.307049262208242,
+    "lvl_range": 26.487389086642644,
+    "na_active": 9.989129034645511
+   },
+   "gain_db": 21.10029555790043,
+   "orig_peak_dbfs": -22.100295557900434
+  },
+  {
+   "file": "meeting__recorded__x_combo_meet_chain.wav",
+   "scene": "meeting/recorded",
+   "role": "output",
+   "method": "x_combo_meet_chain",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_meet_chain (experimental stack, real:run 2026-11-03), DESIGN 2.2 order: S0 prefilter + calibration on both",
+   "card": {
+    "id": "meeting/recorded",
+    "set": "meeting",
+    "device_noise": "recorded",
+    "gain_device": 1.0,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.625,
+    "d_estoi_mean": 0.01900212518978249,
+    "d_estoi_wrst": -0.004035084770047409,
+    "d_estoi_far": -0.008693755680205369,
+    "lvl_std": 6.027932019524367,
+    "lvl_range": 20.023321048115577,
+    "na_active": 6.96014365092438
+   },
+   "gain_db": 7.030880312275148,
+   "orig_peak_dbfs": -8.030880312275148
+  },
+  {
+   "file": "meeting__recorded__m8_gtcrn.wav",
+   "scene": "meeting/recorded",
+   "role": "output",
+   "method": "m8_gtcrn",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "M8 standalone, GTCRN: Mic A -> S0 high-pass -> GTCRN (onnxruntime) -> attenuation limit (DESIGN M8).",
+   "card": {
+    "id": "meeting/recorded",
+    "set": "meeting",
+    "device_noise": "recorded",
+    "gain_device": 1.0,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.75,
+    "d_estoi_mean": 0.021217567241178396,
+    "d_estoi_wrst": 0.0005042308305074732,
+    "d_estoi_far": 0.0023316735467110994,
+    "lvl_std": 5.86857214568461,
+    "lvl_range": 22.298034569274577,
+    "na_active": 6.325286868659915
+   },
+   "gain_db": 21.212997884837254,
+   "orig_peak_dbfs": -22.212997884837257
+  },
+  {
+   "file": "meeting__quiet__input_micA.wav",
+   "scene": "meeting/quiet",
+   "role": "input",
+   "method": "mic_a (raw Mic A, no processing)",
+   "card": {
+    "id": "meeting/quiet",
+    "set": "meeting",
+    "device_noise": "quiet",
+    "gain_device": 0.251188643150958,
+    "omeeting": false
+   },
+   "gain_db": 20.358251230324495,
+   "orig_peak_dbfs": -21.35825123032449
+  },
+  {
+   "file": "meeting__quiet__m8_dpdfnet.wav",
+   "scene": "meeting/quiet",
+   "role": "output",
+   "method": "m8_dpdfnet",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "M8 standalone, DPDFNet-4: Mic A -> S0 high-pass -> DPDFNet-4 (onnxruntime) -> attenuation limit (DESIGN M8).",
+   "card": {
+    "id": "meeting/quiet",
+    "set": "meeting",
+    "device_noise": "quiet",
+    "gain_device": 0.251188643150958,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.25,
+    "d_estoi_mean": 0.05328197839607619,
+    "d_estoi_wrst": -0.001715559951079193,
+    "d_estoi_far": 0.0012541905998817715,
+    "lvl_std": 7.869609821009859,
+    "lvl_range": 27.342376575529258,
+    "na_active": 7.416208160242198
+   },
+   "gain_db": 20.701288047517707,
+   "orig_peak_dbfs": -21.7012880475177
+  },
+  {
+   "file": "meeting__quiet__x_combo_meet_chain.wav",
+   "scene": "meeting/quiet",
+   "role": "output",
+   "method": "x_combo_meet_chain",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_meet_chain (experimental stack, real:run 2026-11-03), DESIGN 2.2 order: S0 prefilter + calibration on both",
+   "card": {
+    "id": "meeting/quiet",
+    "set": "meeting",
+    "device_noise": "quiet",
+    "gain_device": 0.251188643150958,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.875,
+    "d_estoi_mean": 0.05375592501768354,
+    "d_estoi_wrst": 0.04550572208605991,
+    "d_estoi_far": 0.010314361948152467,
+    "lvl_std": 1.7591710539949457,
+    "lvl_range": 6.590967561776935,
+    "na_active": 5.796581361093729
+   },
+   "gain_db": 8.665653699338524,
+   "orig_peak_dbfs": -9.665653699338524
+  },
+  {
+   "file": "meeting__quiet__m8_gtcrn.wav",
+   "scene": "meeting/quiet",
+   "role": "output",
+   "method": "m8_gtcrn",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "M8 standalone, GTCRN: Mic A -> S0 high-pass -> GTCRN (onnxruntime) -> attenuation limit (DESIGN M8).",
+   "card": {
+    "id": "meeting/quiet",
+    "set": "meeting",
+    "device_noise": "quiet",
+    "gain_device": 0.251188643150958,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.75,
+    "d_estoi_mean": 0.04536893790521867,
+    "d_estoi_wrst": 0.04349252802831527,
+    "d_estoi_far": 0.005974934936143317,
+    "lvl_std": 5.501915373419045,
+    "lvl_range": 21.13221352443076,
+    "na_active": 5.792022870069744
+   },
+   "gain_db": 20.858112143537085,
+   "orig_peak_dbfs": -21.858112143537088
+  },
+  {
+   "file": "bus__L1_snr+0_recorded__m8_gtcrn.wav",
+   "scene": "bus/L1_snr+0_recorded",
+   "role": "output",
+   "method": "m8_gtcrn",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "M8 standalone, GTCRN: Mic A -> S0 high-pass -> GTCRN (onnxruntime) -> attenuation limit (DESIGN M8).",
+   "card": {
+    "id": "bus/L1_snr+0_recorded",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 0.0,
+    "device_noise": "recorded",
+    "gain_sim": 2.584260931150329,
+    "gain_device": 1.0
+   },
+   "metrics": {
+    "d_estoi_min": 0.004248021996880319,
+    "estoi_wrst": 0.16266269181591403,
+    "estoi_wrst_in": 0.1584146698190337,
+    "dsnr_active": 3.4860049878521533,
+    "na_active": 10.298520548665856,
+    "dsir_near": 3.0217453443056126,
+    "ta_min": -8.809254625398443,
+    "ta_mean": -6.8125155608137025
+   },
+   "gain_db": 23.2779763897085,
+   "orig_peak_dbfs": -24.2779763897085
+  },
+  {
+   "file": "bus__L1_snr+5_quiet__m8_gtcrn.wav",
+   "scene": "bus/L1_snr+5_quiet",
+   "role": "output",
+   "method": "m8_gtcrn",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "M8 standalone, GTCRN: Mic A -> S0 high-pass -> GTCRN (onnxruntime) -> attenuation limit (DESIGN M8).",
+   "card": {
+    "id": "bus/L1_snr+5_quiet",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 5.0,
+    "device_noise": "quiet",
+    "gain_sim": 1.4532367166607214,
+    "gain_device": 0.251188643150958
+   },
+   "metrics": {},
+   "gain_db": 20.64325356349723,
+   "orig_peak_dbfs": -21.64325356349723
+  },
+  {
+   "file": "bus__L1_snr+0_recorded__x_combo_endfire_dpdf.wav",
+   "scene": "bus/L1_snr+0_recorded",
+   "role": "output",
+   "method": "x_combo_endfire_dpdf",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire_dpdf (experimental, real:run 2026-11-03; GEOMETRY PRIOR as x_combo_endfire): S0 (+ gamma_n repair)",
+   "card": {
+    "id": "bus/L1_snr+0_recorded",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 0.0,
+    "device_noise": "recorded",
+    "gain_sim": 2.584260931150329,
+    "gain_device": 1.0
+   },
+   "metrics": {
+    "d_estoi_min": 0.11037054308155839,
+    "estoi_wrst": 0.2687852129005921,
+    "estoi_wrst_in": 0.1584146698190337,
+    "dsnr_active": 8.705841148101342,
+    "na_active": 14.36492813267016,
+    "dsir_near": 8.00966091035788,
+    "ta_min": -9.42975390841566,
+    "ta_mean": -5.659086984568817
+   },
+   "gain_db": 20.30684009959333,
+   "orig_peak_dbfs": -21.30684009959333
+  },
+  {
+   "file": "bus__L1_snr+5_quiet__x_combo_endfire_dpdf.wav",
+   "scene": "bus/L1_snr+5_quiet",
+   "role": "output",
+   "method": "x_combo_endfire_dpdf",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire_dpdf (experimental, real:run 2026-11-03; GEOMETRY PRIOR as x_combo_endfire): S0 (+ gamma_n repair)",
+   "card": {
+    "id": "bus/L1_snr+5_quiet",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 5.0,
+    "device_noise": "quiet",
+    "gain_sim": 1.4532367166607214,
+    "gain_device": 0.251188643150958
+   },
+   "metrics": {
+    "d_estoi_min": 0.1870171426507859,
+    "estoi_wrst": 0.4835218150541005,
+    "estoi_wrst_in": 0.29650467240331463,
+    "dsnr_active": 9.828094781941811,
+    "na_active": 12.134052704718526,
+    "dsir_near": 8.824097409006818,
+    "ta_min": -3.47877809133608,
+    "ta_mean": -2.305957922776714
+   },
+   "gain_db": 19.688250942320813,
+   "orig_peak_dbfs": -20.688250942320817
+  },
+  {
+   "file": "meeting__recorded__x_combo_endfire_dpdf.wav",
+   "scene": "meeting/recorded",
+   "role": "output",
+   "method": "x_combo_endfire_dpdf",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire_dpdf (experimental, real:run 2026-11-03; GEOMETRY PRIOR as x_combo_endfire): S0 (+ gamma_n repair)",
+   "card": {
+    "id": "meeting/recorded",
+    "set": "meeting",
+    "device_noise": "recorded",
+    "gain_device": 1.0,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.625,
+    "d_estoi_mean": 0.07737638732109167,
+    "d_estoi_wrst": 0.015848208610308584,
+    "d_estoi_far": 0.027737689061519764,
+    "lvl_std": 8.985190314455558,
+    "lvl_range": 29.873586129653795,
+    "na_active": 11.931449560671934
+   },
+   "gain_db": 2.1952956630029323,
+   "orig_peak_dbfs": -3.1952956630029323
+  },
+  {
+   "file": "meeting__quiet__x_combo_endfire_dpdf.wav",
+   "scene": "meeting/quiet",
+   "role": "output",
+   "method": "x_combo_endfire_dpdf",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_combo_endfire_dpdf (experimental, real:run 2026-11-03; GEOMETRY PRIOR as x_combo_endfire): S0 (+ gamma_n repair)",
+   "card": {
+    "id": "meeting/quiet",
+    "set": "meeting",
+    "device_noise": "quiet",
+    "gain_device": 0.251188643150958,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.875,
+    "d_estoi_mean": 0.07449901877138045,
+    "d_estoi_wrst": -0.004333820092721652,
+    "d_estoi_far": 0.018513887669746792,
+    "lvl_std": 2.9465860187699313,
+    "lvl_range": 10.290212148550452,
+    "na_active": 9.240200533225295
+   },
+   "gain_db": 8.75964022758996,
+   "orig_peak_dbfs": -9.75964022758996
+  },
+  {
+   "file": "bus__L1_snr+0_recorded__x_bus_v3.wav",
+   "scene": "bus/L1_snr+0_recorded",
+   "role": "output",
+   "method": "x_bus_v3",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_bus_v3: FINAL bus pipeline of night-B (final:bus), chosen on dev with natural speech (study/final/BUS_V3.md).",
+   "card": {
+    "id": "bus/L1_snr+0_recorded",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 0.0,
+    "device_noise": "recorded",
+    "gain_sim": 2.584260931150329,
+    "gain_device": 1.0
+   },
+   "metrics": {
+    "d_estoi_min": 0.0050564189301719464,
+    "estoi_wrst": 0.1634710887492056,
+    "estoi_wrst_in": 0.15841466981903365,
+    "dsnr_active": 3.2048388489251405,
+    "na_active": 9.2569829427461,
+    "dsir_near": 2.511573370554034,
+    "ta_min": -9.85539184991029,
+    "ta_mean": -6.05214409382096
+   },
+   "gain_db": 20.123409868846057,
+   "orig_peak_dbfs": -21.123409868846057
+  },
+  {
+   "file": "bus__L1_snr+0_recorded__x_bus_v3_classic.wav",
+   "scene": "bus/L1_snr+0_recorded",
+   "role": "output",
+   "method": "x_bus_v3_classic",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_bus_v3_classic: best night-B bus pipeline WITHOUT neural models (Tier 1, DESIGN 2.1), chosen on dev",
+   "card": {
+    "id": "bus/L1_snr+0_recorded",
+    "set": "bus",
+    "layout": "L1",
+    "snr_db": 0.0,
+    "device_noise": "recorded",
+    "gain_sim": 2.584260931150329,
+    "gain_device": 1.0
+   },
+   "metrics": {
+    "d_estoi_min": 0.008139628721354764,
+    "estoi_wrst": 0.16655429854038842,
+    "estoi_wrst_in": 0.15841466981903365,
+    "dsnr_active": 0.6658202257846293,
+    "na_active": 3.230896093963258,
+    "dsir_near": 0.49443645489744714,
+    "ta_min": -2.8360475637912548,
+    "ta_mean": -2.5650758681786288
+   },
+   "gain_db": 20.426321822895982,
+   "orig_peak_dbfs": -21.426321822895986
+  },
+  {
+   "file": "meeting__recorded__x_meeting_v3.wav",
+   "scene": "meeting/recorded",
+   "role": "output",
+   "method": "x_meeting_v3",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_meeting_v3: chosen final meeting pipeline (dev, natural speech; study/final/MEETING_V3.md): x_s0v2 self-calibration when no calib_json (else the calib_json) -> 2-ch WPE -> S1 -> steered superdirective M2 (WNG >= -3 dB) -> M8 GTCRN post-filter (12 dB attenuation limit, replaces M6) -> M11 (one static gain per S1 speech segment, -1 dBTP limiter). Returns {out, pre_agc}.",
+   "card": {
+    "id": "meeting/recorded",
+    "set": "meeting",
+    "device_noise": "recorded",
+    "gain_device": 1.0,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.625,
+    "d_estoi_mean": 0.01900212518978245,
+    "d_estoi_wrst": -0.0040350847700475236,
+    "d_estoi_far": -0.008693755680205466,
+    "lvl_std": 6.027932019524367,
+    "lvl_range": 20.023321048115577,
+    "na_active": 6.96014365092438
+   },
+   "gain_db": 7.030880312275148,
+   "orig_peak_dbfs": -8.030880312275148
+  },
+  {
+   "file": "meeting__recorded__x_meeting_v3_classic.wav",
+   "scene": "meeting/recorded",
+   "role": "output",
+   "method": "x_meeting_v3_classic",
+   "variant": "measured",
+   "enroll": "clean",
+   "description": "x_meeting_v3_classic: best final meeting pipeline without neural models (chosen on dev, study/final/MEETING_V3.md): x_s0v2 self-calibration when no calib_json (else the calib_json) -> 2-ch WPE -> S1 -> steered superdirective M2 (WNG >= -3 dB) -> M6 (floor -12 dB, noise update in >= 300 ms S1-VAD pauses) -> M11 (one static gain per S1 speech segment, -1 dBTP limiter). Returns {out, pre_agc}.",
+   "card": {
+    "id": "meeting/recorded",
+    "set": "meeting",
+    "device_noise": "recorded",
+    "gain_device": 1.0,
+    "omeeting": false
+   },
+   "metrics": {
+    "capture_rate": 0.5,
+    "d_estoi_mean": 0.022940855067821782,
+    "d_estoi_wrst": -0.005331969305419664,
+    "d_estoi_far": -0.0017272719109522883,
+    "lvl_std": 4.40785707605485,
+    "lvl_range": 14.55922806178133,
+    "na_active": 2.7187198712960674
+   },
+   "gain_db": 10.174430666755113,
+   "orig_peak_dbfs": -11.174430666755113
+  }
+ ],
+ "notes": [
+  "Bus rank: mean worst-partner dESTOI over the 6 L1 scenes (measured): x_combo_endfire_dpdf +0.117, x_combo_endfire +0.045, x_combo_endfire_cdr_gtcrn +0.042 (m8_gtcrn +0.009 exported as the best blind single-channel reference). Meeting rank: T1 capture, then mean talker dESTOI: x_combo_meet_chain, m8_gtcrn, x_combo_endfire_dpdf (m8_dpdfnet exported as the best mean-dESTOI reference; its T1 capture is 0.29)."
+ ]
+}

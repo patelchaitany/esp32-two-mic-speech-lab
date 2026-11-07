@@ -1,0 +1,321 @@
+{
+ "predictions": {
+  "H1": {
+   "tau0": -1.1,
+   "d_cm": 1.25,
+   "d_over_c_samples": 0.583,
+   "g_L_now": 0.59,
+   "g_R_now": 0.6,
+   "consistent_|g|<=d/c": true,
+   "flip180_sweep_L": -1.69,
+   "flip180_sweep_R": -1.7,
+   "axis_B_to_A_at_left_speaker_sweep_L": -0.517,
+   "axis_A_to_B_at_left_speaker_sweep_L(reverse)": -1.683,
+   "flip180_sweep_L_range": [
+    -1.75,
+    -1.63
+   ],
+   "endfire_A_toward_left_range": [
+    -0.617,
+    -0.417
+   ],
+   "endfire_B_toward_left_range": [
+    -1.783,
+    -1.583
+   ]
+  },
+  "H2": {
+   "tau0": -0.5,
+   "d_cm": 1.6,
+   "d_over_c_samples": 0.746,
+   "g_L_now": -0.01,
+   "g_R_now": 0.0,
+   "consistent_|g|<=d/c": true,
+   "flip180_sweep_L": -0.49,
+   "flip180_sweep_R": -0.5,
+   "axis_B_to_A_at_left_speaker_sweep_L": 0.246,
+   "axis_A_to_B_at_left_speaker_sweep_L(reverse)": -1.246,
+   "flip180_sweep_L_range": [
+    -0.59,
+    -0.39
+   ],
+   "endfire_A_toward_left_range": [
+    0.103,
+    0.483
+   ],
+   "endfire_B_toward_left_range": [
+    -1.483,
+    -1.103
+   ]
+  },
+  "H3": {
+   "tau0": 0.0,
+   "d_cm": 3.0,
+   "d_over_c_samples": 1.399,
+   "g_L_now": -0.51,
+   "g_R_now": -0.5,
+   "consistent_|g|<=d/c": true,
+   "flip180_sweep_L": 0.51,
+   "flip180_sweep_R": 0.5,
+   "axis_B_to_A_at_left_speaker_sweep_L": 1.399,
+   "axis_A_to_B_at_left_speaker_sweep_L(reverse)": -1.399,
+   "flip180_sweep_L_range": [
+    0.41,
+    0.61
+   ],
+   "endfire_A_toward_left_range": [
+    1.116,
+    2.849
+   ],
+   "endfire_B_toward_left_range": [
+    -2.849,
+    -1.116
+   ]
+  }
+ },
+ "placements": {
+  "H1_s25cm_with_path_constraint": {
+   "n_positions": 2820,
+   "dist_to_laptop_centre_m": [
+    0.171,
+    1.325,
+    2.332
+   ],
+   "r_L_m": [
+    0.142,
+    1.288,
+    2.271
+   ],
+   "r_R_m": [
+    0.244,
+    2.399
+   ],
+   "x_m(+=right)": [
+    -1.2,
+    -0.04
+   ],
+   "fraction_in_front": 0.8,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -29.929,
+    0.393,
+    31.122
+   ]
+  },
+  "H1_s30cm_with_path_constraint": {
+   "n_positions": 2186,
+   "dist_to_laptop_centre_m": [
+    0.204,
+    1.294,
+    2.218
+   ],
+   "r_L_m": [
+    0.187,
+    1.261,
+    2.158
+   ],
+   "r_R_m": [
+    0.276,
+    2.287
+   ],
+   "x_m(+=right)": [
+    -0.96,
+    -0.04
+   ],
+   "fraction_in_front": 0.8,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -28.993,
+    0.465,
+    30.232
+   ]
+  },
+  "H1_s27cm_no_path_constraint": {
+   "n_positions": 22536,
+   "dist_to_laptop_centre_m": [
+    0.161,
+    1.242,
+    2.5
+   ],
+   "r_L_m": [
+    0.08,
+    1.241,
+    2.583
+   ],
+   "r_R_m": [
+    0.08,
+    2.583
+   ],
+   "x_m(+=right)": [
+    -1.5,
+    1.5
+   ],
+   "fraction_in_front": 0.67,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -31.425,
+    0.255,
+    32.004
+   ]
+  },
+  "H2_s25cm_with_path_constraint": {
+   "n_positions": 887,
+   "dist_to_laptop_centre_m": [
+    0.04,
+    1.938,
+    2.332
+   ],
+   "r_L_m": [
+    0.085,
+    1.897,
+    2.271
+   ],
+   "r_R_m": [
+    0.165,
+    2.399
+   ],
+   "x_m(+=right)": [
+    -1.2,
+    -0.04
+   ],
+   "fraction_in_front": 1.0,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -93.82,
+    89.557,
+    95.165
+   ]
+  },
+  "H2_s30cm_with_path_constraint": {
+   "n_positions": 120,
+   "dist_to_laptop_centre_m": [
+    0.04,
+    2.088,
+    2.218
+   ],
+   "r_L_m": [
+    0.09,
+    2.04,
+    2.158
+   ],
+   "r_R_m": [
+    0.19,
+    2.287
+   ],
+   "x_m(+=right)": [
+    -0.96,
+    -0.04
+   ],
+   "fraction_in_front": 1.0,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    85.883,
+    90.412,
+    94.729
+   ]
+  },
+  "H2_s27cm_no_path_constraint": {
+   "n_positions": 11322,
+   "dist_to_laptop_centre_m": [
+    0.0,
+    1.467,
+    2.5
+   ],
+   "r_L_m": [
+    0.085,
+    1.48,
+    2.583
+   ],
+   "r_R_m": [
+    0.085,
+    2.583
+   ],
+   "x_m(+=right)": [
+    -1.5,
+    1.5
+   ],
+   "fraction_in_front": 0.682,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -96.024,
+    85.97,
+    96.046
+   ]
+  },
+  "H3_s25cm_with_path_constraint": {
+   "n_positions": 6,
+   "dist_to_laptop_centre_m": [
+    0.057,
+    0.072,
+    0.085
+   ],
+   "r_L_m": [
+    0.088,
+    0.094,
+    0.104
+   ],
+   "r_R_m": [
+    0.17,
+    0.194
+   ],
+   "x_m(+=right)": [
+    -0.06,
+    -0.04
+   ],
+   "fraction_in_front": 0.5,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -153.95,
+    0.0,
+    153.95
+   ]
+  },
+  "H3_s30cm_with_path_constraint": {
+   "n_positions": 10,
+   "dist_to_laptop_centre_m": [
+    0.057,
+    0.072,
+    0.089
+   ],
+   "r_L_m": [
+    0.098,
+    0.117,
+    0.136
+   ],
+   "r_R_m": [
+    0.194,
+    0.218
+   ],
+   "x_m(+=right)": [
+    -0.06,
+    -0.04
+   ],
+   "fraction_in_front": 0.5,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -157.582,
+    0.0,
+    157.582
+   ]
+  },
+  "H3_s27cm_no_path_constraint": {
+   "n_positions": 4532,
+   "dist_to_laptop_centre_m": [
+    0.04,
+    1.282,
+    2.5
+   ],
+   "r_L_m": [
+    0.085,
+    1.269,
+    2.583
+   ],
+   "r_R_m": [
+    0.085,
+    2.583
+   ],
+   "x_m(+=right)": [
+    -1.5,
+    1.5
+   ],
+   "fraction_in_front": 0.518,
+   "axis_rel_bearing_deg(0=A points at laptop centre)": [
+    -119.066,
+    98.817,
+    119.066
+   ]
+  }
+ }
+}

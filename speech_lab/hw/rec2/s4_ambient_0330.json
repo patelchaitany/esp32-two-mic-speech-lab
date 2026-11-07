@@ -1,0 +1,17 @@
+{
+ "fs": 16000,
+ "channels": 2,
+ "frames": 192000,
+ "t_cmd": 1007925.767933541,
+ "t_rec": 1007925.791646666,
+ "t_end": 1007937.771229916,
+ "stream_s": 11.979583250009455,
+ "extra_bytes": 0,
+ "diffuse_fit": {
+  "d_cm": 1.27,
+  "rho": 0.97,
+  "rmse": 0.161,
+  "skew_samples": -1.03
+ },
+ "label": "s4_ambient_0330"
+}

@@ -1,0 +1,24 @@
+{
+ "fs": 16000,
+ "channels": 2,
+ "frames": 192000,
+ "t_cmd": 1002134.146927791,
+ "t_rec": 1002134.167667958,
+ "t_end": 1002146.147232583,
+ "stream_s": 11.979564625071362,
+ "extra_bytes": 0,
+ "afplay_rc": 0,
+ "t_play": 1002134.167717458,
+ "play_after_rec_s": 4.950002767145634e-05,
+ "tdoa_samples": -0.531,
+ "tdoa_us": -33.2,
+ "tdoa_4ms_window_samples": -0.438,
+ "direct_snr_db": [
+  52.5,
+  50.0
+ ],
+ "level_B_re_A_db": -1.44,
+ "onset_s": 0.094,
+ "speaker": "R",
+ "label": "s2_sweep_R"
+}

@@ -1,0 +1,22 @@
+{
+ "1.0cm_3d": {
+  "original": 2.147,
+  "vectorised": 2.147,
+  "diff": 0.0
+ },
+ "1.0cm_2d": {
+  "original": 1.394,
+  "vectorised": 1.394,
+  "diff": 0.0
+ },
+ "1.2cm_3d": {
+  "original": 2.445,
+  "vectorised": 2.445,
+  "diff": 0.0
+ },
+ "1.2cm_2d": {
+  "original": 1.583,
+  "vectorised": 1.583,
+  "diff": 0.0
+ }
+}

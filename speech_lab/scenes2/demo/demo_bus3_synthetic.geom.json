@@ -1,0 +1,104 @@
+{
+ "geom_id": "demo_bus3_synthetic",
+ "set": "demo",
+ "scenario": "bus",
+ "generator": "lab.scene2:demo_recipe",
+ "seed": 7,
+ "fs": 16000,
+ "room": {
+  "dims": [
+   11.5,
+   2.5,
+   2.3
+  ],
+  "rt60": 0.4,
+  "tail": "synthetic",
+  "max_order": 18,
+  "e_abs": 0.21849162689997956,
+  "rand_disp": 0.05,
+  "exact_direct": true,
+  "edited": false,
+  "seed": 7,
+  "n_rir": 7367,
+  "n_x": 1931
+ },
+ "mics": [
+  [
+   5.018794,
+   1.25684,
+   1.0
+  ],
+  [
+   4.981206,
+   1.24316,
+   1.0
+  ]
+ ],
+ "spacing_m": 0.04,
+ "center": [
+  5.0,
+  1.25,
+  1.0
+ ],
+ "array_azimuth_deg": 19.9988,
+ "array_elevation_deg": 0.0,
+ "sources": [
+  {
+   "name": "pA",
+   "pos": [
+    5.422862,
+    1.403909,
+    1.1
+   ],
+   "directivity": {
+    "azimuth_deg": -151.80963672473894,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 0.460977,
+   "dist_a_m": 0.441475,
+   "theta_deg": 12.5288,
+   "fold_deg": 12.5288,
+   "tau_us": 113.836,
+   "direct_a": 60.5936
+  },
+  {
+   "name": "pB",
+   "pos": [
+    4.504482,
+    0.911677,
+    1.1
+   ],
+   "directivity": {
+    "azimuth_deg": 28.19036327526108,
+    "colatitude_deg": 90.0,
+    "p": 0.75
+   },
+   "dist_m": 0.608277,
+   "dist_a_m": 0.627419,
+   "theta_deg": 162.8866,
+   "fold_deg": 17.1134,
+   "tau_us": -111.4495,
+   "direct_a": 69.2673
+  },
+  {
+   "name": "engine",
+   "pos": [
+    11.1,
+    1.25,
+    0.5
+   ],
+   "directivity": null,
+   "dist_m": 6.120457,
+   "dist_a_m": 6.10173,
+   "theta_deg": 20.5185,
+   "fold_deg": 20.5185,
+   "tau_us": 109.2196,
+   "direct_a": 324.6288
+  }
+ ],
+ "meta": {
+  "stratum": "aligned",
+  "purpose": "demo"
+ }
+}

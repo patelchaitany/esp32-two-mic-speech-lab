@@ -1,0 +1,357 @@
+{
+ "bus/L1_snr+0_recorded": {
+  "measured": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": -1.015,
+   "gain_db_mean": 0.73,
+   "source": "json",
+   "confidence": 0.031,
+   "noise_phase_deg": [
+    -1.8,
+    -0.5,
+    0.6,
+    -0.2,
+    -0.6
+   ],
+   "s1_tau_A": 0.022,
+   "s1_tau_B": 0.022,
+   "d_over_c": 0.555
+  },
+  "blind": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.76,
+   "source": "blind",
+   "confidence": 0.031,
+   "noise_phase_deg": [
+    -1.0,
+    -12.5,
+    -29.4,
+    -63.3,
+    -119.7
+   ],
+   "s1_tau_A": NaN,
+   "s1_tau_B": NaN,
+   "d_over_c": 0.555
+  },
+  "wrong4cm": {
+   "d_hat_cm": 4.0,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.76,
+   "source": "blind",
+   "confidence": 0.031,
+   "noise_phase_deg": [
+    -1.0,
+    -12.5,
+    -29.4,
+    -63.3,
+    -119.7
+   ],
+   "s1_tau_A": -1.039,
+   "s1_tau_B": -1.039,
+   "d_over_c": 1.866
+  },
+  "uncorrected_noise_phase_deg": [
+   -9.6,
+   -16.9,
+   -31.7,
+   -64.5,
+   -119.5
+  ]
+ },
+ "bus/L1_snr+0_quiet": {
+  "measured": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": -1.015,
+   "gain_db_mean": 0.72,
+   "source": "json",
+   "confidence": 0.025,
+   "noise_phase_deg": [
+    -1.8,
+    -0.5,
+    0.6,
+    -0.2,
+    -0.6
+   ],
+   "s1_tau_A": 0.038,
+   "s1_tau_B": 0.038,
+   "d_over_c": 0.555
+  },
+  "blind": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.71,
+   "source": "blind",
+   "confidence": 0.025,
+   "noise_phase_deg": [
+    -1.9,
+    -12.9,
+    -29.6,
+    -63.3,
+    -119.6
+   ],
+   "s1_tau_A": NaN,
+   "s1_tau_B": NaN,
+   "d_over_c": 0.555
+  },
+  "wrong4cm": {
+   "d_hat_cm": 4.0,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.71,
+   "source": "blind",
+   "confidence": 0.025,
+   "noise_phase_deg": [
+    -1.9,
+    -12.9,
+    -29.6,
+    -63.3,
+    -119.6
+   ],
+   "s1_tau_A": -1.055,
+   "s1_tau_B": -1.055,
+   "d_over_c": 1.866
+  },
+  "uncorrected_noise_phase_deg": [
+   -9.6,
+   -16.9,
+   -31.7,
+   -64.5,
+   -119.5
+  ]
+ },
+ "bus/L3_snr-5_quiet": {
+  "measured": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": -1.015,
+   "gain_db_mean": 0.78,
+   "source": "json",
+   "confidence": 0.079,
+   "noise_phase_deg": [
+    -1.8,
+    -0.5,
+    0.6,
+    -0.2,
+    -0.6
+   ],
+   "s1_tau_A": -0.026,
+   "s1_tau_B": -0.026,
+   "d_over_c": 0.555
+  },
+  "blind": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.8,
+   "source": "blind",
+   "confidence": 0.079,
+   "noise_phase_deg": [
+    -4.6,
+    -14.3,
+    -30.3,
+    -63.8,
+    -119.9
+   ],
+   "s1_tau_A": NaN,
+   "s1_tau_B": NaN,
+   "d_over_c": 0.555
+  },
+  "wrong4cm": {
+   "d_hat_cm": 4.0,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.8,
+   "source": "blind",
+   "confidence": 0.079,
+   "noise_phase_deg": [
+    -4.6,
+    -14.3,
+    -30.3,
+    -63.8,
+    -119.9
+   ],
+   "s1_tau_A": -1.055,
+   "s1_tau_B": -1.055,
+   "d_over_c": 1.866
+  },
+  "uncorrected_noise_phase_deg": [
+   -9.6,
+   -16.9,
+   -31.7,
+   -64.5,
+   -119.5
+  ]
+ },
+ "meeting/recorded": {
+  "measured": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": -1.015,
+   "gain_db_mean": 0.66,
+   "source": "json",
+   "confidence": 0.038,
+   "noise_phase_deg": [
+    1.9,
+    0.2,
+    0.5,
+    -0.9,
+    1.4
+   ]
+  },
+  "blind": {
+   "d_hat_cm": 2.841,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.72,
+   "source": "blind",
+   "confidence": 0.038,
+   "noise_phase_deg": [
+    1.1,
+    -12.2,
+    -29.9,
+    -61.5,
+    -120.0
+   ]
+  },
+  "wrong4cm": {
+   "d_hat_cm": 2.841,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.72,
+   "source": "blind",
+   "confidence": 0.038,
+   "noise_phase_deg": [
+    1.1,
+    -12.2,
+    -29.9,
+    -61.5,
+    -120.0
+   ]
+  },
+  "uncorrected_noise_phase_deg": [
+   -5.7,
+   -15.8,
+   -31.8,
+   -62.4,
+   -119.9
+  ]
+ },
+ "meeting/quiet": {
+  "measured": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": -1.015,
+   "gain_db_mean": 0.7,
+   "source": "json",
+   "confidence": 0.018,
+   "noise_phase_deg": [
+    1.9,
+    0.2,
+    0.5,
+    -0.9,
+    1.4
+   ]
+  },
+  "blind": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.67,
+   "source": "blind",
+   "confidence": 0.018,
+   "noise_phase_deg": [
+    2.5,
+    -11.4,
+    -29.4,
+    -61.4,
+    -119.8
+   ]
+  },
+  "wrong4cm": {
+   "d_hat_cm": 4.0,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.67,
+   "source": "blind",
+   "confidence": 0.018,
+   "noise_phase_deg": [
+    2.5,
+    -11.4,
+    -29.4,
+    -61.4,
+    -119.8
+   ]
+  },
+  "uncorrected_noise_phase_deg": [
+   -5.7,
+   -15.8,
+   -31.8,
+   -62.4,
+   -119.9
+  ]
+ },
+ "meeting/quiet_omeeting": {
+  "measured": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": -1.015,
+   "gain_db_mean": 0.75,
+   "source": "json",
+   "confidence": 0.06,
+   "noise_phase_deg": [
+    1.9,
+    0.2,
+    0.5,
+    -0.9,
+    1.4
+   ]
+  },
+  "blind": {
+   "d_hat_cm": 1.19,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.74,
+   "source": "blind",
+   "confidence": 0.06,
+   "noise_phase_deg": [
+    -4.1,
+    -14.9,
+    -31.2,
+    -62.3,
+    -120.7
+   ]
+  },
+  "wrong4cm": {
+   "d_hat_cm": 4.0,
+   "tau0_samples": 0.0,
+   "gain_db_mean": 0.74,
+   "source": "blind",
+   "confidence": 0.06,
+   "noise_phase_deg": [
+    -4.1,
+    -14.9,
+    -31.2,
+    -62.3,
+    -120.7
+   ]
+  },
+  "uncorrected_noise_phase_deg": [
+   -5.7,
+   -15.8,
+   -31.8,
+   -62.4,
+   -119.9
+  ]
+ },
+ "bands_hz": [
+  [
+   150,
+   500
+  ],
+  [
+   500,
+   1000
+  ],
+  [
+   1000,
+   2000
+  ],
+  [
+   2000,
+   4000
+  ],
+  [
+   4000,
+   7000
+  ]
+ ]
+}

@@ -1,0 +1,404 @@
+{
+ "bench": "bench2/2",
+ "scene": "test/bus_g15_snr-5",
+ "method": "m0_mica_hpf",
+ "scenario": "bus",
+ "corpus": "libri",
+ "card": {
+  "stratum": "aligned",
+  "replicate": 3,
+  "spacing_mm": 25,
+  "rt60_bin": "0.375-0.450",
+  "dist_A_m": 0.976841,
+  "dist_B_m": 0.682494,
+  "dist_bin_A": "0.65-1.0",
+  "dist_bin_B": "0.65-1.0",
+  "partner_dist_max_m": 0.976841,
+  "theta_A_deg": 13.9221,
+  "theta_B_deg": 162.8354,
+  "fold_A_deg": 13.9221,
+  "fold_B_deg": 17.1646,
+  "tau_A_us": 70.7437,
+  "tau_B_us": -69.6379,
+  "partner_angle_deg": 168.172,
+  "angle_class": "aligned",
+  "inseparable": false,
+  "inseparable_why": [],
+  "device_height_m": 1.1596,
+  "n_passengers": 17,
+  "n_conv_pairs": 1,
+  "n_far": 11,
+  "nearest_passenger_m": 0.633863,
+  "cone_dist_m": 1.743171,
+  "cone_dtheta_deg": -0.149,
+  "handling": false,
+  "sweep": true,
+  "skew_us": 0.0,
+  "road_model": "j0",
+  "rc_sabine_m": 0.761,
+  "people": {
+   "partners": [
+    "pA",
+    "pB"
+   ],
+   "near": [
+    "n1",
+    "n2",
+    "n3"
+   ],
+   "cone": "cone",
+   "conv": [
+    [
+     "c1a",
+     "c1b"
+    ]
+   ],
+   "far": [
+    "f01",
+    "f02",
+    "f03",
+    "f04",
+    "f05",
+    "f06",
+    "f07",
+    "f08",
+    "f09",
+    "f10",
+    "f11"
+   ]
+  },
+  "noise_src": {
+   "engine": "engine",
+   "wheels": [
+    "wheel_fl",
+    "wheel_fr",
+    "wheel_rl",
+    "wheel_rr"
+   ],
+   "doors": [
+    "door_front",
+    "door_mid"
+   ]
+  },
+  "acoustics": {
+   "edt_s": 0.4722,
+   "t20_s": 0.8294,
+   "t30_s": 0.8627,
+   "rc_eff_m": 0.705,
+   "drr_A_db": -0.69,
+   "drr_B_db": 2.26,
+   "gain_db": {
+    "pA": 3.6,
+    "pB": 5.0,
+    "n1": 3.72,
+    "n2": 1.58,
+    "n3": 4.31,
+    "cone": 1.43,
+    "c1a": 2.99,
+    "c1b": 2.42,
+    "f01": 0.61,
+    "f02": -2.73,
+    "f03": -0.53,
+    "f04": -1.38,
+    "f05": -1.92,
+    "f06": -1.07,
+    "f07": -0.08,
+    "f08": -2.25,
+    "f09": 0.45,
+    "f10": 0.34,
+    "f11": -1.25,
+    "engine": -0.23,
+    "wheel_fl": 3.32,
+    "wheel_fr": 3.62,
+    "wheel_rl": 0.32,
+    "wheel_rr": 0.07,
+    "door_front": 3.01,
+    "door_mid": 1.29
+   },
+   "band_gain_db": {
+    "engine": [
+     9.19,
+     8.58,
+     1.95,
+     -4.33,
+     -0.29,
+     -1.32,
+     -0.38,
+     -0.94
+    ],
+    "wheel_fl": [
+     3.67,
+     7.32,
+     5.14,
+     4.23,
+     1.9,
+     2.16,
+     3.55,
+     3.23
+    ],
+    "wheel_fr": [
+     2.16,
+     6.56,
+     5.57,
+     3.46,
+     3.22,
+     1.71,
+     4.51,
+     3.41
+    ],
+    "wheel_rl": [
+     2.81,
+     7.56,
+     0.51,
+     -0.68,
+     0.45,
+     -0.19,
+     0.52,
+     -0.09
+    ],
+    "wheel_rr": [
+     2.81,
+     7.46,
+     0.19,
+     -0.05,
+     0.17,
+     -0.45,
+     0.07,
+     -0.35
+    ],
+    "door_front": [
+     9.75,
+     3.87,
+     4.97,
+     6.82,
+     3.79,
+     1.58,
+     3.2,
+     2.52
+    ],
+    "door_mid": [
+     7.99,
+     4.17,
+     4.31,
+     5.73,
+     4.79,
+     2.28,
+     0.33,
+     0.45
+    ]
+   }
+  },
+  "seed": 20015,
+  "snr_db": -5.0,
+  "seconds": 24.0,
+  "scene_id": "test/bus_g15_snr-5",
+  "set": "test",
+  "scenario": "bus",
+  "geom_id": "bus_test_g15",
+  "corpora": [
+   "libri",
+   "tts"
+  ],
+  "spacing_m": 0.025,
+  "rt60": 0.386,
+  "tail": "ism",
+  "duration_s": 24.0
+ },
+ "extra": false,
+ "status": "ok",
+ "runs": [
+  {
+   "run": "y1",
+   "flip": [],
+   "rtf": 0.00017134204169148384
+  },
+  {
+   "run": "y2",
+   "flip": [
+    "partner_B",
+    "near_1",
+    "near_2",
+    "near_3",
+    "cone",
+    "conv_1",
+    "babble_far",
+    "engine_road",
+    "transient",
+    "sensor"
+   ],
+   "rtf": 0.0001653090416766645
+  },
+  {
+   "run": "y3",
+   "flip": [
+    "partner_A",
+    "near_1",
+    "near_2",
+    "near_3",
+    "cone",
+    "conv_1",
+    "babble_far",
+    "engine_road",
+    "transient",
+    "sensor"
+   ],
+   "rtf": 0.00016059375002441811
+  },
+  {
+   "run": "y4",
+   "flip": [
+    "partner_A",
+    "partner_B"
+   ],
+   "rtf": 0.00016230037499553873
+  },
+  {
+   "run": "near",
+   "flip": [
+    "near_1",
+    "near_2",
+    "near_3"
+   ],
+   "rtf": 0.00016567362505763109
+  }
+ ],
+ "stages": false,
+ "algo_latency_ms": 0.0,
+ "offline_only": false,
+ "time_s": {
+  "method": 0.01980525200269767,
+  "score": 2.752880083000491
+ },
+ "m": {
+  "sdr_A": -12.63207529050258,
+  "estoi_A": 0.2320680678803342,
+  "sdr_in_A": -12.657690175959807,
+  "estoi_in_A": 0.23236270158141087,
+  "sdr_B": -16.75691951880782,
+  "estoi_B": 0.2533719335684774,
+  "sdr_in_B": -16.695247128127015,
+  "estoi_in_B": 0.24941046525491295,
+  "estoi_wrst": 0.2320680678803342,
+  "estoi_wrst_in": 0.23236270158141087,
+  "d_estoi_wrst": -0.00029463370107665754,
+  "d_estoi_min": -0.00029463370107665754,
+  "sdr_wrst": -16.75691951880782,
+  "d_sdr_min": -0.06167239068080477,
+  "ta_A": -0.01448279031901178,
+  "ta_out_A": -0.01448279031901178,
+  "ta_B": -0.08287628758308493,
+  "ta_out_B": -0.08287628758308493,
+  "ta_min": -0.08287628758308493,
+  "ta_mean": -0.04867953895104836,
+  "ta_mean_out": -0.04867953895104836,
+  "balance": 0.06839349726407315,
+  "balance_med": 0.057586795560715935,
+  "balance_p90": 0.17296694769997661,
+  "na_active": 0.019715033904983,
+  "na_idle": 0.2259286708273826,
+  "nm": 0.2062136369223996,
+  "nm_pre": 0.2062136369223996,
+  "na_active_out": 0.019715033904983,
+  "na_idle_out": 0.2259286708273826,
+  "idle_s": 3.973875,
+  "dsnr_active": -0.028964505046065358,
+  "dsir_near": 0.08847151222299722,
+  "dsir_rest": -0.03056945136300246,
+  "rda_mean": 0.0594676217414622,
+  "rda_p10": -0.06706893744376757,
+  "rda_n": 19.0,
+  "pass_estoi_med": 0.10299112340338674,
+  "pass_estoi_in_med": 0.10247158527158236,
+  "pass_drop_med": -0.0005195381318043851,
+  "conv_estoi_med": 0.0003227461068561373,
+  "conv_estoi_in_med": 0.005865957872785843,
+  "conv_drop_med": 0.005543211765929706,
+  "focus_c1": 0.0,
+  "focus_c2": 1.0,
+  "focus_c3": 0.0,
+  "focus_c4": 1.0,
+  "focus_pass": 0.0,
+  "delay": 0.0,
+  "delay_ok": 1.0,
+  "closure_db": 150.0,
+  "rtf": 0.0001653090416766645,
+  "rtf_y1": 0.00017134204169148384,
+  "rtf_max": 0.00017134204169148384,
+  "peak": 0.1864204167794827,
+  "clipped": 0.0,
+  "n_runs": 5.0
+ },
+ "legacy": {
+  "dsisdr_sum": 0.8709389335905406,
+  "br": 4.520814350585292,
+  "pesq": 1.2771137952804565,
+  "pesq_in": 1.0573580265045166,
+  "estoi_sum": 0.23359495641009212,
+  "estoi_sum_in": 0.23210946872025717
+ },
+ "talkers": {
+  "n1": {
+   "role": "near",
+   "dist_m": 0.633863,
+   "scored_s": 0.492875,
+   "estoi": null,
+   "estoi_in": null
+  },
+  "n3": {
+   "role": "near",
+   "dist_m": 0.749709,
+   "scored_s": 2.83275,
+   "estoi": 0.03172315174552709,
+   "estoi_in": 0.02713922213599213
+  },
+  "n2": {
+   "role": "near",
+   "dist_m": 0.931172,
+   "scored_s": 2.2399375,
+   "estoi": 0.1742590950612464,
+   "estoi_in": 0.1778039484071726
+  },
+  "c1a": {
+   "role": "conv",
+   "dist_m": 0.950898,
+   "scored_s": 1.18775,
+   "estoi": -0.0227813580841741,
+   "estoi_in": -0.020144522581305852
+  },
+  "c1b": {
+   "role": "conv",
+   "dist_m": 1.053375,
+   "scored_s": 1.912,
+   "estoi": 0.023426850297886374,
+   "estoi_in": 0.03187643832687754
+  },
+  "pA": {
+   "role": "partner",
+   "dist_m": 0.976841,
+   "sdr": -12.63207529050258,
+   "sdr_in": -12.657690175959807,
+   "estoi": 0.2320680678803342,
+   "estoi_in": 0.23236270158141087,
+   "ta": -0.01448279031901178,
+   "ta_out": -0.01448279031901178
+  },
+  "pB": {
+   "role": "partner",
+   "dist_m": 0.682494,
+   "sdr": -16.75691951880782,
+   "sdr_in": -16.695247128127015,
+   "estoi": 0.2533719335684774,
+   "estoi_in": 0.24941046525491295,
+   "ta": -0.08287628758308493,
+   "ta_out": -0.08287628758308493
+  }
+ },
+ "delay": 0,
+ "delay_found": true,
+ "aligned": false,
+ "pending": {
+  "wer": "pending: no ASR model downloaded yet (B8/T6 hook: score_wer)",
+  "dnsmos": "pending: no DNSMOS model downloaded yet (B9/T9 hook: score_dnsmos)"
+ },
+ "set": "test"
+}

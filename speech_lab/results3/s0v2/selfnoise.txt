@@ -1,0 +1,15 @@
+hw/rec2/reboot_03.wav    P@6k  -43.1 dB/bin | plain d 1.25 rms 0.027 | datasheet(-61) d 1.23 rms 0.028 | blind s2 -80 dB d 1.25 rms 0.027
+hw/rec2/reboot_05.wav    P@6k  -43.0 dB/bin | plain d 1.25 rms 0.026 | datasheet(-61) d 1.24 rms 0.026 | blind s2 -80 dB d 1.25 rms 0.026
+hw/rec2/drift_00.wav     P@6k  -31.7 dB/bin | plain d 1.21 rms 0.117 | datasheet(-61) d 1.21 rms 0.117 | blind s2 -56 dB d 1.20 rms 0.118
+hw/rec2/drift_01.wav     P@6k  -54.7 dB/bin | plain d 2.01 rms 0.139 | datasheet(-61) d 1.86 rms 0.126 | blind s2 -58 dB d 1.64 rms 0.102
+hw/rec2/drift_02.wav     P@6k  -45.9 dB/bin | plain d 1.59 rms 0.100 | datasheet(-61) d 1.51 rms 0.097 | blind s2 -58 dB d 1.41 rms 0.096
+hw/rec2/drift_03.wav     P@6k  -47.9 dB/bin | plain d 1.61 rms 0.114 | datasheet(-61) d 1.54 rms 0.107 | blind s2 -58 dB d 1.44 rms 0.102
+scan s2 (dB/bin):  d per file (cm)
+   -90: 1.25 1.25 1.21 2.01 1.59 1.61
+   -70: 1.25 1.25 1.21 1.99 1.58 1.61
+   -66: 1.24 1.25 1.21 1.97 1.57 1.59
+   -64: 1.24 1.25 1.21 1.94 1.55 1.58
+   -62: 1.24 1.24 1.21 1.90 1.53 1.56
+   -60: 1.23 1.23 1.21 1.81 1.49 1.52
+   -58: 1.21 1.22 1.21 1.64 1.41 1.44
+   -56: 1.19 1.19 1.20 0.60 1.24 1.23

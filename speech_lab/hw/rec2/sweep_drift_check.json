@@ -1,0 +1,32 @@
+{
+ "what": "Same-boot skew stability: direct-path TDOA of sweep_L (left MacBook speaker, nothing moved) vs noise-based estimates",
+ "boot": "since the 8th esptool reset at 01:54",
+ "points": [
+  {
+   "time": "01:55",
+   "take": "s3_sweep_L",
+   "direct_tdoa_2ms": -0.516,
+   "direct_tdoa_4ms": -0.422,
+   "level_B_re_A_db": -1.31,
+   "x_s0v2_noise_tau": -1.0211
+  },
+  {
+   "time": "03:26",
+   "take": "s4_sweep_L_0330",
+   "direct_tdoa_2ms": -0.516,
+   "direct_tdoa_4ms": -0.422,
+   "level_B_re_A_db": -1.29,
+   "x_s0v2_noise_tau": -1.0122,
+   "ambient_after": {
+    "take": "s4_ambient_0330",
+    "x_s0v2_tau": -1.0113,
+    "diffuse_fit_tau": -1.03
+   }
+  }
+ ],
+ "drift_watch_x_s0v2_tau_range_02_05_to_03_15": [
+  -1.0241,
+  -0.979
+ ],
+ "conclusion": "Direct path unchanged to 0.001 sample over 1.5 h: the skew is constant within a boot; the noise-based estimates wander by up to 0.045 sample as the fan noise field changes."
+}

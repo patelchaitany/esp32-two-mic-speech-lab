@@ -1,0 +1,229 @@
+{
+ "logs": [
+  {
+   "layout_id": "R01",
+   "scenes": [
+    "spacing/meeting_R01_d12",
+    "spacing/meeting_R01_d40"
+   ],
+   "geoms": {
+    "12": "meeting_spacing_R01_d12",
+    "40": "meeting_spacing_R01_d40"
+   },
+   "build_s": 27.6
+  },
+  {
+   "layout_id": "R00",
+   "scenes": [
+    "spacing/meeting_R00_d12",
+    "spacing/meeting_R00_d40"
+   ],
+   "geoms": {
+    "12": "meeting_spacing_R00_d12",
+    "40": "meeting_spacing_R00_d40"
+   },
+   "build_s": 2.0
+  },
+  {
+   "layout_id": "R02",
+   "scenes": [
+    "spacing/meeting_R02_d12",
+    "spacing/meeting_R02_d40"
+   ],
+   "geoms": {
+    "12": "meeting_spacing_R02_d12",
+    "40": "meeting_spacing_R02_d40"
+   },
+   "build_s": 1.3
+  },
+  {
+   "layout_id": "R03",
+   "scenes": [
+    "spacing/meeting_R03_d12",
+    "spacing/meeting_R03_d40"
+   ],
+   "geoms": {
+    "12": "meeting_spacing_R03_d12",
+    "40": "meeting_spacing_R03_d40"
+   },
+   "build_s": 1.6
+  },
+  {
+   "layout_id": "L00",
+   "stratum": "aligned",
+   "scenes": [
+    "spacing/bus_L00_d40_snr-5",
+    "spacing/bus_L00_d40_snr+0",
+    "spacing/bus_L00_d12_snr-5",
+    "spacing/bus_L00_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L00_d40",
+    "12": "bus_spacing_L00_d12"
+   },
+   "build_s": 1.7
+  },
+  {
+   "layout_id": "L01",
+   "stratum": "45",
+   "scenes": [
+    "spacing/bus_L01_d40_snr-5",
+    "spacing/bus_L01_d40_snr+0",
+    "spacing/bus_L01_d12_snr-5",
+    "spacing/bus_L01_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L01_d40",
+    "12": "bus_spacing_L01_d12"
+   },
+   "build_s": 2.3
+  },
+  {
+   "layout_id": "L02",
+   "stratum": "broadside",
+   "scenes": [
+    "spacing/bus_L02_d40_snr-5",
+    "spacing/bus_L02_d40_snr+0",
+    "spacing/bus_L02_d12_snr-5",
+    "spacing/bus_L02_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L02_d40",
+    "12": "bus_spacing_L02_d12"
+   },
+   "build_s": 1.8
+  },
+  {
+   "layout_id": "L03",
+   "stratum": "side_by_side",
+   "scenes": [
+    "spacing/bus_L03_d40_snr-5",
+    "spacing/bus_L03_d40_snr+0",
+    "spacing/bus_L03_d12_snr-5",
+    "spacing/bus_L03_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L03_d40",
+    "12": "bus_spacing_L03_d12"
+   },
+   "build_s": 1.7
+  },
+  {
+   "layout_id": "L04",
+   "stratum": "lap_flat",
+   "scenes": [
+    "spacing/bus_L04_d40_snr-5",
+    "spacing/bus_L04_d40_snr+0",
+    "spacing/bus_L04_d12_snr-5",
+    "spacing/bus_L04_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L04_d40",
+    "12": "bus_spacing_L04_d12"
+   },
+   "build_s": 1.8
+  },
+  {
+   "layout_id": "L05",
+   "stratum": "aligned",
+   "scenes": [
+    "spacing/bus_L05_d40_snr-5",
+    "spacing/bus_L05_d40_snr+0",
+    "spacing/bus_L05_d12_snr-5",
+    "spacing/bus_L05_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L05_d40",
+    "12": "bus_spacing_L05_d12"
+   },
+   "build_s": 1.9
+  },
+  {
+   "layout_id": "L06",
+   "stratum": "45",
+   "scenes": [
+    "spacing/bus_L06_d40_snr-5",
+    "spacing/bus_L06_d40_snr+0",
+    "spacing/bus_L06_d12_snr-5",
+    "spacing/bus_L06_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L06_d40",
+    "12": "bus_spacing_L06_d12"
+   },
+   "build_s": 1.6
+  },
+  {
+   "layout_id": "L07",
+   "stratum": "broadside",
+   "scenes": [
+    "spacing/bus_L07_d40_snr-5",
+    "spacing/bus_L07_d40_snr+0",
+    "spacing/bus_L07_d12_snr-5",
+    "spacing/bus_L07_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L07_d40",
+    "12": "bus_spacing_L07_d12"
+   },
+   "build_s": 1.9
+  },
+  {
+   "layout_id": "L08",
+   "stratum": "side_by_side",
+   "scenes": [
+    "spacing/bus_L08_d40_snr-5",
+    "spacing/bus_L08_d40_snr+0",
+    "spacing/bus_L08_d12_snr-5",
+    "spacing/bus_L08_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L08_d40",
+    "12": "bus_spacing_L08_d12"
+   },
+   "build_s": 2.2
+  },
+  {
+   "layout_id": "L09",
+   "stratum": "lap_flat",
+   "scenes": [
+    "spacing/bus_L09_d40_snr-5",
+    "spacing/bus_L09_d40_snr+0",
+    "spacing/bus_L09_d12_snr-5",
+    "spacing/bus_L09_d12_snr+0"
+   ],
+   "geoms": {
+    "40": "bus_spacing_L09_d40",
+    "12": "bus_spacing_L09_d12"
+   },
+   "build_s": 2.2
+  }
+ ],
+ "recipe_identity": {
+  "spacing/meeting_R01_dXX": true,
+  "spacing/meeting_R00_dXX": true,
+  "spacing/meeting_R02_dXX": true,
+  "spacing/meeting_R03_dXX": true,
+  "spacing/bus_L00_dXX_snr-5": true,
+  "spacing/bus_L00_dXX_snr+0": true,
+  "spacing/bus_L01_dXX_snr-5": true,
+  "spacing/bus_L01_dXX_snr+0": true,
+  "spacing/bus_L02_dXX_snr-5": true,
+  "spacing/bus_L02_dXX_snr+0": true,
+  "spacing/bus_L03_dXX_snr-5": true,
+  "spacing/bus_L03_dXX_snr+0": true,
+  "spacing/bus_L04_dXX_snr-5": true,
+  "spacing/bus_L04_dXX_snr+0": true,
+  "spacing/bus_L05_dXX_snr-5": true,
+  "spacing/bus_L05_dXX_snr+0": true,
+  "spacing/bus_L06_dXX_snr-5": true,
+  "spacing/bus_L06_dXX_snr+0": true,
+  "spacing/bus_L07_dXX_snr-5": true,
+  "spacing/bus_L07_dXX_snr+0": true,
+  "spacing/bus_L08_dXX_snr-5": true,
+  "spacing/bus_L08_dXX_snr+0": true,
+  "spacing/bus_L09_dXX_snr-5": true,
+  "spacing/bus_L09_dXX_snr+0": true
+ },
+ "wall_s": 31.6
+}

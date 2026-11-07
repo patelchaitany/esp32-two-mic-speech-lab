@@ -1,0 +1,216 @@
+{
+ "bench": "realeval/1",
+ "scene": "bus/L2_snr+0_recorded",
+ "method": "x_bus_v3_classic",
+ "scenario": "bus",
+ "card": {
+  "id": "bus/L2_snr+0_recorded",
+  "set": "bus",
+  "layout": "L2",
+  "snr_db": 0.0,
+  "device_noise": "recorded",
+  "gain_sim": 3.430008826650389,
+  "gain_device": 1.0
+ },
+ "info_keys": [
+  "calib_json",
+  "enroll",
+  "scenario",
+  "spacing_m"
+ ],
+ "status": "ok",
+ "runs": [
+  {
+   "run": "y1",
+   "flip": [],
+   "rtf": 0.08384915337840144
+  },
+  {
+   "run": "y2",
+   "flip": [
+    "partner_B",
+    "near_1",
+    "near_2",
+    "near_3",
+    "near_4",
+    "bus_noise",
+    "device"
+   ],
+   "rtf": 0.09084050148824412
+  },
+  {
+   "run": "y3",
+   "flip": [
+    "partner_A",
+    "near_1",
+    "near_2",
+    "near_3",
+    "near_4",
+    "bus_noise",
+    "device"
+   ],
+   "rtf": 0.07118279794725564
+  },
+  {
+   "run": "y4",
+   "flip": [
+    "partner_A",
+    "partner_B"
+   ],
+   "rtf": 0.08636606488360372
+  },
+  {
+   "run": "near",
+   "flip": [
+    "near_1",
+    "near_2",
+    "near_3",
+    "near_4"
+   ],
+   "rtf": 0.10231453394599721
+  }
+ ],
+ "stages": true,
+ "algo_latency_ms": 37.0,
+ "time_s": {
+  "method": 12.276123708928935,
+  "score": 3.978845207951963
+ },
+ "m": {
+  "sdr_A": -0.7524765488527103,
+  "estoi_A": 0.4392156966379544,
+  "sdr_in_A": -1.762465864308652,
+  "estoi_in_A": 0.4061110089214112,
+  "sdr_B": -5.104479649816015,
+  "estoi_B": 0.14433545115633695,
+  "sdr_in_B": -6.068444211001989,
+  "estoi_in_B": 0.13624869505636192,
+  "estoi_wrst": 0.14433545115633695,
+  "estoi_wrst_in": 0.13624869505636192,
+  "d_estoi_wrst": 0.008086756099975029,
+  "d_estoi_min": 0.008086756099975029,
+  "sdr_wrst": -5.104479649816015,
+  "d_sdr_min": 0.963964561185974,
+  "ta_A": -2.258567840245364,
+  "ta_out_A": -2.258567840245364,
+  "ta_B": -2.8207536042850716,
+  "ta_out_B": -2.8207536042850716,
+  "ta_min": -2.8207536042850716,
+  "ta_mean": -2.539660722265218,
+  "ta_mean_out": -2.539660722265218,
+  "balance": 0.5621857640397074,
+  "balance_med": 0.6302624844537652,
+  "balance_p90": 1.3159403005633061,
+  "na_active": 3.198173357260377,
+  "na_idle": null,
+  "nm": null,
+  "nm_pre": null,
+  "na_active_out": 3.198173357260377,
+  "na_idle_out": null,
+  "idle_s": 0.0,
+  "dsnr_active": 0.6585126349951591,
+  "dsir_near": 0.1106593726896481,
+  "dsir_rest": 0.8379396915000346,
+  "rda_mean": 0.15195798573041053,
+  "rda_p10": -0.5645543085300889,
+  "rda_n": 29.0,
+  "pass_estoi_med": 0.12065981363072176,
+  "pass_estoi_in_med": 0.12281793530029274,
+  "pass_drop_med": 0.0004270052746521147,
+  "conv_estoi_med": null,
+  "conv_estoi_in_med": null,
+  "conv_drop_med": null,
+  "focus_c1": 1.0,
+  "focus_c2": 1.0,
+  "focus_c3": 0.0,
+  "focus_c4": 1.0,
+  "focus_pass": 0.0,
+  "delay": 0.0,
+  "delay_ok": 1.0,
+  "closure_db": 44.155870317952946,
+  "rtf": 0.08636606488360372,
+  "rtf_max": 0.10231453394599721,
+  "peak": 0.09699192062160222,
+  "clipped": 0.0,
+  "n_runs": 5.0,
+  "gap_s": 1.78,
+  "na_gap_pre": 3.6753872585855403,
+  "na_act_pre": 3.198173357260377,
+  "na_gap_out": 3.6753872585855403,
+  "na_act_out": 3.198173357260377,
+  "nm_gap": 0.4772139013251633
+ },
+ "legacy": {
+  "dsisdr_sum": 0.43010356210579426,
+  "br": null,
+  "pesq": 1.0767825841903687,
+  "pesq_in": 1.0434879064559937,
+  "estoi_sum": 0.2914135227247248,
+  "estoi_sum_in": 0.27296106513266
+ },
+ "talkers": {
+  "pax4": {
+   "role": "near",
+   "dist_m": 1.102152,
+   "scored_s": 2.25,
+   "estoi": 0.20909378827775604,
+   "estoi_in": 0.20952079355240816
+  },
+  "pax2": {
+   "role": "near",
+   "dist_m": 1.246822,
+   "scored_s": 2.132875,
+   "estoi": -0.013825730361543971,
+   "estoi_in": -0.02046119465095598
+  },
+  "pax1": {
+   "role": "near",
+   "dist_m": 1.270269,
+   "scored_s": 2.75,
+   "estoi": 0.12065981363072176,
+   "estoi_in": 0.12281793530029274
+  },
+  "pA": {
+   "role": "partner",
+   "dist_m": null,
+   "sdr": -0.7524765488527103,
+   "sdr_in": -1.762465864308652,
+   "estoi": 0.4392156966379544,
+   "estoi_in": 0.4061110089214112,
+   "ta": -2.258567840245364,
+   "ta_out": -2.258567840245364
+  },
+  "pB": {
+   "role": "partner",
+   "dist_m": null,
+   "sdr": -5.104479649816015,
+   "sdr_in": -6.068444211001989,
+   "estoi": 0.14433545115633695,
+   "estoi_in": 0.13624869505636192,
+   "ta": -2.8207536042850716,
+   "ta_out": -2.8207536042850716
+  }
+ },
+ "delay": 0,
+ "delay_found": true,
+ "aligned": false,
+ "pending": {
+  "wer": "pending: no ASR model downloaded yet (B8/T6 hook: score_wer)",
+  "dnsmos": "pending: no DNSMOS model downloaded yet (B9/T9 hook: score_dnsmos)"
+ },
+ "own": {
+  "pA": {
+   "estoi_full": 0.4188637663695103,
+   "sdr_full": -0.7610356542794529,
+   "estoi_full_in": 0.39379750304331296
+  },
+  "pB": {
+   "estoi_full": 0.16733895142221744,
+   "sdr_full": -4.649293205932519,
+   "estoi_full_in": 0.16741526266381485
+  }
+ },
+ "variant": "measured",
+ "enroll": "clean",
+ "wall_s": 16.265477895736694
+}

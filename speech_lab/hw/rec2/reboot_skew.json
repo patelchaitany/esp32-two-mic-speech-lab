@@ -1,0 +1,74 @@
+[
+ {
+  "cycle": 0,
+  "esptool_ok": true,
+  "d_cm": 1.15,
+  "rho": 0.95,
+  "rmse": 0.138,
+  "skew_samples": -1.029,
+  "time": "01:51:24"
+ },
+ {
+  "cycle": 1,
+  "esptool_ok": true,
+  "d_cm": 1.11,
+  "rho": 0.96,
+  "rmse": 0.105,
+  "skew_samples": -1.011,
+  "time": "01:51:52"
+ },
+ {
+  "cycle": 2,
+  "esptool_ok": true,
+  "d_cm": 1.14,
+  "rho": 0.96,
+  "rmse": 0.068,
+  "skew_samples": -1.011,
+  "time": "01:52:23"
+ },
+ {
+  "cycle": 3,
+  "esptool_ok": true,
+  "d_cm": 1.19,
+  "rho": 0.98,
+  "rmse": 0.045,
+  "skew_samples": -1.009,
+  "time": "01:52:52"
+ },
+ {
+  "cycle": 4,
+  "esptool_ok": true,
+  "d_cm": 1.16,
+  "rho": 0.96,
+  "rmse": 0.065,
+  "skew_samples": -1.013,
+  "time": "01:53:20"
+ },
+ {
+  "cycle": 5,
+  "esptool_ok": true,
+  "d_cm": 1.18,
+  "rho": 0.98,
+  "rmse": 0.052,
+  "skew_samples": -1.008,
+  "time": "01:53:49"
+ },
+ {
+  "cycle": 6,
+  "esptool_ok": true,
+  "d_cm": 1.16,
+  "rho": 0.97,
+  "rmse": 0.052,
+  "skew_samples": -1.009,
+  "time": "01:54:18"
+ },
+ {
+  "cycle": 7,
+  "esptool_ok": true,
+  "d_cm": 1.13,
+  "rho": 0.96,
+  "rmse": 0.064,
+  "skew_samples": -1.01,
+  "time": "01:54:48"
+ }
+]

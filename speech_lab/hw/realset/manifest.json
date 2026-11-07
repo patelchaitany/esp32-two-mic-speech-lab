@@ -1,0 +1,200 @@
+{
+ "A1": {
+  "speaker": "121",
+  "side": "L",
+  "level_db": 0,
+  "kind": "scene",
+  "utts": [
+   "121-121726-0010"
+  ],
+  "active_frac": 0.857,
+  "sound_s": 4.2
+ },
+ "A2": {
+  "speaker": "121",
+  "side": "L",
+  "level_db": 0,
+  "kind": "scene",
+  "utts": [
+   "121-121726-0007"
+  ],
+  "active_frac": 0.833,
+  "sound_s": 4.2
+ },
+ "A3": {
+  "speaker": "121",
+  "side": "L",
+  "level_db": 0,
+  "kind": "scene",
+  "utts": [
+   "121-121726-0000"
+  ],
+  "active_frac": 0.819,
+  "sound_s": 4.2
+ },
+ "B1": {
+  "speaker": "1089",
+  "side": "R",
+  "level_db": 0,
+  "kind": "scene",
+  "utts": [
+   "1089-134686-0028"
+  ],
+  "active_frac": 0.943,
+  "sound_s": 4.2
+ },
+ "B2": {
+  "speaker": "1089",
+  "side": "R",
+  "level_db": 0,
+  "kind": "scene",
+  "utts": [
+   "1089-134686-0006"
+  ],
+  "active_frac": 0.867,
+  "sound_s": 4.2
+ },
+ "B3": {
+  "speaker": "1089",
+  "side": "R",
+  "level_db": 0,
+  "kind": "scene",
+  "utts": [
+   "1089-134686-0031"
+  ],
+  "active_frac": 0.867,
+  "sound_s": 4.2
+ },
+ "AE1": {
+  "speaker": "121",
+  "side": "L",
+  "level_db": 0,
+  "kind": "enroll",
+  "utts": [
+   "121-123852-0000"
+  ],
+  "active_frac": 0.762,
+  "sound_s": 4.2
+ },
+ "AE2": {
+  "speaker": "121",
+  "side": "L",
+  "level_db": 0,
+  "kind": "enroll",
+  "utts": [
+   "121-123852-0004"
+  ],
+  "active_frac": 0.838,
+  "sound_s": 4.2
+ },
+ "BE1": {
+  "speaker": "1089",
+  "side": "R",
+  "level_db": 0,
+  "kind": "enroll",
+  "utts": [
+   "1089-134691-0017"
+  ],
+  "active_frac": 0.848,
+  "sound_s": 4.2
+ },
+ "BE2": {
+  "speaker": "1089",
+  "side": "R",
+  "level_db": 0,
+  "kind": "enroll",
+  "utts": [
+   "1089-134691-0011"
+  ],
+  "active_frac": 0.843,
+  "sound_s": 4.2
+ },
+ "M1": {
+  "speaker": "3575",
+  "side": "L",
+  "level_db": 0,
+  "kind": "scene",
+  "utts": [
+   "3575-170457-0014"
+  ],
+  "active_frac": 0.914,
+  "sound_s": 4.2
+ },
+ "M2": {
+  "speaker": "2300",
+  "side": "R",
+  "level_db": -6,
+  "kind": "scene",
+  "utts": [
+   "2300-131720-0037"
+  ],
+  "active_frac": 0.952,
+  "sound_s": 4.2
+ },
+ "M3": {
+  "speaker": "1995",
+  "side": "L",
+  "level_db": -12,
+  "kind": "scene",
+  "utts": [
+   "1995-1836-0003"
+  ],
+  "active_frac": 0.962,
+  "sound_s": 4.2
+ },
+ "M4": {
+  "speaker": "7729",
+  "side": "R",
+  "level_db": -3,
+  "kind": "scene",
+  "utts": [
+   "7729-102255-0042"
+  ],
+  "active_frac": 0.905,
+  "sound_s": 4.2
+ },
+ "M5": {
+  "speaker": "4970",
+  "side": "L",
+  "level_db": -9,
+  "kind": "scene",
+  "utts": [
+   "4970-29093-0012"
+  ],
+  "active_frac": 0.752,
+  "sound_s": 4.2
+ },
+ "M6": {
+  "speaker": "1320",
+  "side": "R",
+  "level_db": -15,
+  "kind": "scene",
+  "utts": [
+   "1320-122617-0009"
+  ],
+  "active_frac": 0.962,
+  "sound_s": 4.2
+ },
+ "MF1": {
+  "speaker": "6829",
+  "side": "L",
+  "level_db": -6,
+  "kind": "far",
+  "utts": [
+   "6829-68771-0018"
+  ],
+  "active_frac": 0.912,
+  "sound_s": 4.2
+ },
+ "MF2": {
+  "speaker": "260",
+  "side": "R",
+  "level_db": -6,
+  "kind": "far",
+  "utts": [
+   "260-123288-0002"
+  ],
+  "active_frac": 0.994,
+  "sound_s": 4.2
+ }
+}

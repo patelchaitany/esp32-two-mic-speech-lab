@@ -1,0 +1,17 @@
+{
+ "fs": 16000,
+ "channels": 2,
+ "frames": 192000,
+ "t_cmd": 1002101.364176333,
+ "t_rec": 1002101.368593708,
+ "t_end": 1002113.348058,
+ "stream_s": 11.979464291944169,
+ "extra_bytes": 0,
+ "diffuse_fit": {
+  "d_cm": 1.19,
+  "rho": 0.96,
+  "rmse": 0.112,
+  "skew_samples": -1.111
+ },
+ "label": "s2_ambient"
+}

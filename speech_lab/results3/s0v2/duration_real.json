@@ -1,0 +1,62 @@
+{
+ "0.5": {
+  "n": 36,
+  "skew_median": NaN,
+  "skew_p90_abs_dev_from_-1.01": NaN,
+  "skew_p90_abs_dev_from_own_median": NaN,
+  "d_median_cm": NaN,
+  "d_p90_abs_rel_dev_from_1.19": NaN,
+  "d_p90_abs_rel_dev_from_own_median": NaN,
+  "noise_frames_note": "about 30-80 % of each window passes the noise gate"
+ },
+ "1.0": {
+  "n": 36,
+  "skew_median": -1.020846771386179,
+  "skew_p90_abs_dev_from_-1.01": 0.021168595174973076,
+  "skew_p90_abs_dev_from_own_median": 0.015388102065132176,
+  "d_median_cm": 1.2421893573815286,
+  "d_p90_abs_rel_dev_from_1.19": 0.06448840984090878,
+  "d_p90_abs_rel_dev_from_own_median": 0.0444722386964553,
+  "noise_frames_note": "about 30-80 % of each window passes the noise gate"
+ },
+ "2.0": {
+  "n": 36,
+  "skew_median": -1.0213234128956894,
+  "skew_p90_abs_dev_from_-1.01": 0.01753293717659621,
+  "skew_p90_abs_dev_from_own_median": 0.013589484109966077,
+  "d_median_cm": 1.247933594095752,
+  "d_p90_abs_rel_dev_from_1.19": 0.06324261249523455,
+  "d_p90_abs_rel_dev_from_own_median": 0.040945767945677,
+  "noise_frames_note": "about 30-80 % of each window passes the noise gate"
+ },
+ "4.0": {
+  "n": 36,
+  "skew_median": -1.0210313740098313,
+  "skew_p90_abs_dev_from_-1.01": 0.01673450787638442,
+  "skew_p90_abs_dev_from_own_median": 0.01207884678376625,
+  "d_median_cm": 1.2484701581232853,
+  "d_p90_abs_rel_dev_from_1.19": 0.05872776612269337,
+  "d_p90_abs_rel_dev_from_own_median": 0.028602260964641524,
+  "noise_frames_note": "about 30-80 % of each window passes the noise gate"
+ },
+ "8.0": {
+  "n": 18,
+  "skew_median": -1.0199815701039017,
+  "skew_p90_abs_dev_from_-1.01": 0.01833941794996457,
+  "skew_p90_abs_dev_from_own_median": 0.008357847846062909,
+  "d_median_cm": 1.2505334532384151,
+  "d_p90_abs_rel_dev_from_1.19": 0.060595883927265386,
+  "d_p90_abs_rel_dev_from_own_median": 0.023992579723618224,
+  "noise_frames_note": "about 30-80 % of each window passes the noise gate"
+ },
+ "11.0": {
+  "n": 18,
+  "skew_median": -1.0201112255381903,
+  "skew_p90_abs_dev_from_-1.01": 0.02054238025520648,
+  "skew_p90_abs_dev_from_own_median": 0.010431154717016153,
+  "d_median_cm": 1.2511013249405212,
+  "d_p90_abs_rel_dev_from_1.19": 0.06056166745715581,
+  "d_p90_abs_rel_dev_from_own_median": 0.014017540569693052,
+  "noise_frames_note": "about 30-80 % of each window passes the noise gate"
+ }
+}

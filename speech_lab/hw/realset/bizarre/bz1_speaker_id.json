@@ -1,0 +1,1100 @@
+{
+ "ref_cross_cos": [
+  [
+   1.0,
+   0.109,
+   0.096,
+   -0.107,
+   0.192,
+   0.107,
+   0.183,
+   0.053
+  ],
+  [
+   0.109,
+   1.0,
+   0.146,
+   0.147,
+   0.015,
+   0.298,
+   0.176,
+   0.024
+  ],
+  [
+   0.096,
+   0.146,
+   1.0,
+   0.065,
+   -0.005,
+   0.096,
+   0.081,
+   0.173
+  ],
+  [
+   -0.107,
+   0.147,
+   0.065,
+   1.0,
+   0.057,
+   0.085,
+   0.017,
+   0.028
+  ],
+  [
+   0.192,
+   0.015,
+   -0.005,
+   0.057,
+   1.0,
+   0.009,
+   0.276,
+   0.06
+  ],
+  [
+   0.107,
+   0.298,
+   0.096,
+   0.085,
+   0.009,
+   1.0,
+   0.092,
+   0.331
+  ],
+  [
+   0.183,
+   0.176,
+   0.081,
+   0.017,
+   0.276,
+   0.092,
+   1.0,
+   0.065
+  ],
+  [
+   0.053,
+   0.024,
+   0.173,
+   0.028,
+   0.06,
+   0.331,
+   0.065,
+   1.0
+  ]
+ ],
+ "scenes": {
+  "meeting/recorded": {
+   "clean": {
+    "n_chunks": 32,
+    "id_acc": 0.9375,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 1.0,
+     "MF1": 0.75,
+     "MF2": 0.75
+    },
+    "cos_target_median": 0.5114989284392276,
+    "cos_nontarget_p95": 0.238803975515967,
+    "eer": 0.08928571428571429,
+    "cos_target_per_talker": {
+     "M1": 0.7343045461168256,
+     "M2": 0.5401894078638986,
+     "M3": 0.4253698377911959,
+     "M4": 0.5689644857903049,
+     "M5": 0.5928530364121649,
+     "M6": 0.3786192211806129,
+     "MF1": 0.2376781639231474,
+     "MF2": 0.33111304762968213
+    },
+    "ahc_0.375": {
+     "n_clusters": 10,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.9003215434083601
+    },
+    "ahc_0.5": {
+     "n_clusters": 15,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.6625650733554189
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 1.0
+    },
+    "online_0.375": {
+     "n_clusters": 8,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 1.0
+    },
+    "online_0.6": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.5201238390092879
+    }
+   },
+   "raw": {
+    "n_chunks": 32,
+    "id_acc": 0.5,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 0.5,
+     "M3": 0.5,
+     "M4": 0.5,
+     "M5": 1.0,
+     "M6": 0.0,
+     "MF1": 0.5,
+     "MF2": 0.0
+    },
+    "cos_target_median": 0.2057264024294035,
+    "cos_nontarget_p95": 0.22426964306800037,
+    "eer": 0.28125,
+    "cos_target_per_talker": {
+     "M1": 0.4943632435859151,
+     "M2": 0.22278147906240509,
+     "M3": 0.1954933309536161,
+     "M4": 0.1805863537058328,
+     "M5": 0.4399260779102836,
+     "M6": 0.07685902494333949,
+     "MF1": 0.1331138233756031,
+     "MF2": 0.18065356483447648
+    },
+    "ahc_0.375": {
+     "n_clusters": 9,
+     "purity": 0.71875,
+     "talkers_covered": 7,
+     "absorbed_talkers": [
+      "M3",
+      "M6"
+     ],
+     "ari": 0.4036449544380695
+    },
+    "ahc_0.5": {
+     "n_clusters": 15,
+     "purity": 0.875,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.3538536112457586
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.65625,
+     "talkers_covered": 6,
+     "absorbed_talkers": [
+      "M3",
+      "M6",
+      "MF2"
+     ],
+     "ari": 0.40214985773000317
+    },
+    "online_0.375": {
+     "n_clusters": 5,
+     "purity": 0.4375,
+     "talkers_covered": 5,
+     "absorbed_talkers": [
+      "M3",
+      "M4",
+      "M6",
+      "MF1",
+      "MF2"
+     ],
+     "ari": 0.1515271717572392
+    },
+    "online_0.6": {
+     "n_clusters": 21,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.4015444015444016
+    }
+   },
+   "gtcrn": {
+    "n_chunks": 32,
+    "id_acc": 0.4375,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 0.5,
+     "M3": 0.25,
+     "M4": 0.25,
+     "M5": 1.0,
+     "M6": 0.0,
+     "MF1": 0.5,
+     "MF2": 0.0
+    },
+    "cos_target_median": 0.19983235828649154,
+    "cos_nontarget_p95": 0.22429402129789439,
+    "eer": 0.3392857142857143,
+    "cos_target_per_talker": {
+     "M1": 0.5331266687505141,
+     "M2": 0.19281808607101486,
+     "M3": 0.20891189224692952,
+     "M4": 0.19265694994183483,
+     "M5": 0.4464727102352888,
+     "M6": 0.1063323376366786,
+     "MF1": 0.15984717635013207,
+     "MF2": 0.11527081122328159
+    },
+    "ahc_0.375": {
+     "n_clusters": 11,
+     "purity": 0.84375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [
+      "MF1"
+     ],
+     "ari": 0.6274347285536676
+    },
+    "ahc_0.5": {
+     "n_clusters": 17,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.5201238390092879
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.78125,
+     "talkers_covered": 7,
+     "absorbed_talkers": [
+      "MF1"
+     ],
+     "ari": 0.5851917930419268
+    },
+    "online_0.375": {
+     "n_clusters": 6,
+     "purity": 0.5,
+     "talkers_covered": 5,
+     "absorbed_talkers": [
+      "M3",
+      "M6",
+      "MF1",
+      "MF2"
+     ],
+     "ari": 0.19229011122962059
+    },
+    "online_0.6": {
+     "n_clusters": 22,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.426550598476605
+    }
+   },
+   "wpe": {
+    "n_chunks": 32,
+    "id_acc": 0.5625,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 0.5,
+     "M3": 0.5,
+     "M4": 0.75,
+     "M5": 1.0,
+     "M6": 0.0,
+     "MF1": 0.25,
+     "MF2": 0.5
+    },
+    "cos_target_median": 0.19808590678775112,
+    "cos_nontarget_p95": 0.21426399102454038,
+    "eer": 0.28125,
+    "cos_target_per_talker": {
+     "M1": 0.47727273995029373,
+     "M2": 0.2189602463670451,
+     "M3": 0.18167586998051244,
+     "M4": 0.18968299241251368,
+     "M5": 0.4183624276814938,
+     "M6": 0.09010411566604484,
+     "MF1": 0.10633637116870198,
+     "MF2": 0.18553865003486147
+    },
+    "ahc_0.375": {
+     "n_clusters": 9,
+     "purity": 0.6875,
+     "talkers_covered": 7,
+     "absorbed_talkers": [
+      "MF1"
+     ],
+     "ari": 0.36238981390793334
+    },
+    "ahc_0.5": {
+     "n_clusters": 16,
+     "purity": 0.90625,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.3839069316529326
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.625,
+     "talkers_covered": 6,
+     "absorbed_talkers": [
+      "MF1",
+      "MF2"
+     ],
+     "ari": 0.3634692001225866
+    },
+    "online_0.375": {
+     "n_clusters": 5,
+     "purity": 0.4375,
+     "talkers_covered": 5,
+     "absorbed_talkers": [
+      "M3",
+      "M4",
+      "M6",
+      "MF1",
+      "MF2"
+     ],
+     "ari": 0.1515271717572392
+    },
+    "online_0.6": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.426550598476605
+    }
+   },
+   "s1_embed": {
+    "n_clusters": 0,
+    "purity": NaN,
+    "talkers_covered": 0,
+    "absorbed_talkers": [],
+    "ari": NaN,
+    "empty": true,
+    "frac_turn_frames_labelled": 0.0,
+    "n_clusters_total": 0,
+    "vad_gt_0.5_frac": 0.10421888053467,
+    "vad_gt_0.5_frac_in_turns": 0.10971545757498077,
+    "vad_gt_0.5_frac_per_talker": {
+     "M1": 0.23770491803278687,
+     "M2": 0.014344262295081968,
+     "M3": 0.1026694045174538,
+     "M4": 0.07377049180327869,
+     "M5": 0.08418891170431211,
+     "M6": 0.03490759753593429,
+     "MF1": 0.25614754098360654,
+     "MF2": 0.07377049180327869
+    },
+    "labelled_frac_per_talker": {
+     "M1": 0.0,
+     "M2": 0.0,
+     "M3": 0.0,
+     "M4": 0.0,
+     "M5": 0.0,
+     "M6": 0.0,
+     "MF1": 0.0,
+     "MF2": 0.0
+    }
+   },
+   "s1_dpmeans": {
+    "n_clusters": 1,
+    "purity": 0.4449152542372881,
+    "talkers_covered": 1,
+    "absorbed_talkers": [
+     "M1",
+     "M3",
+     "M4",
+     "MF2"
+    ],
+    "ari": 0.0,
+    "frac_turn_frames_labelled": 0.12099461676493208,
+    "n_clusters_total": 1,
+    "vad_gt_0.5_frac": 0.10421888053467,
+    "vad_gt_0.5_frac_in_turns": 0.10971545757498077,
+    "vad_gt_0.5_frac_per_talker": {
+     "M1": 0.23770491803278687,
+     "M2": 0.014344262295081968,
+     "M3": 0.1026694045174538,
+     "M4": 0.07377049180327869,
+     "M5": 0.08418891170431211,
+     "M6": 0.03490759753593429,
+     "MF1": 0.25614754098360654,
+     "MF2": 0.07377049180327869
+    },
+    "labelled_frac_per_talker": {
+     "M1": 0.3463114754098361,
+     "M2": 0.0,
+     "M3": 0.11909650924024641,
+     "M4": 0.00819672131147541,
+     "M5": 0.0,
+     "M6": 0.0,
+     "MF1": 0.430327868852459,
+     "MF2": 0.06352459016393443
+    }
+   }
+  },
+  "meeting/quiet": {
+   "clean": {
+    "n_chunks": 32,
+    "id_acc": 0.9375,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 1.0,
+     "MF1": 0.75,
+     "MF2": 0.75
+    },
+    "cos_target_median": 0.5114989284392276,
+    "cos_nontarget_p95": 0.238803975515967,
+    "eer": 0.08928571428571429,
+    "cos_target_per_talker": {
+     "M1": 0.7343045461168256,
+     "M2": 0.5401894078638986,
+     "M3": 0.4253698377911959,
+     "M4": 0.5689644857903049,
+     "M5": 0.5928530364121649,
+     "M6": 0.3786192211806129,
+     "MF1": 0.2376781639231474,
+     "MF2": 0.33111304762968213
+    },
+    "ahc_0.375": {
+     "n_clusters": 10,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.9003215434083601
+    },
+    "ahc_0.5": {
+     "n_clusters": 15,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.6625650733554189
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 1.0
+    },
+    "online_0.375": {
+     "n_clusters": 8,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 1.0
+    },
+    "online_0.6": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.5201238390092879
+    }
+   },
+   "raw": {
+    "n_chunks": 32,
+    "id_acc": 0.8125,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 0.5,
+     "MF1": 0.5,
+     "MF2": 0.5
+    },
+    "cos_target_median": 0.3809469006599753,
+    "cos_nontarget_p95": 0.20591463988584108,
+    "eer": 0.1875,
+    "cos_target_per_talker": {
+     "M1": 0.7256866793001038,
+     "M2": 0.4296976198866282,
+     "M3": 0.42854058424498226,
+     "M4": 0.3198717715215843,
+     "M5": 0.5194783013505829,
+     "M6": 0.1269557425126076,
+     "MF1": 0.1477139967107343,
+     "MF2": 0.19044502657023182
+    },
+    "ahc_0.375": {
+     "n_clusters": 14,
+     "purity": 0.9375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [
+      "MF1"
+     ],
+     "ari": 0.6748251748251748
+    },
+    "ahc_0.5": {
+     "n_clusters": 19,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.47457627118644063
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.9375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.866571018651363
+    },
+    "online_0.375": {
+     "n_clusters": 11,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.8867235079171741
+    },
+    "online_0.6": {
+     "n_clusters": 21,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.47457627118644063
+    }
+   },
+   "gtcrn": {
+    "n_chunks": 32,
+    "id_acc": 0.78125,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 0.5,
+     "MF1": 0.5,
+     "MF2": 0.25
+    },
+    "cos_target_median": 0.359393459183859,
+    "cos_nontarget_p95": 0.21675686214163858,
+    "eer": 0.15625,
+    "cos_target_per_talker": {
+     "M1": 0.7140369307130805,
+     "M2": 0.48060014378122684,
+     "M3": 0.40328783445798966,
+     "M4": 0.28252038049034867,
+     "M5": 0.4910456712511908,
+     "M6": 0.13045419276352857,
+     "MF1": 0.22676286750490554,
+     "MF2": 0.1357128161662211
+    },
+    "ahc_0.375": {
+     "n_clusters": 12,
+     "purity": 0.9375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.7082976903336184
+    },
+    "ahc_0.5": {
+     "n_clusters": 21,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.3758389261744966
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.9375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.866571018651363
+    },
+    "online_0.375": {
+     "n_clusters": 9,
+     "purity": 0.9375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [
+      "MF1"
+     ],
+     "ari": 0.84866691701089
+    },
+    "online_0.6": {
+     "n_clusters": 21,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.3758389261744966
+    }
+   },
+   "wpe": {
+    "n_chunks": 32,
+    "id_acc": 0.71875,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 0.25,
+     "MF1": 0.25,
+     "MF2": 0.25
+    },
+    "cos_target_median": 0.38364710680040887,
+    "cos_nontarget_p95": 0.2068632792456287,
+    "eer": 0.1875,
+    "cos_target_per_talker": {
+     "M1": 0.7457877852496437,
+     "M2": 0.45358416928090317,
+     "M3": 0.40332258515138275,
+     "M4": 0.3204784096467713,
+     "M5": 0.4958346555472639,
+     "M6": 0.12922263774480613,
+     "MF1": 0.16611120720752381,
+     "MF2": 0.1484053354626057
+    },
+    "ahc_0.375": {
+     "n_clusters": 13,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.7832167832167831
+    },
+    "ahc_0.5": {
+     "n_clusters": 19,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.47457627118644063
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.9375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.866571018651363
+    },
+    "online_0.375": {
+     "n_clusters": 9,
+     "purity": 0.875,
+     "talkers_covered": 7,
+     "absorbed_talkers": [
+      "MF2"
+     ],
+     "ari": 0.7553802008608321
+    },
+    "online_0.6": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.47457627118644063
+    }
+   },
+   "s1_embed": {
+    "n_clusters": 4,
+    "purity": 0.5515273581738839,
+    "talkers_covered": 4,
+    "absorbed_talkers": [
+     "M2",
+     "M3",
+     "M5",
+     "M6"
+    ],
+    "ari": 0.5054269560003833,
+    "frac_turn_frames_labelled": 0.7636503460651115,
+    "n_clusters_total": 4,
+    "vad_gt_0.5_frac": 0.5417710944026733,
+    "vad_gt_0.5_frac_in_turns": 0.6075365290951038,
+    "vad_gt_0.5_frac_per_talker": {
+     "M1": 0.7848360655737705,
+     "M2": 0.5717213114754098,
+     "M3": 0.6201232032854209,
+     "M4": 0.7459016393442623,
+     "M5": 0.5030800821355236,
+     "M6": 0.21560574948665298,
+     "MF1": 0.7274590163934426,
+     "MF2": 0.6905737704918032
+    },
+    "labelled_frac_per_talker": {
+     "M1": 0.8709016393442623,
+     "M2": 0.7069672131147541,
+     "M3": 0.8008213552361396,
+     "M4": 1.0,
+     "M5": 0.971252566735113,
+     "M6": 0.26283367556468173,
+     "MF1": 0.805327868852459,
+     "MF2": 0.6905737704918032
+    }
+   },
+   "s1_dpmeans": {
+    "n_clusters": 1,
+    "purity": 0.16874135546334718,
+    "talkers_covered": 1,
+    "absorbed_talkers": [
+     "M1",
+     "M2",
+     "M3",
+     "M5",
+     "M6",
+     "MF1",
+     "MF2"
+    ],
+    "ari": 0.0,
+    "frac_turn_frames_labelled": 0.7413483722122532,
+    "n_clusters_total": 1,
+    "vad_gt_0.5_frac": 0.5417710944026733,
+    "vad_gt_0.5_frac_in_turns": 0.6075365290951038,
+    "vad_gt_0.5_frac_per_talker": {
+     "M1": 0.7848360655737705,
+     "M2": 0.5717213114754098,
+     "M3": 0.6201232032854209,
+     "M4": 0.7459016393442623,
+     "M5": 0.5030800821355236,
+     "M6": 0.21560574948665298,
+     "MF1": 0.7274590163934426,
+     "MF2": 0.6905737704918032
+    },
+    "labelled_frac_per_talker": {
+     "M1": 0.8401639344262295,
+     "M2": 0.7069672131147541,
+     "M3": 0.7638603696098563,
+     "M4": 1.0,
+     "M5": 0.971252566735113,
+     "M6": 0.15195071868583163,
+     "MF1": 0.805327868852459,
+     "MF2": 0.6905737704918032
+    }
+   }
+  },
+  "meeting/quiet_omeeting": {
+   "clean": {
+    "n_chunks": 32,
+    "id_acc": 0.9375,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 1.0,
+     "MF1": 0.75,
+     "MF2": 0.75
+    },
+    "cos_target_median": 0.5114989284392276,
+    "cos_nontarget_p95": 0.238803975515967,
+    "eer": 0.08928571428571429,
+    "cos_target_per_talker": {
+     "M1": 0.7343045461168256,
+     "M2": 0.5401894078638986,
+     "M3": 0.4253698377911959,
+     "M4": 0.5689644857903049,
+     "M5": 0.5928530364121649,
+     "M6": 0.3786192211806129,
+     "MF1": 0.2376781639231474,
+     "MF2": 0.33111304762968213
+    },
+    "ahc_0.375": {
+     "n_clusters": 10,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.9003215434083601
+    },
+    "ahc_0.5": {
+     "n_clusters": 15,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.6625650733554189
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 1.0
+    },
+    "online_0.375": {
+     "n_clusters": 8,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 1.0
+    },
+    "online_0.6": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.5201238390092879
+    }
+   },
+   "raw": {
+    "n_chunks": 32,
+    "id_acc": 0.8125,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 0.5,
+     "MF1": 0.25,
+     "MF2": 0.75
+    },
+    "cos_target_median": 0.29998239895762224,
+    "cos_nontarget_p95": 0.2052009806932298,
+    "eer": 0.15625,
+    "cos_target_per_talker": {
+     "M1": 0.6966915193113965,
+     "M2": 0.40386307615361383,
+     "M3": 0.2735948642139958,
+     "M4": 0.27100513130259296,
+     "M5": 0.44365604528348745,
+     "M6": 0.15044441854279106,
+     "MF1": 0.12338437725419638,
+     "MF2": 0.21782356636301334
+    },
+    "ahc_0.375": {
+     "n_clusters": 15,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.716636197440585
+    },
+    "ahc_0.5": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.4015444015444016
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.84375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [
+      "M6"
+     ],
+     "ari": 0.7024528972627088
+    },
+    "online_0.375": {
+     "n_clusters": 11,
+     "purity": 0.9375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [
+      "MF1"
+     ],
+     "ari": 0.7801418439716312
+    },
+    "online_0.6": {
+     "n_clusters": 24,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.29422066549912435
+    }
+   },
+   "gtcrn": {
+    "n_chunks": 32,
+    "id_acc": 0.875,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 0.5,
+     "MF1": 0.5,
+     "MF2": 1.0
+    },
+    "cos_target_median": 0.3035797035078748,
+    "cos_nontarget_p95": 0.2250218668027048,
+    "eer": 0.1875,
+    "cos_target_per_talker": {
+     "M1": 0.6458641112446879,
+     "M2": 0.43874938192403434,
+     "M3": 0.23417955493577164,
+     "M4": 0.2696807624677787,
+     "M5": 0.46788244333831436,
+     "M6": 0.19350032851399213,
+     "MF1": 0.1994861544317825,
+     "MF2": 0.197629484583646
+    },
+    "ahc_0.375": {
+     "n_clusters": 15,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.716636197440585
+    },
+    "ahc_0.5": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.4015444015444016
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.8125,
+     "talkers_covered": 7,
+     "absorbed_talkers": [
+      "M6",
+      "MF2"
+     ],
+     "ari": 0.6912945711532285
+    },
+    "online_0.375": {
+     "n_clusters": 12,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.8442211055276382
+    },
+    "online_0.6": {
+     "n_clusters": 22,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.3494044242768009
+    }
+   },
+   "wpe": {
+    "n_chunks": 32,
+    "id_acc": 0.8125,
+    "id_acc_per_talker": {
+     "M1": 1.0,
+     "M2": 1.0,
+     "M3": 1.0,
+     "M4": 1.0,
+     "M5": 1.0,
+     "M6": 0.5,
+     "MF1": 0.5,
+     "MF2": 0.5
+    },
+    "cos_target_median": 0.2921702629423949,
+    "cos_nontarget_p95": 0.2135736854129581,
+    "eer": 0.15625,
+    "cos_target_per_talker": {
+     "M1": 0.679659084508105,
+     "M2": 0.42887041808277304,
+     "M3": 0.24703321242463744,
+     "M4": 0.31379488802463684,
+     "M5": 0.455416620934749,
+     "M6": 0.18185082783422443,
+     "MF1": 0.15932552856105275,
+     "MF2": 0.1744268684417508
+    },
+    "ahc_0.375": {
+     "n_clusters": 15,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.6990291262135921
+    },
+    "ahc_0.5": {
+     "n_clusters": 20,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.4508856682769727
+    },
+    "ahc_k8": {
+     "n_clusters": 8,
+     "purity": 0.84375,
+     "talkers_covered": 8,
+     "absorbed_talkers": [
+      "MF1"
+     ],
+     "ari": 0.7024528972627088
+    },
+    "online_0.375": {
+     "n_clusters": 13,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.8143712574850299
+    },
+    "online_0.6": {
+     "n_clusters": 21,
+     "purity": 1.0,
+     "talkers_covered": 8,
+     "absorbed_talkers": [],
+     "ari": 0.4015444015444016
+    }
+   },
+   "s1_embed": {
+    "n_clusters": 1,
+    "purity": 0.543448275862069,
+    "talkers_covered": 1,
+    "absorbed_talkers": [
+     "MF2"
+    ],
+    "ari": 0.0,
+    "frac_turn_frames_labelled": 0.185849782107152,
+    "n_clusters_total": 1,
+    "vad_gt_0.5_frac": 0.49832915622389307,
+    "vad_gt_0.5_frac_in_turns": 0.5598564470648552,
+    "vad_gt_0.5_frac_per_talker": {
+     "M1": 0.4077868852459016,
+     "M2": 0.5922131147540983,
+     "M3": 0.6878850102669405,
+     "M4": 0.6229508196721312,
+     "M5": 0.5790554414784395,
+     "M6": 0.20739219712525667,
+     "MF1": 0.7192622950819673,
+     "MF2": 0.6618852459016393
+    },
+    "labelled_frac_per_talker": {
+     "M1": 0.0,
+     "M2": 0.0,
+     "M3": 0.0,
+     "M4": 0.0,
+     "M5": 0.0,
+     "M6": 0.0,
+     "MF1": 0.8073770491803278,
+     "MF2": 0.6782786885245902
+    }
+   },
+   "s1_dpmeans": {
+    "n_clusters": 1,
+    "purity": 0.1557285873192436,
+    "talkers_covered": 1,
+    "absorbed_talkers": [
+     "M1",
+     "M2",
+     "M3",
+     "M4",
+     "M6",
+     "MF1",
+     "MF2"
+    ],
+    "ari": 0.0,
+    "frac_turn_frames_labelled": 0.6913611894386055,
+    "n_clusters_total": 1,
+    "vad_gt_0.5_frac": 0.49832915622389307,
+    "vad_gt_0.5_frac_in_turns": 0.5598564470648552,
+    "vad_gt_0.5_frac_per_talker": {
+     "M1": 0.4077868852459016,
+     "M2": 0.5922131147540983,
+     "M3": 0.6878850102669405,
+     "M4": 0.6229508196721312,
+     "M5": 0.5790554414784395,
+     "M6": 0.20739219712525667,
+     "MF1": 0.7192622950819673,
+     "MF2": 0.6618852459016393
+    },
+    "labelled_frac_per_talker": {
+     "M1": 0.6024590163934426,
+     "M2": 0.7090163934426229,
+     "M3": 0.7618069815195072,
+     "M4": 0.8176229508196722,
+     "M5": 0.8624229979466119,
+     "M6": 0.2915811088295688,
+     "MF1": 0.8073770491803278,
+     "MF2": 0.6782786885245902
+    }
+   }
+  }
+ },
+ "wall_s": 153.06734991073608
+}

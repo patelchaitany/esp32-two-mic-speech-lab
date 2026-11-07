@@ -1,0 +1,4405 @@
+{
+ "wall_s": 197.5,
+ "scenes": [
+  {
+   "scene": "spacing/bus_L00_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L00",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.87,
+   "peak": 0.0473,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     73.01,
+     63.531
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": 0.0,
+   "realized_snr_db": -0.062,
+   "rule_gain_db": -3.5131,
+   "tau_A_us": -32.9144,
+   "tau_B_us": 33.3077,
+   "dist_A_m": 0.457838,
+   "dist_B_m": 0.549147,
+   "fold_A_deg": 19.8267,
+   "fold_B_deg": 17.8316,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "1995",
+    "1320"
+   ],
+   "partner_dbfs": -46.06,
+   "rule_noise_dbfs": -46.0,
+   "all_inclusive_snr_db": -0.78,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.968,
+    "3000": 0.91,
+    "4000": 0.853,
+    "6000": 0.706
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.987,
+    "2000": 0.958,
+    "3000": 0.899,
+    "4000": 0.82,
+    "6000": 0.646
+   },
+   "tdoa_meas_A_us": -83.06,
+   "tdoa_truth_A_us": -96.04,
+   "tdoa_meas_B_us": -38.03,
+   "tdoa_truth_B_us": -29.82,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 72.41,
+   "rule_noise_dba": 73.95,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L00_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L00",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.69,
+   "peak": 0.0716,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     73.01,
+     63.531
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": -5.0,
+   "realized_snr_db": -5.062,
+   "rule_gain_db": 1.4869,
+   "tau_A_us": -32.9144,
+   "tau_B_us": 33.3077,
+   "dist_A_m": 0.457838,
+   "dist_B_m": 0.549147,
+   "fold_A_deg": 19.8267,
+   "fold_B_deg": 17.8316,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "1995",
+    "1320"
+   ],
+   "partner_dbfs": -46.06,
+   "rule_noise_dbfs": -41.0,
+   "all_inclusive_snr_db": -5.3,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.968,
+    "3000": 0.91,
+    "4000": 0.853,
+    "6000": 0.706
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.987,
+    "2000": 0.958,
+    "3000": 0.899,
+    "4000": 0.82,
+    "6000": 0.646
+   },
+   "tdoa_meas_A_us": -83.06,
+   "tdoa_truth_A_us": -96.04,
+   "tdoa_meas_B_us": -38.03,
+   "tdoa_truth_B_us": -29.82,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 72.41,
+   "rule_noise_dba": 78.95,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L00_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L00",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.03,
+   "peak": 0.0456,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     73.01,
+     63.531
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": 0.0,
+   "realized_snr_db": -0.063,
+   "rule_gain_db": -3.5801,
+   "tau_A_us": -109.6925,
+   "tau_B_us": 111.0082,
+   "dist_A_m": 0.457838,
+   "dist_B_m": 0.549147,
+   "fold_A_deg": 19.8267,
+   "fold_B_deg": 17.8317,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "1995",
+    "1320"
+   ],
+   "partner_dbfs": -46.14,
+   "rule_noise_dbfs": -46.08,
+   "all_inclusive_snr_db": -0.87,
+   "coh_rule_noise": {
+    "250": 0.995,
+    "500": 0.975,
+    "1000": 0.903,
+    "2000": 0.672,
+    "3000": 0.236,
+    "4000": -0.033,
+    "6000": -0.232
+   },
+   "coh_babble_far": {
+    "250": 0.994,
+    "500": 0.966,
+    "1000": 0.862,
+    "2000": 0.598,
+    "3000": 0.169,
+    "4000": -0.193,
+    "6000": -0.353
+   },
+   "tdoa_meas_A_us": -133.23,
+   "tdoa_truth_A_us": -172.82,
+   "tdoa_meas_B_us": 23.95,
+   "tdoa_truth_B_us": 47.88,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 72.34,
+   "rule_noise_dba": 73.88,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L00_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L00",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.79,
+   "peak": 0.0692,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     73.01,
+     63.531
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": -5.0,
+   "realized_snr_db": -5.063,
+   "rule_gain_db": 1.4199,
+   "tau_A_us": -109.6925,
+   "tau_B_us": 111.0082,
+   "dist_A_m": 0.457838,
+   "dist_B_m": 0.549147,
+   "fold_A_deg": 19.8267,
+   "fold_B_deg": 17.8317,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "1995",
+    "1320"
+   ],
+   "partner_dbfs": -46.14,
+   "rule_noise_dbfs": -41.08,
+   "all_inclusive_snr_db": -5.33,
+   "coh_rule_noise": {
+    "250": 0.995,
+    "500": 0.975,
+    "1000": 0.903,
+    "2000": 0.672,
+    "3000": 0.236,
+    "4000": -0.033,
+    "6000": -0.232
+   },
+   "coh_babble_far": {
+    "250": 0.994,
+    "500": 0.966,
+    "1000": 0.862,
+    "2000": 0.598,
+    "3000": 0.169,
+    "4000": -0.193,
+    "6000": -0.353
+   },
+   "tdoa_meas_A_us": -133.23,
+   "tdoa_truth_A_us": -172.82,
+   "tdoa_meas_B_us": 23.95,
+   "tdoa_truth_B_us": 47.88,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 72.34,
+   "rule_noise_dba": 78.88,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L01_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L01",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.84,
+   "peak": 0.0912,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     76.935,
+     53.9
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.036,
+   "rule_gain_db": -8.3687,
+   "tau_A_us": -20.5532,
+   "tau_B_us": 21.6557,
+   "dist_A_m": 0.540327,
+   "dist_B_m": 0.477374,
+   "fold_A_deg": 54.0211,
+   "fold_B_deg": 51.7564,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "2300",
+    "908"
+   ],
+   "partner_dbfs": -52.41,
+   "rule_noise_dbfs": -52.45,
+   "all_inclusive_snr_db": 0.03,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.962,
+    "3000": 0.918,
+    "4000": 0.867,
+    "6000": 0.724
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.953,
+    "3000": 0.899,
+    "4000": 0.829,
+    "6000": 0.664
+   },
+   "tdoa_meas_A_us": -78.54,
+   "tdoa_truth_A_us": -83.68,
+   "tdoa_meas_B_us": -44.46,
+   "tdoa_truth_B_us": -41.47,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 67.48,
+   "rule_noise_dba": 68.05,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L01_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L01",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.98,
+   "peak": 0.0924,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     76.935,
+     53.9
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.964,
+   "rule_gain_db": -3.3687,
+   "tau_A_us": -20.5532,
+   "tau_B_us": 21.6557,
+   "dist_A_m": 0.540327,
+   "dist_B_m": 0.477374,
+   "fold_A_deg": 54.0211,
+   "fold_B_deg": 51.7564,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "2300",
+    "908"
+   ],
+   "partner_dbfs": -52.41,
+   "rule_noise_dbfs": -47.45,
+   "all_inclusive_snr_db": -4.96,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.962,
+    "3000": 0.918,
+    "4000": 0.867,
+    "6000": 0.724
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.953,
+    "3000": 0.899,
+    "4000": 0.829,
+    "6000": 0.664
+   },
+   "tdoa_meas_A_us": -78.54,
+   "tdoa_truth_A_us": -83.68,
+   "tdoa_meas_B_us": -44.46,
+   "tdoa_truth_B_us": -41.47,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 67.48,
+   "rule_noise_dba": 73.05,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L01_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L01",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.05,
+   "peak": 0.0906,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     76.935,
+     53.9
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.036,
+   "rule_gain_db": -8.3079,
+   "tau_A_us": -68.4858,
+   "tau_B_us": 72.153,
+   "dist_A_m": 0.540327,
+   "dist_B_m": 0.477374,
+   "fold_A_deg": 54.0178,
+   "fold_B_deg": 51.7531,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "2300",
+    "908"
+   ],
+   "partner_dbfs": -52.32,
+   "rule_noise_dbfs": -52.35,
+   "all_inclusive_snr_db": 0.04,
+   "coh_rule_noise": {
+    "250": 0.994,
+    "500": 0.977,
+    "1000": 0.9,
+    "2000": 0.627,
+    "3000": 0.289,
+    "4000": 0.038,
+    "6000": -0.18
+   },
+   "coh_babble_far": {
+    "250": 0.991,
+    "500": 0.983,
+    "1000": 0.907,
+    "2000": 0.546,
+    "3000": 0.168,
+    "4000": -0.135,
+    "6000": -0.283
+   },
+   "tdoa_meas_A_us": -117.13,
+   "tdoa_truth_A_us": -131.61,
+   "tdoa_meas_B_us": -0.12,
+   "tdoa_truth_B_us": 9.03,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 67.56,
+   "rule_noise_dba": 68.14,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L01_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L01",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 2.92,
+   "peak": 0.0918,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     76.935,
+     53.9
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.964,
+   "rule_gain_db": -3.3079,
+   "tau_A_us": -68.4858,
+   "tau_B_us": 72.153,
+   "dist_A_m": 0.540327,
+   "dist_B_m": 0.477374,
+   "fold_A_deg": 54.0178,
+   "fold_B_deg": 51.7531,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "2300",
+    "908"
+   ],
+   "partner_dbfs": -52.32,
+   "rule_noise_dbfs": -47.35,
+   "all_inclusive_snr_db": -4.96,
+   "coh_rule_noise": {
+    "250": 0.994,
+    "500": 0.977,
+    "1000": 0.9,
+    "2000": 0.627,
+    "3000": 0.289,
+    "4000": 0.038,
+    "6000": -0.18
+   },
+   "coh_babble_far": {
+    "250": 0.991,
+    "500": 0.983,
+    "1000": 0.907,
+    "2000": 0.546,
+    "3000": 0.168,
+    "4000": -0.135,
+    "6000": -0.283
+   },
+   "tdoa_meas_A_us": -117.13,
+   "tdoa_truth_A_us": -131.61,
+   "tdoa_meas_B_us": -0.12,
+   "tdoa_truth_B_us": 9.03,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 67.56,
+   "rule_noise_dba": 73.14,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L02_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L02",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.23,
+   "peak": 0.1794,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     71.653,
+     57.24
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.092,
+   "rule_gain_db": -0.1219,
+   "tau_A_us": 5.8434,
+   "tau_B_us": -9.4335,
+   "dist_A_m": 0.377097,
+   "dist_B_m": 0.347512,
+   "fold_A_deg": 80.3838,
+   "fold_B_deg": 74.3546,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1580",
+    "672"
+   ],
+   "partner_dbfs": -45.85,
+   "rule_noise_dbfs": -45.95,
+   "all_inclusive_snr_db": -2.83,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.955,
+    "3000": 0.908,
+    "4000": 0.854,
+    "6000": 0.7
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.99,
+    "2000": 0.965,
+    "3000": 0.922,
+    "4000": 0.875,
+    "6000": 0.721
+   },
+   "tdoa_meas_A_us": -56.84,
+   "tdoa_truth_A_us": -57.28,
+   "tdoa_meas_B_us": -70.61,
+   "tdoa_truth_B_us": -72.56,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 75.88,
+   "rule_noise_dba": 74.34,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L02_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L02",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.03,
+   "peak": 0.1799,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     71.653,
+     57.24
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.908,
+   "rule_gain_db": 4.8781,
+   "tau_A_us": 5.8434,
+   "tau_B_us": -9.4335,
+   "dist_A_m": 0.377097,
+   "dist_B_m": 0.347512,
+   "fold_A_deg": 80.3838,
+   "fold_B_deg": 74.3546,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1580",
+    "672"
+   ],
+   "partner_dbfs": -45.85,
+   "rule_noise_dbfs": -40.95,
+   "all_inclusive_snr_db": -6.06,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.955,
+    "3000": 0.908,
+    "4000": 0.854,
+    "6000": 0.7
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.99,
+    "2000": 0.965,
+    "3000": 0.922,
+    "4000": 0.875,
+    "6000": 0.721
+   },
+   "tdoa_meas_A_us": -56.84,
+   "tdoa_truth_A_us": -57.28,
+   "tdoa_meas_B_us": -70.61,
+   "tdoa_truth_B_us": -72.56,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 75.88,
+   "rule_noise_dba": 79.34,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L02_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L02",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 2.27,
+   "peak": 0.1883,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     71.653,
+     57.24
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.092,
+   "rule_gain_db": -0.264,
+   "tau_A_us": 19.4474,
+   "tau_B_us": -31.3957,
+   "dist_A_m": 0.377097,
+   "dist_B_m": 0.347512,
+   "fold_A_deg": 80.3871,
+   "fold_B_deg": 74.3575,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1580",
+    "672"
+   ],
+   "partner_dbfs": -45.99,
+   "rule_noise_dbfs": -46.08,
+   "all_inclusive_snr_db": -3.03,
+   "coh_rule_noise": {
+    "250": 0.988,
+    "500": 0.978,
+    "1000": 0.915,
+    "2000": 0.571,
+    "3000": 0.263,
+    "4000": -0.036,
+    "6000": -0.22
+   },
+   "coh_babble_far": {
+    "250": 0.994,
+    "500": 0.964,
+    "1000": 0.896,
+    "2000": 0.658,
+    "3000": 0.416,
+    "4000": 0.175,
+    "6000": -0.016
+   },
+   "tdoa_meas_A_us": -42.4,
+   "tdoa_truth_A_us": -43.68,
+   "tdoa_meas_B_us": -89.8,
+   "tdoa_truth_B_us": -94.52,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 75.74,
+   "rule_noise_dba": 74.21,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L02_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L02",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 1.95,
+   "peak": 0.1828,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     71.653,
+     57.24
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.908,
+   "rule_gain_db": 4.736,
+   "tau_A_us": 19.4474,
+   "tau_B_us": -31.3957,
+   "dist_A_m": 0.377097,
+   "dist_B_m": 0.347512,
+   "fold_A_deg": 80.3871,
+   "fold_B_deg": 74.3575,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1580",
+    "672"
+   ],
+   "partner_dbfs": -45.99,
+   "rule_noise_dbfs": -41.08,
+   "all_inclusive_snr_db": -6.16,
+   "coh_rule_noise": {
+    "250": 0.988,
+    "500": 0.978,
+    "1000": 0.915,
+    "2000": 0.571,
+    "3000": 0.263,
+    "4000": -0.036,
+    "6000": -0.22
+   },
+   "coh_babble_far": {
+    "250": 0.994,
+    "500": 0.964,
+    "1000": 0.896,
+    "2000": 0.658,
+    "3000": 0.416,
+    "4000": 0.175,
+    "6000": -0.016
+   },
+   "tdoa_meas_A_us": -42.4,
+   "tdoa_truth_A_us": -43.68,
+   "tdoa_meas_B_us": -89.8,
+   "tdoa_truth_B_us": -94.52,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 75.74,
+   "rule_noise_dba": 79.21,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L03_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L03",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 2.86,
+   "peak": 0.049,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     67.158,
+     71.729
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.087,
+   "rule_gain_db": -12.2992,
+   "tau_A_us": 32.2973,
+   "tau_B_us": 20.9889,
+   "dist_A_m": 0.745882,
+   "dist_B_m": 0.620716,
+   "fold_A_deg": 22.6109,
+   "fold_B_deg": 53.1351,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "6930",
+    "908"
+   ],
+   "partner_dbfs": -57.9,
+   "rule_noise_dbfs": -57.99,
+   "all_inclusive_snr_db": -1.14,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.993,
+    "2000": 0.965,
+    "3000": 0.922,
+    "4000": 0.87,
+    "6000": 0.735
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.997,
+    "1000": 0.991,
+    "2000": 0.957,
+    "3000": 0.908,
+    "4000": 0.874,
+    "6000": 0.72
+   },
+   "tdoa_meas_A_us": -37.63,
+   "tdoa_truth_A_us": -30.83,
+   "tdoa_meas_B_us": -45.62,
+   "tdoa_truth_B_us": -42.14,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 64.6,
+   "rule_noise_dba": 61.97,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L03_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L03",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.16,
+   "peak": 0.0543,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     67.158,
+     71.729
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.913,
+   "rule_gain_db": -7.2992,
+   "tau_A_us": 32.2973,
+   "tau_B_us": 20.9889,
+   "dist_A_m": 0.745882,
+   "dist_B_m": 0.620716,
+   "fold_A_deg": 22.6109,
+   "fold_B_deg": 53.1351,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "6930",
+    "908"
+   ],
+   "partner_dbfs": -57.9,
+   "rule_noise_dbfs": -52.99,
+   "all_inclusive_snr_db": -5.35,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.993,
+    "2000": 0.965,
+    "3000": 0.922,
+    "4000": 0.87,
+    "6000": 0.735
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.997,
+    "1000": 0.991,
+    "2000": 0.957,
+    "3000": 0.908,
+    "4000": 0.874,
+    "6000": 0.72
+   },
+   "tdoa_meas_A_us": -37.63,
+   "tdoa_truth_A_us": -30.83,
+   "tdoa_meas_B_us": -45.62,
+   "tdoa_truth_B_us": -42.14,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 64.6,
+   "rule_noise_dba": 66.97,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L03_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L03",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.48,
+   "peak": 0.0494,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     67.158,
+     71.729
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.087,
+   "rule_gain_db": -12.1343,
+   "tau_A_us": 107.6477,
+   "tau_B_us": 69.9342,
+   "dist_A_m": 0.745882,
+   "dist_B_m": 0.620716,
+   "fold_A_deg": 22.6121,
+   "fold_B_deg": 53.1383,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "6930",
+    "908"
+   ],
+   "partner_dbfs": -57.77,
+   "rule_noise_dbfs": -57.86,
+   "all_inclusive_snr_db": -1.11,
+   "coh_rule_noise": {
+    "250": 0.995,
+    "500": 0.974,
+    "1000": 0.921,
+    "2000": 0.654,
+    "3000": 0.305,
+    "4000": 0.024,
+    "6000": -0.262
+   },
+   "coh_babble_far": {
+    "250": 0.997,
+    "500": 0.963,
+    "1000": 0.907,
+    "2000": 0.58,
+    "3000": 0.268,
+    "4000": 0.06,
+    "6000": -0.183
+   },
+   "tdoa_meas_A_us": 36.05,
+   "tdoa_truth_A_us": 44.52,
+   "tdoa_meas_B_us": -2.11,
+   "tdoa_truth_B_us": 6.81,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 64.73,
+   "rule_noise_dba": 62.1,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L03_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L03",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.34,
+   "peak": 0.0547,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     67.158,
+     71.729
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.913,
+   "rule_gain_db": -7.1343,
+   "tau_A_us": 107.6477,
+   "tau_B_us": 69.9342,
+   "dist_A_m": 0.745882,
+   "dist_B_m": 0.620716,
+   "fold_A_deg": 22.6121,
+   "fold_B_deg": 53.1383,
+   "road_model": "sinc",
+   "handling": false,
+   "speakers": [
+    "6930",
+    "908"
+   ],
+   "partner_dbfs": -57.77,
+   "rule_noise_dbfs": -52.86,
+   "all_inclusive_snr_db": -5.34,
+   "coh_rule_noise": {
+    "250": 0.995,
+    "500": 0.974,
+    "1000": 0.921,
+    "2000": 0.654,
+    "3000": 0.305,
+    "4000": 0.024,
+    "6000": -0.262
+   },
+   "coh_babble_far": {
+    "250": 0.997,
+    "500": 0.963,
+    "1000": 0.907,
+    "2000": 0.58,
+    "3000": 0.268,
+    "4000": 0.06,
+    "6000": -0.183
+   },
+   "tdoa_meas_A_us": 36.05,
+   "tdoa_truth_A_us": 44.52,
+   "tdoa_meas_B_us": -2.11,
+   "tdoa_truth_B_us": 6.81,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 64.73,
+   "rule_noise_dba": 67.1,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L04_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L04",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 2.69,
+   "peak": 0.0694,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     62.001,
+     59.289
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": 0.0,
+   "realized_snr_db": -0.039,
+   "rule_gain_db": -15.1251,
+   "tau_A_us": -1.84,
+   "tau_B_us": -4.1526,
+   "dist_A_m": 0.787416,
+   "dist_B_m": 0.578449,
+   "fold_A_deg": 86.985,
+   "fold_B_deg": 83.1823,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "3570",
+    "4077"
+   ],
+   "partner_dbfs": -58.99,
+   "rule_noise_dbfs": -58.95,
+   "all_inclusive_snr_db": -5.44,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.964,
+    "3000": 0.927,
+    "4000": 0.866,
+    "6000": 0.734
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.992,
+    "2000": 0.958,
+    "3000": 0.919,
+    "4000": 0.785,
+    "6000": 0.698
+   },
+   "tdoa_meas_A_us": -65.49,
+   "tdoa_truth_A_us": -64.97,
+   "tdoa_meas_B_us": -67.35,
+   "tdoa_truth_B_us": -67.28,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 60.52,
+   "rule_noise_dba": 61.37,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L04_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L04",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.61,
+   "peak": 0.0726,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     62.001,
+     59.289
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": -5.0,
+   "realized_snr_db": -5.039,
+   "rule_gain_db": -10.1251,
+   "tau_A_us": -1.84,
+   "tau_B_us": -4.1526,
+   "dist_A_m": 0.787416,
+   "dist_B_m": 0.578449,
+   "fold_A_deg": 86.985,
+   "fold_B_deg": 83.1823,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "3570",
+    "4077"
+   ],
+   "partner_dbfs": -58.99,
+   "rule_noise_dbfs": -53.95,
+   "all_inclusive_snr_db": -7.53,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.991,
+    "2000": 0.964,
+    "3000": 0.927,
+    "4000": 0.866,
+    "6000": 0.734
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.992,
+    "2000": 0.958,
+    "3000": 0.919,
+    "4000": 0.785,
+    "6000": 0.698
+   },
+   "tdoa_meas_A_us": -65.49,
+   "tdoa_truth_A_us": -64.97,
+   "tdoa_meas_B_us": -67.35,
+   "tdoa_truth_B_us": -67.28,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 60.52,
+   "rule_noise_dba": 66.37,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L04_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L04",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 2.83,
+   "peak": 0.0697,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     62.001,
+     59.289
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": 0.0,
+   "realized_snr_db": -0.04,
+   "rule_gain_db": -15.1428,
+   "tau_A_us": -6.124,
+   "tau_B_us": -13.8329,
+   "dist_A_m": 0.787416,
+   "dist_B_m": 0.578449,
+   "fold_A_deg": 86.9889,
+   "fold_B_deg": 83.1838,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "3570",
+    "4077"
+   ],
+   "partner_dbfs": -59.0,
+   "rule_noise_dbfs": -58.96,
+   "all_inclusive_snr_db": -7.37,
+   "coh_rule_noise": {
+    "250": 0.995,
+    "500": 0.976,
+    "1000": 0.903,
+    "2000": 0.638,
+    "3000": 0.353,
+    "4000": 0.026,
+    "6000": -0.184
+   },
+   "coh_babble_far": {
+    "250": 0.994,
+    "500": 0.972,
+    "1000": 0.915,
+    "2000": 0.593,
+    "3000": 0.324,
+    "4000": -0.327,
+    "6000": -0.154
+   },
+   "tdoa_meas_A_us": -70.71,
+   "tdoa_truth_A_us": -69.25,
+   "tdoa_meas_B_us": -76.9,
+   "tdoa_truth_B_us": -76.96,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 60.5,
+   "rule_noise_dba": 61.36,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L04_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L04",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 4.61,
+   "peak": 0.0728,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     62.001,
+     59.289
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": -5.0,
+   "realized_snr_db": -5.04,
+   "rule_gain_db": -10.1428,
+   "tau_A_us": -6.124,
+   "tau_B_us": -13.8329,
+   "dist_A_m": 0.787416,
+   "dist_B_m": 0.578449,
+   "fold_A_deg": 86.9889,
+   "fold_B_deg": 83.1838,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "3570",
+    "4077"
+   ],
+   "partner_dbfs": -59.0,
+   "rule_noise_dbfs": -53.96,
+   "all_inclusive_snr_db": -8.83,
+   "coh_rule_noise": {
+    "250": 0.995,
+    "500": 0.976,
+    "1000": 0.903,
+    "2000": 0.638,
+    "3000": 0.353,
+    "4000": 0.026,
+    "6000": -0.184
+   },
+   "coh_babble_far": {
+    "250": 0.994,
+    "500": 0.972,
+    "1000": 0.915,
+    "2000": 0.593,
+    "3000": 0.324,
+    "4000": -0.327,
+    "6000": -0.154
+   },
+   "tdoa_meas_A_us": -70.71,
+   "tdoa_truth_A_us": -69.25,
+   "tdoa_meas_B_us": -76.9,
+   "tdoa_truth_B_us": -76.96,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 60.5,
+   "rule_noise_dba": 66.36,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L05_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L05",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 4.12,
+   "peak": 0.0735,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     70.111,
+     54.322
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.132,
+   "rule_gain_db": -7.76,
+   "tau_A_us": -34.3068,
+   "tau_B_us": 33.887,
+   "dist_A_m": 0.407169,
+   "dist_B_m": 0.649419,
+   "fold_A_deg": 11.3124,
+   "fold_B_deg": 14.4027,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "5142",
+    "1188"
+   ],
+   "partner_dbfs": -50.11,
+   "rule_noise_dbfs": -50.24,
+   "all_inclusive_snr_db": -0.97,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.937,
+    "4000": 0.854,
+    "6000": 0.721
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.993,
+    "2000": 0.968,
+    "3000": 0.935,
+    "4000": 0.887,
+    "6000": 0.749
+   },
+   "tdoa_meas_A_us": -93.6,
+   "tdoa_truth_A_us": -97.43,
+   "tdoa_meas_B_us": -37.81,
+   "tdoa_truth_B_us": -29.24,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.46,
+   "rule_noise_dba": 69.35,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L05_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L05",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.44,
+   "peak": 0.0812,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     70.111,
+     54.322
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.868,
+   "rule_gain_db": -2.76,
+   "tau_A_us": -34.3068,
+   "tau_B_us": 33.887,
+   "dist_A_m": 0.407169,
+   "dist_B_m": 0.649419,
+   "fold_A_deg": 11.3124,
+   "fold_B_deg": 14.4027,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "5142",
+    "1188"
+   ],
+   "partner_dbfs": -50.11,
+   "rule_noise_dbfs": -45.24,
+   "all_inclusive_snr_db": -5.25,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.937,
+    "4000": 0.854,
+    "6000": 0.721
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.993,
+    "2000": 0.968,
+    "3000": 0.935,
+    "4000": 0.887,
+    "6000": 0.749
+   },
+   "tdoa_meas_A_us": -93.6,
+   "tdoa_truth_A_us": -97.43,
+   "tdoa_meas_B_us": -37.81,
+   "tdoa_truth_B_us": -29.24,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.46,
+   "rule_noise_dba": 74.35,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L05_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L05",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 2.51,
+   "peak": 0.0797,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     70.111,
+     54.322
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.127,
+   "rule_gain_db": -7.851,
+   "tau_A_us": -114.3471,
+   "tau_B_us": 112.9498,
+   "dist_A_m": 0.407169,
+   "dist_B_m": 0.649419,
+   "fold_A_deg": 11.3102,
+   "fold_B_deg": 14.4005,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "5142",
+    "1188"
+   ],
+   "partner_dbfs": -50.2,
+   "rule_noise_dbfs": -50.33,
+   "all_inclusive_snr_db": -0.99,
+   "coh_rule_noise": {
+    "250": 0.996,
+    "500": 0.974,
+    "1000": 0.918,
+    "2000": 0.678,
+    "3000": 0.431,
+    "4000": -0.007,
+    "6000": -0.264
+   },
+   "coh_babble_far": {
+    "250": 0.996,
+    "500": 0.98,
+    "1000": 0.922,
+    "2000": 0.682,
+    "3000": 0.453,
+    "4000": 0.187,
+    "6000": -0.141
+   },
+   "tdoa_meas_A_us": -169.77,
+   "tdoa_truth_A_us": -177.47,
+   "tdoa_meas_B_us": 25.5,
+   "tdoa_truth_B_us": 49.82,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.3,
+   "rule_noise_dba": 69.27,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L05_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L05",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.55,
+   "peak": 0.0903,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     70.111,
+     54.322
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "aligned",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.873,
+   "rule_gain_db": -2.851,
+   "tau_A_us": -114.3471,
+   "tau_B_us": 112.9498,
+   "dist_A_m": 0.407169,
+   "dist_B_m": 0.649419,
+   "fold_A_deg": 11.3102,
+   "fold_B_deg": 14.4005,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "5142",
+    "1188"
+   ],
+   "partner_dbfs": -50.2,
+   "rule_noise_dbfs": -45.33,
+   "all_inclusive_snr_db": -5.25,
+   "coh_rule_noise": {
+    "250": 0.996,
+    "500": 0.974,
+    "1000": 0.918,
+    "2000": 0.678,
+    "3000": 0.431,
+    "4000": -0.007,
+    "6000": -0.264
+   },
+   "coh_babble_far": {
+    "250": 0.996,
+    "500": 0.98,
+    "1000": 0.922,
+    "2000": 0.682,
+    "3000": 0.453,
+    "4000": 0.187,
+    "6000": -0.141
+   },
+   "tdoa_meas_A_us": -169.77,
+   "tdoa_truth_A_us": -177.47,
+   "tdoa_meas_B_us": 25.5,
+   "tdoa_truth_B_us": 49.82,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.3,
+   "rule_noise_dba": 74.27,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L06_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L06",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 2.4,
+   "peak": 0.1422,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     52.581,
+     71.853
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.072,
+   "rule_gain_db": -3.6623,
+   "tau_A_us": 28.8608,
+   "tau_B_us": -17.5987,
+   "dist_A_m": 0.387379,
+   "dist_B_m": 0.565523,
+   "fold_A_deg": 34.4188,
+   "fold_B_deg": 59.7996,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "3575",
+    "6930"
+   ],
+   "partner_dbfs": -45.45,
+   "rule_noise_dbfs": -45.52,
+   "all_inclusive_snr_db": -1.93,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.99,
+    "2000": 0.97,
+    "3000": 0.916,
+    "4000": 0.859,
+    "6000": 0.678
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.989,
+    "2000": 0.972,
+    "3000": 0.93,
+    "4000": 0.879,
+    "6000": 0.743
+   },
+   "tdoa_meas_A_us": -42.34,
+   "tdoa_truth_A_us": -34.26,
+   "tdoa_meas_B_us": -76.51,
+   "tdoa_truth_B_us": -80.72,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 77.23,
+   "rule_noise_dba": 74.56,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L06_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L06",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.33,
+   "peak": 0.153,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     52.581,
+     71.853
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.928,
+   "rule_gain_db": 1.3377,
+   "tau_A_us": 28.8608,
+   "tau_B_us": -17.5987,
+   "dist_A_m": 0.387379,
+   "dist_B_m": 0.565523,
+   "fold_A_deg": 34.4188,
+   "fold_B_deg": 59.7996,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "3575",
+    "6930"
+   ],
+   "partner_dbfs": -45.45,
+   "rule_noise_dbfs": -40.52,
+   "all_inclusive_snr_db": -5.67,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.99,
+    "2000": 0.97,
+    "3000": 0.916,
+    "4000": 0.859,
+    "6000": 0.678
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.989,
+    "2000": 0.972,
+    "3000": 0.93,
+    "4000": 0.879,
+    "6000": 0.743
+   },
+   "tdoa_meas_A_us": -42.34,
+   "tdoa_truth_A_us": -34.26,
+   "tdoa_meas_B_us": -76.51,
+   "tdoa_truth_B_us": -80.72,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 77.23,
+   "rule_noise_dba": 79.56,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L06_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L06",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.5,
+   "peak": 0.1397,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     52.581,
+     71.853
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.072,
+   "rule_gain_db": -3.8108,
+   "tau_A_us": 96.1572,
+   "tau_B_us": -58.6295,
+   "dist_A_m": 0.387379,
+   "dist_B_m": 0.565523,
+   "fold_A_deg": 34.4216,
+   "fold_B_deg": 59.8024,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "3575",
+    "6930"
+   ],
+   "partner_dbfs": -45.53,
+   "rule_noise_dbfs": -45.6,
+   "all_inclusive_snr_db": -1.96,
+   "coh_rule_noise": {
+    "250": 0.993,
+    "500": 0.977,
+    "1000": 0.895,
+    "2000": 0.694,
+    "3000": 0.291,
+    "4000": -0.006,
+    "6000": -0.25
+   },
+   "coh_babble_far": {
+    "250": 0.996,
+    "500": 0.978,
+    "1000": 0.884,
+    "2000": 0.72,
+    "3000": 0.385,
+    "4000": 0.12,
+    "6000": -0.166
+   },
+   "tdoa_meas_A_us": 10.1,
+   "tdoa_truth_A_us": 33.03,
+   "tdoa_meas_B_us": -115.85,
+   "tdoa_truth_B_us": -121.75,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 77.11,
+   "rule_noise_dba": 74.48,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L06_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L06",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 2.4,
+   "peak": 0.1504,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     52.581,
+     71.853
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "45",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.928,
+   "rule_gain_db": 1.1892,
+   "tau_A_us": 96.1572,
+   "tau_B_us": -58.6295,
+   "dist_A_m": 0.387379,
+   "dist_B_m": 0.565523,
+   "fold_A_deg": 34.4216,
+   "fold_B_deg": 59.8024,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "3575",
+    "6930"
+   ],
+   "partner_dbfs": -45.53,
+   "rule_noise_dbfs": -40.6,
+   "all_inclusive_snr_db": -5.68,
+   "coh_rule_noise": {
+    "250": 0.993,
+    "500": 0.977,
+    "1000": 0.895,
+    "2000": 0.694,
+    "3000": 0.291,
+    "4000": -0.006,
+    "6000": -0.25
+   },
+   "coh_babble_far": {
+    "250": 0.996,
+    "500": 0.978,
+    "1000": 0.884,
+    "2000": 0.72,
+    "3000": 0.385,
+    "4000": 0.12,
+    "6000": -0.166
+   },
+   "tdoa_meas_A_us": 10.1,
+   "tdoa_truth_A_us": 33.03,
+   "tdoa_meas_B_us": -115.85,
+   "tdoa_truth_B_us": -121.75,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 77.11,
+   "rule_noise_dba": 79.48,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L07_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L07",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.67,
+   "peak": 0.1621,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     79.081,
+     72.473
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.179,
+   "rule_gain_db": -8.8462,
+   "tau_A_us": -2.4204,
+   "tau_B_us": 11.8655,
+   "dist_A_m": 0.857036,
+   "dist_B_m": 0.695351,
+   "fold_A_deg": 86.0329,
+   "fold_B_deg": 70.1745,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "5142",
+    "6930"
+   ],
+   "partner_dbfs": -51.88,
+   "rule_noise_dbfs": -52.06,
+   "all_inclusive_snr_db": -9.97,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.993,
+    "2000": 0.974,
+    "3000": 0.935,
+    "4000": 0.892,
+    "6000": 0.763
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.978,
+    "3000": 0.943,
+    "4000": 0.897,
+    "6000": 0.788
+   },
+   "tdoa_meas_A_us": -61.15,
+   "tdoa_truth_A_us": -65.55,
+   "tdoa_meas_B_us": -53.54,
+   "tdoa_truth_B_us": -51.26,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.43,
+   "rule_noise_dba": 68.41,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L07_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L07",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 3.66,
+   "peak": 0.1688,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     79.081,
+     72.473
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.821,
+   "rule_gain_db": -3.8462,
+   "tau_A_us": -2.4204,
+   "tau_B_us": 11.8655,
+   "dist_A_m": 0.857036,
+   "dist_B_m": 0.695351,
+   "fold_A_deg": 86.0329,
+   "fold_B_deg": 70.1745,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "5142",
+    "6930"
+   ],
+   "partner_dbfs": -51.88,
+   "rule_noise_dbfs": -47.06,
+   "all_inclusive_snr_db": -10.8,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.993,
+    "2000": 0.974,
+    "3000": 0.935,
+    "4000": 0.892,
+    "6000": 0.763
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.978,
+    "3000": 0.943,
+    "4000": 0.897,
+    "6000": 0.788
+   },
+   "tdoa_meas_A_us": -61.15,
+   "tdoa_truth_A_us": -65.55,
+   "tdoa_meas_B_us": -53.54,
+   "tdoa_truth_B_us": -51.26,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.43,
+   "rule_noise_dba": 73.41,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L07_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L07",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.22,
+   "peak": 0.1616,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     79.081,
+     72.473
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.178,
+   "rule_gain_db": -8.7936,
+   "tau_A_us": -8.0591,
+   "tau_B_us": 39.5313,
+   "dist_A_m": 0.857036,
+   "dist_B_m": 0.695351,
+   "fold_A_deg": 86.0363,
+   "fold_B_deg": 70.1779,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "5142",
+    "6930"
+   ],
+   "partner_dbfs": -51.87,
+   "rule_noise_dbfs": -52.05,
+   "all_inclusive_snr_db": -11.14,
+   "coh_rule_noise": {
+    "250": 0.996,
+    "500": 0.983,
+    "1000": 0.925,
+    "2000": 0.739,
+    "3000": 0.436,
+    "4000": 0.179,
+    "6000": -0.122
+   },
+   "coh_babble_far": {
+    "250": 0.997,
+    "500": 0.981,
+    "1000": 0.919,
+    "2000": 0.774,
+    "3000": 0.5,
+    "4000": 0.215,
+    "6000": -0.048
+   },
+   "tdoa_meas_A_us": -58.54,
+   "tdoa_truth_A_us": -71.18,
+   "tdoa_meas_B_us": -24.95,
+   "tdoa_truth_B_us": -23.59,
+   "ideal_snr_db": -0.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.44,
+   "rule_noise_dba": 68.44,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L07_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L07",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 3.09,
+   "peak": 0.1591,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     79.081,
+     72.473
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "broadside",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.822,
+   "rule_gain_db": -3.7936,
+   "tau_A_us": -8.0591,
+   "tau_B_us": 39.5313,
+   "dist_A_m": 0.857036,
+   "dist_B_m": 0.695351,
+   "fold_A_deg": 86.0363,
+   "fold_B_deg": 70.1779,
+   "road_model": "j0",
+   "handling": false,
+   "speakers": [
+    "5142",
+    "6930"
+   ],
+   "partner_dbfs": -51.87,
+   "rule_noise_dbfs": -47.05,
+   "all_inclusive_snr_db": -11.78,
+   "coh_rule_noise": {
+    "250": 0.996,
+    "500": 0.983,
+    "1000": 0.925,
+    "2000": 0.739,
+    "3000": 0.436,
+    "4000": 0.179,
+    "6000": -0.122
+   },
+   "coh_babble_far": {
+    "250": 0.997,
+    "500": 0.981,
+    "1000": 0.919,
+    "2000": 0.774,
+    "3000": 0.5,
+    "4000": 0.215,
+    "6000": -0.048
+   },
+   "tdoa_meas_A_us": -58.54,
+   "tdoa_truth_A_us": -71.18,
+   "tdoa_meas_B_us": -24.95,
+   "tdoa_truth_B_us": -23.59,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 71.44,
+   "rule_noise_dba": 73.44,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L08_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L08",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 4.73,
+   "peak": 0.1265,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     74.664,
+     57.494
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": 0.0,
+   "realized_snr_db": -0.085,
+   "rule_gain_db": -12.5642,
+   "tau_A_us": 6.6508,
+   "tau_B_us": 25.0399,
+   "dist_A_m": 0.939459,
+   "dist_B_m": 0.921684,
+   "fold_A_deg": 79.0406,
+   "fold_B_deg": 44.2943,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "2300",
+    "3570"
+   ],
+   "partner_dbfs": -52.9,
+   "rule_noise_dbfs": -52.82,
+   "all_inclusive_snr_db": -3.06,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.966,
+    "3000": 0.936,
+    "4000": 0.88,
+    "6000": 0.735
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.997,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.923,
+    "4000": 0.876,
+    "6000": 0.735
+   },
+   "tdoa_meas_A_us": -57.32,
+   "tdoa_truth_A_us": -56.47,
+   "tdoa_meas_B_us": -50.49,
+   "tdoa_truth_B_us": -38.09,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.124
+    }
+   },
+   "partner_dba": 65.83,
+   "rule_noise_dba": 67.16,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L08_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L08",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 4.11,
+   "peak": 0.1399,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     74.664,
+     57.494
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": -5.0,
+   "realized_snr_db": -5.085,
+   "rule_gain_db": -7.5642,
+   "tau_A_us": 6.6508,
+   "tau_B_us": 25.0399,
+   "dist_A_m": 0.939459,
+   "dist_B_m": 0.921684,
+   "fold_A_deg": 79.0406,
+   "fold_B_deg": 44.2943,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "2300",
+    "3570"
+   ],
+   "partner_dbfs": -52.9,
+   "rule_noise_dbfs": -47.82,
+   "all_inclusive_snr_db": -6.26,
+   "coh_rule_noise": {
+    "250": 1.0,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.966,
+    "3000": 0.936,
+    "4000": 0.88,
+    "6000": 0.735
+   },
+   "coh_babble_far": {
+    "250": 1.0,
+    "500": 0.997,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.923,
+    "4000": 0.876,
+    "6000": 0.735
+   },
+   "tdoa_meas_A_us": -57.32,
+   "tdoa_truth_A_us": -56.47,
+   "tdoa_meas_B_us": -50.49,
+   "tdoa_truth_B_us": -38.09,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.124
+    }
+   },
+   "partner_dba": 65.83,
+   "rule_noise_dba": 72.16,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L08_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L08",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 4.0,
+   "peak": 0.1083,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     74.664,
+     57.494
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": 0.0,
+   "realized_snr_db": -0.085,
+   "rule_gain_db": -12.5862,
+   "tau_A_us": 22.1636,
+   "tau_B_us": 83.46,
+   "dist_A_m": 0.939459,
+   "dist_B_m": 0.921684,
+   "fold_A_deg": 79.0417,
+   "fold_B_deg": 44.2954,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "2300",
+    "3570"
+   ],
+   "partner_dbfs": -52.88,
+   "rule_noise_dbfs": -52.8,
+   "all_inclusive_snr_db": -3.07,
+   "coh_rule_noise": {
+    "250": 0.996,
+    "500": 0.976,
+    "1000": 0.913,
+    "2000": 0.664,
+    "3000": 0.418,
+    "4000": 0.109,
+    "6000": -0.249
+   },
+   "coh_babble_far": {
+    "250": 0.996,
+    "500": 0.969,
+    "1000": 0.918,
+    "2000": 0.681,
+    "3000": 0.35,
+    "4000": 0.103,
+    "6000": -0.151
+   },
+   "tdoa_meas_A_us": -42.7,
+   "tdoa_truth_A_us": -40.96,
+   "tdoa_meas_B_us": -39.06,
+   "tdoa_truth_B_us": 20.33,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 65.85,
+   "rule_noise_dba": 67.18,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L08_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L08",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 4.77,
+   "peak": 0.121,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     74.664,
+     57.494
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "side_by_side",
+   "snr_db": -5.0,
+   "realized_snr_db": -5.085,
+   "rule_gain_db": -7.5862,
+   "tau_A_us": 22.1636,
+   "tau_B_us": 83.46,
+   "dist_A_m": 0.939459,
+   "dist_B_m": 0.921684,
+   "fold_A_deg": 79.0417,
+   "fold_B_deg": 44.2954,
+   "road_model": "j0",
+   "handling": true,
+   "speakers": [
+    "2300",
+    "3570"
+   ],
+   "partner_dbfs": -52.88,
+   "rule_noise_dbfs": -47.8,
+   "all_inclusive_snr_db": -6.26,
+   "coh_rule_noise": {
+    "250": 0.996,
+    "500": 0.976,
+    "1000": 0.913,
+    "2000": 0.664,
+    "3000": 0.418,
+    "4000": 0.109,
+    "6000": -0.249
+   },
+   "coh_babble_far": {
+    "250": 0.996,
+    "500": 0.969,
+    "1000": 0.918,
+    "2000": 0.681,
+    "3000": 0.35,
+    "4000": 0.103,
+    "6000": -0.151
+   },
+   "tdoa_meas_A_us": -42.7,
+   "tdoa_truth_A_us": -40.96,
+   "tdoa_meas_B_us": -39.06,
+   "tdoa_truth_B_us": 20.33,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 65.85,
+   "rule_noise_dba": 72.18,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L09_d12_snr+0",
+   "scenario": "bus",
+   "layout_id": "L09",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 2.56,
+   "peak": 0.0723,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     78.708,
+     50.577
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.124,
+   "rule_gain_db": -12.0321,
+   "tau_A_us": 4.6674,
+   "tau_B_us": 1.1032,
+   "dist_A_m": 0.533462,
+   "dist_B_m": 0.902593,
+   "fold_A_deg": 82.3323,
+   "fold_B_deg": 88.1928,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1188",
+    "4970"
+   ],
+   "partner_dbfs": -52.42,
+   "rule_noise_dbfs": -52.54,
+   "all_inclusive_snr_db": -5.62,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.996,
+    "1000": 0.99,
+    "2000": 0.965,
+    "3000": 0.926,
+    "4000": 0.871,
+    "6000": 0.724
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.99,
+    "2000": 0.971,
+    "3000": 0.926,
+    "4000": 0.852,
+    "6000": 0.703
+   },
+   "tdoa_meas_A_us": -59.88,
+   "tdoa_truth_A_us": -58.46,
+   "tdoa_meas_B_us": -62.63,
+   "tdoa_truth_B_us": -62.02,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 69.55,
+   "rule_noise_dba": 67.91,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L09_d12_snr-5",
+   "scenario": "bus",
+   "layout_id": "L09",
+   "spacing_mm": 12,
+   "duration_s": 24.0,
+   "render_s": 2.88,
+   "peak": 0.0856,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     78.708,
+     50.577
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.876,
+   "rule_gain_db": -7.0321,
+   "tau_A_us": 4.6674,
+   "tau_B_us": 1.1032,
+   "dist_A_m": 0.533462,
+   "dist_B_m": 0.902593,
+   "fold_A_deg": 82.3323,
+   "fold_B_deg": 88.1928,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1188",
+    "4970"
+   ],
+   "partner_dbfs": -52.42,
+   "rule_noise_dbfs": -47.54,
+   "all_inclusive_snr_db": -7.59,
+   "coh_rule_noise": {
+    "250": 0.999,
+    "500": 0.996,
+    "1000": 0.99,
+    "2000": 0.965,
+    "3000": 0.926,
+    "4000": 0.871,
+    "6000": 0.724
+   },
+   "coh_babble_far": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.99,
+    "2000": 0.971,
+    "3000": 0.926,
+    "4000": 0.852,
+    "6000": 0.703
+   },
+   "tdoa_meas_A_us": -59.88,
+   "tdoa_truth_A_us": -58.46,
+   "tdoa_meas_B_us": -62.63,
+   "tdoa_truth_B_us": -62.02,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 69.55,
+   "rule_noise_dba": 72.91,
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/bus_L09_d40_snr+0",
+   "scenario": "bus",
+   "layout_id": "L09",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 2.82,
+   "peak": 0.0812,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     78.708,
+     50.577
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": 0.0,
+   "realized_snr_db": 0.124,
+   "rule_gain_db": -11.9886,
+   "tau_A_us": 15.5468,
+   "tau_B_us": 3.6754,
+   "dist_A_m": 0.533462,
+   "dist_B_m": 0.902593,
+   "fold_A_deg": 82.3334,
+   "fold_B_deg": 88.1934,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1188",
+    "4970"
+   ],
+   "partner_dbfs": -52.38,
+   "rule_noise_dbfs": -52.5,
+   "all_inclusive_snr_db": -3.01,
+   "coh_rule_noise": {
+    "250": 0.993,
+    "500": 0.961,
+    "1000": 0.896,
+    "2000": 0.645,
+    "3000": 0.342,
+    "4000": 0.094,
+    "6000": -0.119
+   },
+   "coh_babble_far": {
+    "250": 0.991,
+    "500": 0.967,
+    "1000": 0.888,
+    "2000": 0.713,
+    "3000": 0.355,
+    "4000": -0.05,
+    "6000": -0.244
+   },
+   "tdoa_meas_A_us": -52.19,
+   "tdoa_truth_A_us": -47.58,
+   "tdoa_meas_B_us": -61.35,
+   "tdoa_truth_B_us": -59.45,
+   "ideal_snr_db": 0.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 69.58,
+   "rule_noise_dba": 67.95,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/bus_L09_d40_snr-5",
+   "scenario": "bus",
+   "layout_id": "L09",
+   "spacing_mm": 40,
+   "duration_s": 24.0,
+   "render_s": 2.11,
+   "peak": 0.0942,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     78.708,
+     50.577
+    ],
+    "skew_us": -63.125
+   },
+   "stratum": "lap_flat",
+   "snr_db": -5.0,
+   "realized_snr_db": -4.876,
+   "rule_gain_db": -6.9886,
+   "tau_A_us": 15.5468,
+   "tau_B_us": 3.6754,
+   "dist_A_m": 0.533462,
+   "dist_B_m": 0.902593,
+   "fold_A_deg": 82.3334,
+   "fold_B_deg": 88.1934,
+   "road_model": "sinc",
+   "handling": true,
+   "speakers": [
+    "1188",
+    "4970"
+   ],
+   "partner_dbfs": -52.38,
+   "rule_noise_dbfs": -47.5,
+   "all_inclusive_snr_db": -6.13,
+   "coh_rule_noise": {
+    "250": 0.993,
+    "500": 0.961,
+    "1000": 0.896,
+    "2000": 0.645,
+    "3000": 0.342,
+    "4000": 0.094,
+    "6000": -0.119
+   },
+   "coh_babble_far": {
+    "250": 0.991,
+    "500": 0.967,
+    "1000": 0.888,
+    "2000": 0.713,
+    "3000": 0.355,
+    "4000": -0.05,
+    "6000": -0.244
+   },
+   "tdoa_meas_A_us": -52.19,
+   "tdoa_truth_A_us": -47.58,
+   "tdoa_meas_B_us": -61.35,
+   "tdoa_truth_B_us": -59.45,
+   "ideal_snr_db": -5.0,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "partner_dba": 69.58,
+   "rule_noise_dba": 72.95,
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/meeting_R00_d12",
+   "scenario": "meeting",
+   "layout_id": "R00",
+   "spacing_mm": 12,
+   "duration_s": 106.52,
+   "render_s": 3.31,
+   "peak": 0.0104,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     62.56,
+     64.02
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 0.77,
+   "alone_s_median": 3.59,
+   "n_talkers_alone_lt1s": 1,
+   "n_talkers_alone_lt3s": 8,
+   "overlap_ratio": 0.1508,
+   "n_turns_total": 22,
+   "hvac_dba": 40.0,
+   "mic_height_cm": 1,
+   "axis_mode": "table",
+   "presenter": true,
+   "tail": "synthetic",
+   "rt60": 0.5784,
+   "coh_hvac": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.967,
+    "3000": 0.928,
+    "4000": 0.874,
+    "6000": 0.73
+   },
+   "coh_noise": {
+    "250": 0.994,
+    "500": 0.988,
+    "1000": 0.959,
+    "2000": 0.887,
+    "3000": 0.774,
+    "4000": 0.659,
+    "6000": 0.431
+   },
+   "speech_dbfs": -64.68,
+   "noise_dbfs": -77.98,
+   "nearest_talker": "t19",
+   "tdoa_meas_near_us": -54.88,
+   "tdoa_truth_near_us": -52.44,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/meeting_R00_d40",
+   "scenario": "meeting",
+   "layout_id": "R00",
+   "spacing_mm": 40,
+   "duration_s": 106.52,
+   "render_s": 3.68,
+   "peak": 0.0105,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     62.56,
+     64.02
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 0.77,
+   "alone_s_median": 3.59,
+   "n_talkers_alone_lt1s": 1,
+   "n_talkers_alone_lt3s": 8,
+   "overlap_ratio": 0.1508,
+   "n_turns_total": 22,
+   "hvac_dba": 40.0,
+   "mic_height_cm": 1,
+   "axis_mode": "table",
+   "presenter": true,
+   "tail": "synthetic",
+   "rt60": 0.5784,
+   "coh_hvac": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.911,
+    "2000": 0.673,
+    "3000": 0.362,
+    "4000": 0.07,
+    "6000": -0.206
+   },
+   "coh_noise": {
+    "250": 0.99,
+    "500": 0.967,
+    "1000": 0.874,
+    "2000": 0.591,
+    "3000": 0.272,
+    "4000": 0.022,
+    "6000": -0.134
+   },
+   "speech_dbfs": -64.69,
+   "noise_dbfs": -77.99,
+   "nearest_talker": "t19",
+   "tdoa_meas_near_us": -34.01,
+   "tdoa_truth_near_us": -27.5,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/meeting_R01_d12",
+   "scenario": "meeting",
+   "layout_id": "R01",
+   "spacing_mm": 12,
+   "duration_s": 104.03,
+   "render_s": 4.32,
+   "peak": 0.0123,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     59.124,
+     74.457
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 0.93,
+   "alone_s_median": 3.41,
+   "n_talkers_alone_lt1s": 1,
+   "n_talkers_alone_lt3s": 5,
+   "overlap_ratio": 0.1323,
+   "n_turns_total": 22,
+   "hvac_dba": 35.0,
+   "mic_height_cm": 2,
+   "axis_mode": "random",
+   "presenter": false,
+   "tail": "ism",
+   "rt60": 0.6261,
+   "coh_hvac": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.967,
+    "3000": 0.928,
+    "4000": 0.873,
+    "6000": 0.729
+   },
+   "coh_noise": {
+    "250": 0.996,
+    "500": 0.993,
+    "1000": 0.968,
+    "2000": 0.855,
+    "3000": 0.647,
+    "4000": 0.45,
+    "6000": 0.22
+   },
+   "speech_dbfs": -63.04,
+   "noise_dbfs": -77.3,
+   "nearest_talker": "t09",
+   "tdoa_meas_near_us": -89.12,
+   "tdoa_truth_near_us": -95.35,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/meeting_R01_d40",
+   "scenario": "meeting",
+   "layout_id": "R01",
+   "spacing_mm": 40,
+   "duration_s": 104.03,
+   "render_s": 3.41,
+   "peak": 0.0115,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     59.124,
+     74.457
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 0.93,
+   "alone_s_median": 3.41,
+   "n_talkers_alone_lt1s": 1,
+   "n_talkers_alone_lt3s": 5,
+   "overlap_ratio": 0.1323,
+   "n_turns_total": 22,
+   "hvac_dba": 35.0,
+   "mic_height_cm": 2,
+   "axis_mode": "random",
+   "presenter": false,
+   "tail": "ism",
+   "rt60": 0.6261,
+   "coh_hvac": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.912,
+    "2000": 0.673,
+    "3000": 0.359,
+    "4000": 0.066,
+    "6000": -0.209
+   },
+   "coh_noise": {
+    "250": 0.994,
+    "500": 0.985,
+    "1000": 0.944,
+    "2000": 0.656,
+    "3000": 0.307,
+    "4000": 0.075,
+    "6000": 0.045
+   },
+   "speech_dbfs": -63.05,
+   "noise_dbfs": -77.27,
+   "nearest_talker": "t09",
+   "tdoa_meas_near_us": -157.19,
+   "tdoa_truth_near_us": -170.52,
+   "chain": {
+    "A": {
+     "gain_db": -0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/meeting_R02_d12",
+   "scenario": "meeting",
+   "layout_id": "R02",
+   "spacing_mm": 12,
+   "duration_s": 99.16,
+   "render_s": 3.34,
+   "peak": 0.0099,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     75.001,
+     65.127
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 0.77,
+   "alone_s_median": 3.66,
+   "n_talkers_alone_lt1s": 1,
+   "n_talkers_alone_lt3s": 4,
+   "overlap_ratio": 0.118,
+   "n_turns_total": 22,
+   "hvac_dba": 45.0,
+   "mic_height_cm": 10,
+   "axis_mode": "table",
+   "presenter": false,
+   "tail": "synthetic",
+   "rt60": 0.7021,
+   "coh_hvac": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.928,
+    "4000": 0.874,
+    "6000": 0.729
+   },
+   "coh_noise": {
+    "250": 0.998,
+    "500": 0.994,
+    "1000": 0.979,
+    "2000": 0.932,
+    "3000": 0.848,
+    "4000": 0.754,
+    "6000": 0.543
+   },
+   "speech_dbfs": -64.1,
+   "noise_dbfs": -74.24,
+   "nearest_talker": "t06",
+   "tdoa_meas_near_us": -67.99,
+   "tdoa_truth_near_us": -71.03,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/meeting_R02_d40",
+   "scenario": "meeting",
+   "layout_id": "R02",
+   "spacing_mm": 40,
+   "duration_s": 99.16,
+   "render_s": 3.11,
+   "peak": 0.0099,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     75.001,
+     65.127
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 0.77,
+   "alone_s_median": 3.66,
+   "n_talkers_alone_lt1s": 1,
+   "n_talkers_alone_lt3s": 4,
+   "overlap_ratio": 0.118,
+   "n_turns_total": 22,
+   "hvac_dba": 45.0,
+   "mic_height_cm": 10,
+   "axis_mode": "table",
+   "presenter": false,
+   "tail": "synthetic",
+   "rt60": 0.7021,
+   "coh_hvac": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.912,
+    "2000": 0.674,
+    "3000": 0.362,
+    "4000": 0.065,
+    "6000": -0.206
+   },
+   "coh_noise": {
+    "250": 0.992,
+    "500": 0.974,
+    "1000": 0.903,
+    "2000": 0.646,
+    "3000": 0.31,
+    "4000": 0.031,
+    "6000": -0.158
+   },
+   "speech_dbfs": -64.1,
+   "noise_dbfs": -74.25,
+   "nearest_talker": "t06",
+   "tdoa_meas_near_us": -79.9,
+   "tdoa_truth_near_us": -89.48,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  },
+  {
+   "scene": "spacing/meeting_R03_d12",
+   "scenario": "meeting",
+   "layout_id": "R03",
+   "spacing_mm": 12,
+   "duration_s": 110.72,
+   "render_s": 3.54,
+   "peak": 0.0151,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     51.527,
+     67.07
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 1.15,
+   "alone_s_median": 4.0,
+   "n_talkers_alone_lt1s": 0,
+   "n_talkers_alone_lt3s": 4,
+   "overlap_ratio": 0.1264,
+   "n_turns_total": 22,
+   "hvac_dba": 40.0,
+   "mic_height_cm": 2,
+   "axis_mode": "random",
+   "presenter": true,
+   "tail": "synthetic",
+   "rt60": 0.8746,
+   "coh_hvac": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.928,
+    "4000": 0.874,
+    "6000": 0.729
+   },
+   "coh_noise": {
+    "250": 0.994,
+    "500": 0.99,
+    "1000": 0.973,
+    "2000": 0.888,
+    "3000": 0.774,
+    "4000": 0.655,
+    "6000": 0.444
+   },
+   "speech_dbfs": -63.49,
+   "noise_dbfs": -78.0,
+   "nearest_talker": "t08",
+   "tdoa_meas_near_us": -84.78,
+   "tdoa_truth_near_us": -90.6,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.999,
+    "500": 0.998,
+    "1000": 0.992,
+    "2000": 0.968,
+    "3000": 0.929,
+    "4000": 0.876,
+    "6000": 0.734
+   },
+   "coh_model_j0": {
+    "250": 0.999,
+    "500": 0.997,
+    "1000": 0.988,
+    "2000": 0.952,
+    "3000": 0.894,
+    "4000": 0.816,
+    "6000": 0.61
+   }
+  },
+  {
+   "scene": "spacing/meeting_R03_d40",
+   "scenario": "meeting",
+   "layout_id": "R03",
+   "spacing_mm": 40,
+   "duration_s": 110.72,
+   "render_s": 4.31,
+   "peak": 0.0157,
+   "clipped": false,
+   "impair": {
+    "gain_db": [
+     0.0,
+     -1.3
+    ],
+    "hp_hz": [
+     51.527,
+     67.07
+    ],
+    "skew_us": -63.125
+   },
+   "n_talkers": 20,
+   "alone_s_min": 1.15,
+   "alone_s_median": 4.0,
+   "n_talkers_alone_lt1s": 0,
+   "n_talkers_alone_lt3s": 4,
+   "overlap_ratio": 0.1264,
+   "n_turns_total": 22,
+   "hvac_dba": 40.0,
+   "mic_height_cm": 2,
+   "axis_mode": "random",
+   "presenter": true,
+   "tail": "synthetic",
+   "rt60": 0.8746,
+   "coh_hvac": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.911,
+    "2000": 0.674,
+    "3000": 0.359,
+    "4000": 0.067,
+    "6000": -0.208
+   },
+   "coh_noise": {
+    "250": 0.986,
+    "500": 0.974,
+    "1000": 0.926,
+    "2000": 0.643,
+    "3000": 0.32,
+    "4000": 0.061,
+    "6000": -0.119
+   },
+   "speech_dbfs": -63.51,
+   "noise_dbfs": -77.96,
+   "nearest_talker": "t08",
+   "tdoa_meas_near_us": -139.13,
+   "tdoa_truth_near_us": -154.7,
+   "chain": {
+    "A": {
+     "gain_db": 0.0,
+     "delay_us": -0.0
+    },
+    "B": {
+     "gain_db": -1.3,
+     "delay_us": -63.125
+    }
+   },
+   "coh_model_sinc": {
+    "250": 0.994,
+    "500": 0.978,
+    "1000": 0.913,
+    "2000": 0.679,
+    "3000": 0.368,
+    "4000": 0.071,
+    "6000": -0.216
+   },
+   "coh_model_j0": {
+    "250": 0.992,
+    "500": 0.967,
+    "1000": 0.87,
+    "2000": 0.531,
+    "3000": 0.111,
+    "4000": -0.236,
+    "6000": -0.343
+   }
+  }
+ ]
+}

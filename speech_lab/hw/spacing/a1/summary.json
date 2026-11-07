@@ -1,0 +1,16 @@
+{
+ "estimator": "A1",
+ "conventions": "tau = arrival at B (ch1) minus arrival at A (ch0), samples at 16 kHz; tau0<0: B sampled later",
+ "tau0_samples": -1.10,
+ "tau0_ci95_samples": [-1.14, -1.07],
+ "tau0_us": -68.8,
+ "correction": "delay ch1 by 1.10 samples: X_B *= exp(-j*2*pi*f*1.10/fs)",
+ "d_cm": 1.25,
+ "d_ci95_cm": [1.10, 1.40],
+ "d_model": "3-D diffuse (sinc); J0 rejected by the direct-sound bound",
+ "speaker_geometric_tdoa_samples": {"left": 0.59, "right": 0.60, "err": 0.04},
+ "first_arrival_path_difference_R_minus_L_cm": [6, 11],
+ "flip180_predictions": {"H1": [-1.69, -1.70], "H2": [-0.49, -0.50], "H3": [0.51, 0.50]},
+ "endfire_A_toward_left_speaker_sweep_L": {"H1": -0.52, "H2": 0.25, "H3": 1.40},
+ "verdicts": {"H1": "supported", "H2": "refuted", "H3": "refuted"}
+}

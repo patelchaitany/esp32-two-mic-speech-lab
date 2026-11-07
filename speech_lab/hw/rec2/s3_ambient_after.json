@@ -1,0 +1,17 @@
+{
+ "fs": 16000,
+ "channels": 2,
+ "frames": 192000,
+ "t_cmd": 1002761.277981333,
+ "t_rec": 1002761.283435416,
+ "t_end": 1002773.300410791,
+ "stream_s": 12.01697537500877,
+ "extra_bytes": 0,
+ "diffuse_fit": {
+  "d_cm": 1.13,
+  "rho": 0.97,
+  "rmse": 0.13,
+  "skew_samples": -1.002
+ },
+ "label": "s3_ambient_after"
+}
